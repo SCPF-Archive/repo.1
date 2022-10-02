@@ -1,0 +1,31 @@
+name: Update ReVanced
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-20.04
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@main
+
+    - name: Downloading Packages
+      uses: robinraju/release-downloader@v1.5
+      with: 
+        repository: "SCP-017/debug"
+        latest: true
+        fileName: "*"
+        token: "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"
+        out-file-path: "updates"
+
+    - name: Upload Packages
+      uses: marvinpinto/action-automatic-releases@v1.2.1
+      with:
+        repo_token: "${{ secrets.GITHUB_TOKEN }}"
+        automatic_release_tag: "latest"
+        draft: true
+        title: "${{ env.date_now }} - ${{ env.RANDOM }}"
+        files: |
+          updates/*
