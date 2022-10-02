@@ -17,7 +17,7 @@ jobs:
         repository: "SCP-017/debug"
         latest: true
         fileName: "*"
-        token: "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"
+        token: "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"
         out-file-path: "updates"
 
     - name: Upload Packages
