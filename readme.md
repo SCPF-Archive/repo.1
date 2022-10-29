@@ -12,7 +12,7 @@
 - **ReVanced Log.7z**
 - **Arch Checker**
 
-#### **Notes**
+#### **Notes :**
 - The **ReVanced Log.7z** contains all the ReVanced applications, archived and compressed for faster download of all the applications.
 - The **Arch Checker** application is used to identify the phone architecture to install either YouTube Music ***arm-v7a*** or ***arm64-v8a***.
 
