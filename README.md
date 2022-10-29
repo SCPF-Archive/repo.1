@@ -2,7 +2,11 @@
 
 ![](https://img.shields.io/github/downloads/SCP-017/ReVanced-Download/total?label=TOTAL%20DOWNLOADS&style=for-the-badge)
 
-**View Changelog** :
+**View Changelog :**
 
 - [Full Changelog](https://github.com/revanced/revanced-patches/blob/main/CHANGELOG.md)
 - [Release Changelog](https://github.com/revanced/revanced-patches/releases)
+
+**Download :**
+
+- [Click here to download.](https://github.com/SCP-017/ReVanced-Download/releases)
