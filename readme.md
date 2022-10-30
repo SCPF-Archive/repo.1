@@ -13,6 +13,7 @@
 - **YouTube**
 - **YouTube Music**
 - **ReVanced Log.7z**
+- **Micro G**
 - **Arch Checker**
 
 #### **Notes :**
