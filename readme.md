@@ -26,3 +26,5 @@
 
 #### **Contact Me :**
 [![](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:ph.server@pm.me)
+
+[![](https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white)](https://m.me/fb.me.2)
