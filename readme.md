@@ -43,4 +43,5 @@
 - [**n0k0m3**](https://github.com/n0k0m3)
 - [**vietanhbui2000**](https://github.com/vietanhbui2000)
 - [**j-hc**](https://github.com/j-hc)
+- [**inotia00**](https://github.com/inotia00)
 - [**SCP-017**](https://phc.onl/members/scp-017.1530736)
