@@ -1,4 +1,4 @@
-# © 2022-Present
+# © 2022 - Present
 
 #### **Stats :**
 ![](https://img.shields.io/github/downloads/SCP-017/ReVanced-Download/total?label=TOTAL%20DOWNLOADS&style=for-the-badge)
@@ -27,4 +27,7 @@
 #### **Contact Me :**
 [![](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:ph.server@pm.me)
 
+[![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SCP-017)
+
 [![](https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white)](https://m.me/fb.me.2)
+
