@@ -17,6 +17,7 @@
 - **Arch Checker**
 
 #### **Notes :**
+- All the default patches are applied in the applications except for the **~~custom-branding~~** and **~~premium-heading~~** patch because I just want it to look normal 🤦. To see the full patches that is applied here, [**click here**](https://github.com/revanced/revanced-patches).
 - The **ReVanced Log.7z** contains all the ReVanced applications, archived and compressed for faster download of all the applications.
 - The **Arch Checker** application is used to identify the phone architecture to install wether YouTube Music ***arm-v7a*** or ***arm64-v8a***.
 - The **Micro G** application is needed to be installed in order to run YouTube and YouTube Music or else it will not work.
