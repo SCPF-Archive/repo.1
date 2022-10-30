@@ -23,9 +23,10 @@
 - The **Micro G** application is needed to be installed in order to run YouTube and YouTube Music or else it will not work.
 - Both the **YouTube Music** and **YouTube** application are non-root variant so don't expect some **Magisk** modules here.
 
-### **View ReVanced Changelog :**
-- [**View Full Changelog**](https://github.com/revanced/revanced-patches/blob/main/CHANGELOG.md)
-- [**View Release Changelog**](https://github.com/revanced/revanced-patches/releases)
+### **View ReVanced Details :**
+- [**Patches Changelog**](https://github.com/revanced/revanced-patches/releases)
+- [**CLI Changelog**](https://github.com/revanced/revanced-cli/releases)
+- [**Integrations Changelog**](https://github.com/revanced/revanced-integrations/releases)
 
 ### **Download :**
 - [***Click here to download.***](https://github.com/SCP-017/ReVanced-Download/releases)
