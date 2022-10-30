@@ -1,8 +1,7 @@
 # © 2022-Present
 
+#### **Stats :**
 ![](https://img.shields.io/github/downloads/SCP-017/ReVanced-Download/total?label=TOTAL%20DOWNLOADS&style=for-the-badge)
-
-[![](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:ph.server@pm.me)
 
 #### **Files List :**
 - **Reddit**
@@ -24,3 +23,6 @@
 
 #### **Download :**
 - [***Click here to download.***](https://github.com/SCP-017/ReVanced-Download/releases)
+
+#### **Contact Me :**
+[![](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:ph.server@pm.me)
