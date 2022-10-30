@@ -19,6 +19,8 @@
 #### **Notes :**
 - The **ReVanced Log.7z** contains all the ReVanced applications, archived and compressed for faster download of all the applications.
 - The **Arch Checker** application is used to identify the phone architecture to install wether YouTube Music ***arm-v7a*** or ***arm64-v8a***.
+- The **Micro G** application is needed to be installed in order to run YouTube and YouTube Music or else it will not work.
+- Both the **YouTube Music** and **YouTube** application are non-root variant so don't expect some **Magisk** modules here.
 
 #### **View ReVanced Changelog :**
 - [**View Full Changelog**](https://github.com/revanced/revanced-patches/blob/main/CHANGELOG.md)
