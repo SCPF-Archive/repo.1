@@ -1,0 +1,45 @@
+#### **YouTube Patch**
+
+- Hides the crowdfunding box between the player and video description.
+- Hides progress bar and time counter on videos.
+- Adds options to hide action buttons under a video.
+- Replaces the search icon with a wide search bar. This will hide the YouTube logo when active.
+- Hides the captions button on video player.
+- Hides the shorts button on the navigation bar.
+- Hides the create button in the navigation bar.
+- Disables playing YouTube Shorts when launching YouTube.
+- Hides the cast button in the video player.
+- Integrate SponsorBlock.
+- Hides the autoplay button in the video player.
+- Hides the Watch in VR option from the player settings flyout panel.
+- Hides the album cards below the artist description.
+- Disable automatic popup panels (playlist or live chat) on video player.
+- Disable forced captions from being automatically enabled.
+- Disables video description and comments panel in fullscreen view.
+- Hides the artist card below the searchbar.
+- Shows the dislike count of videos using the Return YouTube Dislike API.
+- Hides components related to comments.
+- Applies a custom theme.
+- Hides the email address in the account switcher.
+- Enables the tablet mini player layout.
+- Hides creator's watermarks on videos.
+- Hides mix playlists.
+- ~~Changes the YouTube launcher icon and name to your choice (defaults to ReVanced).~~
+- ~~Shows premium branding on the home screen.~~
+- Enables the original quality flyout menu.
+- Removes general ads.
+- Removes ads in the video player.
+- Hides infocards in videos.
+- Adds volume and brightness swipe controls.
+- Enables downloading music and videos from YouTube.
+- Enables tap-to-seek on the seekbar of the video player.
+- Adds settings for ReVanced to YouTube.
+- Allows YouTube ReVanced to run without root and under a different package name with Vanced MicroG.
+- Lets you change the buffers of videos.
+- Spoofs the YouTube or Vanced client to prevent playback issues.
+- Always repeats the playing video again.
+- Enables app debugging by patching the manifest file.
+- Adds the ability to remember the video quality you chose in the video quality flyout.
+- Enables minimized and background playback.
+- Adds more video playback speed options.
+- Makes the brightness of HDR videos follow the system default.
