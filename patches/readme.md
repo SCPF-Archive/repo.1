@@ -8,4 +8,4 @@ Click the
 - `twitter.patch.md` or
 - `youtube.patch.md`
 
-to view the patch or mod details of the applications.
+files above to view the patch or mod details of the applications.
