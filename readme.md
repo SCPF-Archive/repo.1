@@ -6,14 +6,14 @@
 ![](https://img.shields.io/github/downloads/SCP-017/ReVanced-Download/total?label=TOTAL%20DOWNLOADS&color=red&style=for-the-badge)
 
 ### **Files List :**
-- **Reddit (MOD)**
-- **Spotify (MOD)**
-- **TikTok (MOD)**
-- **Twitter (MOD)**
-- **YouTube (MOD)**
-- **YouTube Music (MOD)**
-- **ReVanced Log.7z (Archive)**
-- **Micro G (Latest)**
+- **Reddit**
+- **Spotify**
+- **TikTok**
+- **Twitter**
+- **YouTube**
+- **YouTube Music**
+- **ReVanced Log.7z**
+- **Micro G**
 - **Arch Checker**
 
 ### **Notes :**
