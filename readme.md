@@ -12,7 +12,7 @@
 - **Twitter (MOD)**
 - **YouTube (MOD)**
 - **YouTube Music (MOD)**
-- **ReVanced Log.7z**
+- **ReVanced Log.7z (Archive)**
 - **Micro G (Latest)**
 - **Arch Checker**
 
