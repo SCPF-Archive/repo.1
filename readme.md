@@ -33,6 +33,9 @@
 - [**➡️ CLI Changelog**](https://github.com/revanced/revanced-cli/releases)
 - [**➡️ Integrations Changelog**](https://github.com/revanced/revanced-integrations/releases)
 
+### **Patch Request or Bug?**
+- To submit any patch request or bug report to the **ReVanced Team**, click [**here**](https://github.com/revanced/revanced-patches/issues/new/choose).
+
 ### **Screenshots :**
 - [**Click here to view screenshots.**](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/screenshots.md)
 
