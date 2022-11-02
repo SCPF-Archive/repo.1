@@ -1,6 +1,6 @@
 # © 2022 - Present
 
-### **Stats :**
+### **ReVanced Stats :**
 ![](https://img.shields.io/github/workflow/status/SCP-017/debug/Build%20ReVanced?label=BUILD%20REVANCED&color=blue&style=for-the-badge)
 
 ![](https://img.shields.io/github/v/release/SCP-017/ReVanced-Download?label=RELEASE%20VERSION&color=blue&style=for-the-badge)
