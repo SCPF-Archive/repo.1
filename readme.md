@@ -34,7 +34,7 @@
 - [**➡️ Integrations Changelog**](https://github.com/revanced/revanced-integrations/releases)
 
 ### **Screenshots :**
-- [**Click here to view screenshots.**](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/readme.md)
+- [**Click here to view screenshots.**](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/screenshots.md)
 
 ### **Download :**
 - [**Click here to download.**](https://github.com/SCP-017/ReVanced-Download/releases)
