@@ -7,8 +7,6 @@
 
 ![](https://img.shields.io/github/downloads/SCP-017/ReVanced-Download/total?label=TOTAL%20DOWNLOADS&color=blue&style=for-the-badge)
 
-![](https://img.shields.io/github/issues/revanced/revanced-patches/bug?color=red&label=PATCH%20BUGS&style=for-the-badge)
-
 ### **Files List :**
 - **Reddit**
 - **Spotify**
@@ -34,6 +32,10 @@
 - [**➡️ Integrations Changelog**](https://github.com/revanced/revanced-integrations/releases)
 
 ### **Patch Request or Bug?**
+![](https://img.shields.io/github/issues/revanced/revanced-patches/patch-request?color=blue&label=PATCH%20REQUESTS&style=for-the-badge)
+
+![](https://img.shields.io/github/issues/revanced/revanced-patches/bug?color=red&label=BUG%20REPORTS&style=for-the-badge)
+
 - To submit any patch request or bug report to the **ReVanced Team**, click [**here**](https://github.com/revanced/revanced-patches/issues/new/choose).
 
 ### **Screenshots :**
