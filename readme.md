@@ -23,7 +23,7 @@
 - The **ReVanced Log.7z** contains all the ReVanced applications, archived and compressed for faster download of all the applications.
 - The **Arch Checker** application is used to identify the phone architecture to install wether YouTube Music ***arm-v7a*** or ***arm64-v8a***.
 - The **Micro G** application is needed to be installed in order to run YouTube and YouTube Music or else it will not work.
-- Uninstall your current **Micro G** because the **Micro G** here is updated version, modified from **Team Vanced MicroG** so there will be **signature conflict** if you update the old **Micro G** with the latest ones.
+- Uninstall your current **Micro G** because the **Micro G** here is updated version, modified from **Team Vanced MicroG** so there will be **signature conflict** if you update your current and old **Micro G** with the latest ones.
 - Both the **YouTube Music** and **YouTube** application are non-root variant so don't expect some **Magisk** modules here.
 
 ### **Click to view Changelog :**
