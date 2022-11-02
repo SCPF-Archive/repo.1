@@ -28,10 +28,10 @@
 - Uninstall your current **Micro G** because the **Micro G** here is updated version, modified from **Team Vanced MicroG** so there will be **signature conflict** if you update the old **Micro G** with the latest ones.
 - Both the **YouTube Music** and **YouTube** application are non-root variant so don't expect some **Magisk** modules here.
 
-### **View ReVanced Details :**
-- [**Patches Changelog**](https://github.com/revanced/revanced-patches/releases)
-- [**CLI Changelog**](https://github.com/revanced/revanced-cli/releases)
-- [**Integrations Changelog**](https://github.com/revanced/revanced-integrations/releases)
+### **Click to view Changelog :**
+- [**➡️ Patches Changelog**](https://github.com/revanced/revanced-patches/releases)
+- [**➡️ CLI Changelog**](https://github.com/revanced/revanced-cli/releases)
+- [**➡️ Integrations Changelog**](https://github.com/revanced/revanced-integrations/releases)
 
 ### **Screenshots :**
 - **Reddit**
