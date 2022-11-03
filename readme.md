@@ -10,7 +10,8 @@
 ### Files List :
 - **Reddit**
 - **Spotify**
-- **TikTok**
+- **TikTok Asia**
+- **TikTok Global**
 - **Twitter**
 - **YouTube**
 - **YouTube Music**
