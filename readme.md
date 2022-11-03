@@ -42,7 +42,7 @@
 - [**Click here to view screenshots.**](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/screenshots.md)
 
 ### Download :
-- [**Click here to download.**](https://github.com/SCP-017/ReVanced-Download/releases)
+- [**Click here to download.**](https://github.com/SCP-017/ReVanced-Download/releases/latest)
 
 ### Contact Me :
 [![](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:ph.server@pm.me)
