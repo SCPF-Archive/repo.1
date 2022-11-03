@@ -42,7 +42,15 @@
 - [**Click here to view screenshots.**](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/screenshots.md)
 
 ### Download :
-- [**Click here to download.**](https://github.com/SCP-017/ReVanced-Download/releases/latest)
+[<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/reddit.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/reddit.apk)
+
+[<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/tiktok.asia.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/tiktok.asia.apk) [<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/tiktok.global.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/tiktok.global.apk)
+
+[<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/twitter.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/twitter.apk) [<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/youtube.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/youtube.apk)
+
+[<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/yt.music.v7a.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/yt.music.v7a.apk) [<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/yt.music.v8a.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/yt.music.v8a.apk)
+
+[**Click to view full releases.**](https://github.com/SCP-017/ReVanced-Download/releases)
 
 ### Contact Me :
 [![](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:ph.server@pm.me)
