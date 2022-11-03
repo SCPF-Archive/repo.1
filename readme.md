@@ -49,7 +49,7 @@
 
 [<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/yt.music.v7a.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/yt.music.v7a.apk) [<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/yt.music.v8a.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/yt.music.v8a.apk)
 
-[<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/micro.g.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/micro.g.apk) [<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/arch.checker.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/arch.checker/arch.checker.apk)
+[<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/micro.g.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/micro.g.apk) [<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/arch.checker.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://raw.githubusercontent.com/SCP-017/debug/main/arch.checker/arch.checker.apk)
 
 [**Click here to view full releases.**](https://github.com/SCP-017/ReVanced-Download/releases)
 
