@@ -1,11 +1,11 @@
 # © 2022 - Present
 
 ### **ReVanced Stats :**
-![](https://img.shields.io/github/workflow/status/SCP-017/debug/Build%20ReVanced?label=BUILD%20REVANCED&color=orange&style=for-the-badge)
+![](https://img.shields.io/github/workflow/status/SCP-017/debug/Build%20ReVanced?label=BUILD%20REVANCED&color=black&style=for-the-badge)
 
 ![](https://img.shields.io/github/v/release/SCP-017/ReVanced-Download?label=RELEASE%20VERSION&color=black&style=for-the-badge)
 
-![](https://img.shields.io/github/downloads/SCP-017/ReVanced-Download/total?label=TOTAL%20DOWNLOADS&color=gold&style=for-the-badge)
+![](https://img.shields.io/github/downloads/SCP-017/ReVanced-Download/total?label=TOTAL%20DOWNLOADS&color=black&style=for-the-badge)
 
 ### Files List :
 - **Reddit**
