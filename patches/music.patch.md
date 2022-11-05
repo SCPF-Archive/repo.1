@@ -1,4 +1,4 @@
-#### **YouTube Music Patch**
+#### YouTube Music Patch
 
 - ~~Removes the "Tell us which artists you like" card from the home screen.~~
 - Removes all "Get Premium" evidences from the avatar menu.
