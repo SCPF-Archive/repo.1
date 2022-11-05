@@ -1,4 +1,4 @@
-#### **Info :**
+#### Info :
 
 Click the
 - `music.patch.md`
