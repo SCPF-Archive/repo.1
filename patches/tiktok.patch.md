@@ -1,4 +1,4 @@
-#### **TikTok Patch**
+#### TikTok Patch
 
 - Removed ads from TikTok.
 - Enabled the playback speed option for all videos.
@@ -7,3 +7,4 @@
 - Added settings menu to TikTok.
 - Do not force login.
 - Filtered tiktok videos: removing ads, removing livestreams.
+- Watermark remover included.
