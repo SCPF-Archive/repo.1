@@ -1,4 +1,4 @@
-#### **YouTube Patch**
+#### YouTube Patch
 
 - Hides the crowdfunding box between the player and video description.
 - Hides progress bar and time counter on videos.
