@@ -14,12 +14,14 @@
 
 ![](https://img.shields.io/badge/dynamic/json?color=black&label=TIKTOK%20ASIA&query=%24%5B%22com.zhiliaoapp.musically.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Flatest%2Fversion.json&style=for-the-badge)
 
-- **Spotify**
-- **TikTok Asia**
-- **TikTok Global**
-- **Twitter**
-- **YouTube**
-- **YouTube Music**
+![](https://img.shields.io/badge/dynamic/json?color=black&label=TIKTOK%20GLOBAL&query=%24%5B%22com.ss.android.ugc.trill.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Flatest%2Fversion.json&style=for-the-badge)
+
+![](https://img.shields.io/badge/dynamic/json?color=black&label=TWITTER&query=%24%5B%22com.twitter.android.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Flatest%2Fversion.json&style=for-the-badge)
+
+![](https://img.shields.io/badge/dynamic/json?color=black&label=YOUTUBE&query=%24%5B%22com.google.android.youtube.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Flatest%2Fversion.json&style=for-the-badge)
+
+![](https://img.shields.io/badge/dynamic/json?color=black&label=YOUTUBE%20MUSIC&query=%24%5B%22com.google.android.apps.youtube.music.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Flatest%2Fversion.json&style=for-the-badge)
+
 - **ReVanced Log.7z**
 - **Micro G**
 
