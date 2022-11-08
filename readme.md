@@ -76,11 +76,14 @@
 [![](https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white)](https://m.me/fb.me.2)
 
 ### Credits :
-[![](https://github.com/revanced)](https://img.shields.io/badge/ReVanced%20Team-black?&style=for-the-badge)
+[![](https://img.shields.io/badge/ReVanced%20Team-black?&style=for-the-badge)](https://github.com/revanced)
 
-- [**ReVanced Team**](https://github.com/revanced)
-- [**n0k0m3**](https://github.com/n0k0m3)
-- [**vietanhbui2000**](https://github.com/vietanhbui2000)
-- [**j-hc**](https://github.com/j-hc)
-- [**inotia00**](https://github.com/inotia00)
-- [**SCP-017**](https://phc.onl/members/scp-017.1530736)
+[![](https://img.shields.io/badge/n0k0m3-black?&style=for-the-badge)](https://github.com/n0k0m3)
+
+[![](https://img.shields.io/badge/j--hc-black?&style=for-the-badge)](https://github.com/j-hc)
+
+[![](https://img.shields.io/badge/vietanhbui2000-black?&style=for-the-badge)](https://github.com/vietanhbui2000)
+
+[![](https://img.shields.io/badge/inotia00-black?&style=for-the-badge)](https://github.com/inotia00)
+
+[![](https://img.shields.io/badge/SCP--017-black?&style=for-the-badge)](https://phc.onl/members/scp-017.1530736)
