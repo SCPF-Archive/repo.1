@@ -53,7 +53,8 @@
 - To submit any patch request or bug report to the **ReVanced Team**, click [**here**](https://github.com/revanced/revanced-patches/issues/new/choose).
 
 ### Application Screenshots :
-- [**Click here to view screenshots.**](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/screenshots.md)
+
+[![](https://img.shields.io/badge/Click%20To%20View%20Screenshots-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/screenshots.md)
 
 ### Download :
 [<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/reddit.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/reddit.apk) [<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/spotify.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/spotify.apk)
