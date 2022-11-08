@@ -8,7 +8,12 @@
 ![](https://img.shields.io/github/downloads/SCP-017/ReVanced-Download/total?label=TOTAL%20DOWNLOADS&color=black&style=for-the-badge)
 
 ### Files List :
-- **Reddit**
+![](https://img.shields.io/badge/dynamic/json?color=black&label=REDDIT&query=%24%5B%22com.reddit.frontpage.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Flatest%2Fversion.json&style=for-the-badge)
+
+![](https://img.shields.io/badge/dynamic/json?color=black&label=SPOTIFY&query=%24%5B%22com.reddit.frontpage.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Flatest%2Fversion.json&style=for-the-badge)
+
+![](https://img.shields.io/badge/dynamic/json?color=black&label=REDDIT&query=%24%5B%22com.reddit.frontpage.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Flatest%2Fversion.json&style=for-the-badge)
+
 - **Spotify**
 - **TikTok Asia**
 - **TikTok Global**
