@@ -78,6 +78,12 @@
 ### Credits :
 [![](https://img.shields.io/badge/ReVanced%20Team-black?&style=for-the-badge)](https://github.com/revanced)
 
+[![](https://img.shields.io/badge/Team%20Vanced-black?&style=for-the-badge)](https://github.com/TeamVanced)
+
+[![](https://img.shields.io/badge/microG%20Project-black?&style=for-the-badge)](https://github.com/microg)
+
+[![](https://img.shields.io/badge/Shields.IO-black?&style=for-the-badge)](https://github.com/badges)
+
 [![](https://img.shields.io/badge/n0k0m3-black?&style=for-the-badge)](https://github.com/n0k0m3)
 
 [![](https://img.shields.io/badge/j--hc-black?&style=for-the-badge)](https://github.com/j-hc)
