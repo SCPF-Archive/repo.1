@@ -41,9 +41,11 @@
 ![](https://img.shields.io/github/v/release/revanced/revanced-integrations?color=black&label=INTEGRATION%20VERSION&style=for-the-badge)
 
 ### Click to view Changelog :
-- [**➡️ Patches Changelog**](https://github.com/revanced/revanced-patches/releases)
-- [**➡️ CLI Changelog**](https://github.com/revanced/revanced-cli/releases)
-- [**➡️ Integrations Changelog**](https://github.com/revanced/revanced-integrations/releases)
+[![](https://img.shields.io/badge/🧩-Patches%20Changelog-black?&style=for-the-badge)](https://github.com/revanced/revanced-patches/releases)
+
+[![](https://img.shields.io/badge/💻-CLI%20Changelog-black?&style=for-the-badge)](https://github.com/revanced/revanced-cli/releases)
+
+[![](https://img.shields.io/badge/🔩-Integrations%20Changelog-black?&style=for-the-badge)](https://github.com/revanced/revanced-integrations/releases)
 
 ### Patch Request or Bug?
 ![](https://img.shields.io/github/issues/revanced/revanced-patches/patch-request?color=blue&label=PATCH%20REQUESTS&style=for-the-badge)
