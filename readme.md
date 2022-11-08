@@ -59,15 +59,17 @@
 [![](https://img.shields.io/badge/Click%20To%20View%20Screenshots-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/screenshots.md)
 
 ### Download :
-[<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/reddit.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/reddit.apk) [<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/spotify.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/spotify.apk)
+[![](https://img.shields.io/badge/Reddit-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/reddit.apk) [![](https://img.shields.io/badge/Spotify-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/spotify.apk)
 
-[<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/tiktok.asia.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/tiktok.asia.apk) [<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/tiktok.global.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/tiktok.global.apk)
+[![](https://img.shields.io/badge/TikTok%20Asia-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/tiktok.asia.apk) [![](https://img.shields.io/badge/TikTok%20Global-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/tiktok.global.apk)
 
-[<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/twitter.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/twitter.apk) [<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/youtube.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/youtube.apk)
+[![](https://img.shields.io/badge/Twitter-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/twitter.apk) [![](https://img.shields.io/badge/YouTube-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/youtube.apk)
 
-[<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/yt.music.v7a.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/yt.music.v7a.apk) [<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/yt.music.v8a.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/yt.music.v8a.apk)
+[![](https://img.shields.io/badge/YT%20Music%20V7A-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/yt.music.v7a.apk) [![](https://img.shields.io/badge/YT%20Music%20V8A-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/yt.music.v8a.apk)
 
-[<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/micro.g.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/micro.g.apk) [<img src="https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/buttons/arch.checker.png" style="width: 45%;margin:16px;" />&nbsp;&nbsp;](https://github.com/SCP-017/ReVanced-Download/releases/download/2022.10.29/arch.checker.apk)
+[![](https://img.shields.io/badge/Micro%20G-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/micro.g.apk) [![](https://img.shields.io/badge/Arch%20Checker-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/download/2022.10.29/arch.checker.apk)
+
+[![](https://img.shields.io/badge/ReVanced%20Log-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/revanced-log.7z)
 
 [**Click here to view full releases.**](https://github.com/SCP-017/ReVanced-Download/releases)
 
