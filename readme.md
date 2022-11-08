@@ -76,6 +76,8 @@
 [![](https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white)](https://m.me/fb.me.2)
 
 ### Credits :
+[![](https://github.com/revanced)](https://img.shields.io/badge/ReVanced%20Team-black?&style=for-the-badge)
+
 - [**ReVanced Team**](https://github.com/revanced)
 - [**n0k0m3**](https://github.com/n0k0m3)
 - [**vietanhbui2000**](https://github.com/vietanhbui2000)
