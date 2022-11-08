@@ -22,8 +22,9 @@
 
 ![](https://img.shields.io/badge/dynamic/json?color=black&label=YOUTUBE%20MUSIC&query=%24%5B%22com.google.android.apps.youtube.music.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Flatest%2Fversion.json&style=for-the-badge)
 
-- **ReVanced Log.7z**
-- **Micro G**
+![](https://img.shields.io/github/v/release/SCP-017/ReVanced-Download?&label=REVANCED%20LOG&color=black&style=for-the-badge)
+
+![](https://img.shields.io/github/v/release/inotia00/VancedMicroG?&label=Micro%20G&color=black&style=for-the-badge)
 
 ### Notes :
 - All the default patches are applied in the applications except for the **~~tasteBuilder-remover~~**, **~~custom-branding~~** and **~~premium-heading~~** patch because I just want it to look normal 🤦. To see the full patches that is applied here, [**click here**](https://github.com/SCP-017/ReVanced-Download/tree/main/patches) or [**here**](https://github.com/revanced/revanced-patches).
