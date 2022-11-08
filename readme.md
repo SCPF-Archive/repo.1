@@ -92,4 +92,4 @@
 
 [![](https://img.shields.io/badge/inotia00-black?&style=for-the-badge)](https://github.com/inotia00)
 
-[![](https://img.shields.io/badge/SCP--017-black?&style=for-the-badge)](https://phc.onl/members/scp-017.1530736)
+[![](https://img.shields.io/badge/SCP--017%20(From%20PH%20Corner)-black?&style=for-the-badge)](https://phc.onl/members/scp-017.1530736)
