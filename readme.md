@@ -65,7 +65,7 @@
 
 ![](https://img.shields.io/github/issues/revanced/revanced-patches/bug?color=red&label=BUG%20REPORTS&style=for-the-badge)
 
-- To submit any patch request or bug report to the **ReVanced Team**, click [**here**](https://github.com/revanced/revanced-patches/issues/new/choose).
+To submit any patch request or bug report to the **ReVanced Team**, click [**here**](https://github.com/revanced/revanced-patches/issues/new/choose).
 
 ### Application Screenshots :
 
