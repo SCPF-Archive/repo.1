@@ -30,6 +30,8 @@
 
 ![](https://img.shields.io/github/v/release/inotia00/VancedMicroG?&label=Micro%20G&color=black&style=for-the-badge)
 
+![](https://img.shields.io/github/v/release/revanced/revanced-manager?&label=ReVanced%20Manager&color=black&style=for-the-badge)
+
 ![](https://img.shields.io/badge/Arch%20Checker-v1.1-black?&style=for-the-badge)
 
 ### Prerelease Files List :
