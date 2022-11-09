@@ -82,6 +82,12 @@
 
 [![](https://img.shields.io/badge/Micro%20G-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/micro.g.apk) [![](https://img.shields.io/badge/ReVanced%20Manager-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/revanced.manager.apk)
 
+[![](https://img.shields.io/badge/YT%20Music%20V7A%20Beta-orange?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/prerelease/download/yt.music.v7a.apk)
+
+[![](https://img.shields.io/badge/YT%20Music%20V8A%20Beta-orange?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/prerelease/download/yt.music.v8a.apk)
+
+[![](https://img.shields.io/badge/YouTube%20Beta-orange?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/prerelease/download/youtube.apk)
+
 [![](https://img.shields.io/badge/Click%20Here%20To%20View%20Full%20Releases-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases)
 
 ### Contact Me :
