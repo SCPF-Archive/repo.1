@@ -29,7 +29,7 @@
 ![](https://img.shields.io/badge/Arch%20Checker-v1.1-black?&style=for-the-badge)
 
 ### Prerelease Files List :
-![](https://img.shields.io/badge/dynamic/json?color=orang&label=YOUTUBE&query=%24%5B%22com.google.android.youtube.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Fprerelease%2Fversion.json&style=for-the-badge)
+![](https://img.shields.io/badge/dynamic/json?color=orange&label=YOUTUBE&query=%24%5B%22com.google.android.youtube.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Fprerelease%2Fversion.json&style=for-the-badge)
 
 ![](https://img.shields.io/badge/dynamic/json?color=orange&label=YOUTUBE%20MUSIC&query=%24%5B%22com.google.android.apps.youtube.music.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Fprerelease%2Fversion.json&style=for-the-badge)
 
