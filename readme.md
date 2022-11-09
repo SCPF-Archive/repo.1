@@ -109,3 +109,5 @@ To submit any patch request or bug report to the **ReVanced Team**, click [**her
 [![](https://img.shields.io/badge/n0k0m3-black?&style=for-the-badge)](https://github.com/n0k0m3) [![](https://img.shields.io/badge/j--hc-black?&style=for-the-badge)](https://github.com/j-hc) [![](https://img.shields.io/badge/inotia00-black?&style=for-the-badge)](https://github.com/inotia00)
 
 [![](https://img.shields.io/badge/vietanhbui2000-black?&style=for-the-badge)](https://github.com/vietanhbui2000) [![](https://img.shields.io/badge/SCP--017-black?&style=for-the-badge)](https://phc.onl/members/scp-017.1530736)
+
+[![](https://img.shields.io/badge/OxrxL-black?&style=for-the-badge)](https://github.com/OxrxL) [![](https://img.shields.io/badge/shadow578-black?&style=for-the-badge)](https://github.com/shadow578)
