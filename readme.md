@@ -33,9 +33,9 @@
 ![](https://img.shields.io/badge/Arch%20Checker-v1.1-black?&style=for-the-badge)
 
 ### Prerelease Files List :
-![](https://img.shields.io/badge/dynamic/json?color=orange&label=YOUTUBE&query=%24%5B%22com.google.android.youtube.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Fprerelease%2Fversion.json&style=for-the-badge)
+![](https://img.shields.io/badge/dynamic/json?color=orange&label=YOUTUBE%20BETA&query=%24%5B%22com.google.android.youtube.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Fprerelease%2Fversion.json&style=for-the-badge)
 
-![](https://img.shields.io/badge/dynamic/json?color=orange&label=YOUTUBE%20MUSIC&query=%24%5B%22com.google.android.apps.youtube.music.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Fprerelease%2Fversion.json&style=for-the-badge)
+![](https://img.shields.io/badge/dynamic/json?color=orange&label=YOUTUBE%20MUSIC%20BETA&query=%24%5B%22com.google.android.apps.youtube.music.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Fprerelease%2Fversion.json&style=for-the-badge)
 
 ### Notes :
 - All the default patches are applied in the applications except for the **~~tasteBuilder-remover~~**, **~~custom-branding~~** and **~~premium-heading~~** patch because I just want it to look normal 🤦. To see the full patches that is applied here, [**click here**](https://github.com/SCP-017/ReVanced-Download/tree/main/patches) or [**here**](https://github.com/revanced/revanced-patches).
