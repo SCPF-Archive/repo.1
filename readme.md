@@ -26,6 +26,8 @@
 
 ![](https://img.shields.io/github/v/release/inotia00/VancedMicroG?&label=Micro%20G&color=black&style=for-the-badge)
 
+![](https://img.shields.io/badge/Arch%20Checker-black?&style=for-the-badge)
+
 ### Notes :
 - All the default patches are applied in the applications except for the **~~tasteBuilder-remover~~**, **~~custom-branding~~** and **~~premium-heading~~** patch because I just want it to look normal 🤦. To see the full patches that is applied here, [**click here**](https://github.com/SCP-017/ReVanced-Download/tree/main/patches) or [**here**](https://github.com/revanced/revanced-patches).
 - The **ReVanced Log.7z** contains all the ReVanced applications, archived and compressed for faster download of all the applications.
@@ -71,7 +73,7 @@
 
 [![](https://img.shields.io/badge/ReVanced%20Log-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/revanced-log.7z)
 
-[**Click here to view full releases.**](https://github.com/SCP-017/ReVanced-Download/releases)
+[![](https://img.shields.io/badge/Click%20Here%20To%20View%20Full%20Releases-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases)
 
 ### Contact Me :
 [![](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:ph.server@pm.me)
