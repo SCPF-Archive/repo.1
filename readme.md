@@ -26,7 +26,7 @@
 
 ![](https://img.shields.io/github/v/release/inotia00/VancedMicroG?&label=Micro%20G&color=black&style=for-the-badge)
 
-![](https://img.shields.io/badge/Arch%20Checker-black?&style=for-the-badge)
+![](https://img.shields.io/badge/Arch%20Checker-v1.1-black?&style=for-the-badge)
 
 ### Notes :
 - All the default patches are applied in the applications except for the **~~tasteBuilder-remover~~**, **~~custom-branding~~** and **~~premium-heading~~** patch because I just want it to look normal 🤦. To see the full patches that is applied here, [**click here**](https://github.com/SCP-017/ReVanced-Download/tree/main/patches) or [**here**](https://github.com/revanced/revanced-patches).
