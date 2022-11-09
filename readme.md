@@ -69,7 +69,7 @@
 
 [![](https://img.shields.io/badge/Click%20To%20View%20Screenshots-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/screenshots.md)
 
-### Download :
+### Download Latest :
 [![](https://img.shields.io/badge/Reddit-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/reddit.apk) [![](https://img.shields.io/badge/Spotify-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/spotify.apk)
 
 [![](https://img.shields.io/badge/TikTok%20Asia-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/tiktok.asia.apk) [![](https://img.shields.io/badge/TikTok%20Global-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/tiktok.global.apk)
@@ -82,13 +82,15 @@
 
 [![](https://img.shields.io/badge/Micro%20G-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/micro.g.apk) [![](https://img.shields.io/badge/ReVanced%20Manager-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/revanced.manager.apk)
 
-[![](https://img.shields.io/badge/YT%20Music%20V7A%20Beta-orange?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/prerelease/download/yt.music.v7a.apk)
+### Download Prerelease :
+[![](https://img.shields.io/badge/YT%20Music%20V7A%20Beta-orange?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/download/2022.11.09.beta/yt.music.v7a.apk)
 
-[![](https://img.shields.io/badge/YT%20Music%20V8A%20Beta-orange?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/prerelease/download/yt.music.v8a.apk)
+[![](https://img.shields.io/badge/YT%20Music%20V8A%20Beta-orange?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/download/2022.11.09.beta/yt.music.v8a.apk)
 
-[![](https://img.shields.io/badge/YouTube%20Beta-orange?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/prerelease/download/youtube.apk)
+[![](https://img.shields.io/badge/YouTube%20Beta-orange?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/download/2022.11.09.beta/youtube.apk)
 
-[![](https://img.shields.io/badge/Click%20Here%20To%20View%20Full%20Releases-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases)
+### Full Release :
+[![](https://img.shields.io/badge/Click%20Here%20To%20View%20All-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases)
 
 ### Contact Me :
 [![](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:ph.server@pm.me)
