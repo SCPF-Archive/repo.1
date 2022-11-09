@@ -71,7 +71,7 @@
 
 [![](https://img.shields.io/badge/Micro%20G-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/micro.g.apk) [![](https://img.shields.io/badge/Arch%20Checker-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/download/2022.10.29/arch.checker.apk)
 
-[![](https://img.shields.io/badge/ReVanced%20Log-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/revanced-log.7z)
+[![](https://img.shields.io/badge/ReVanced%20Log-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/revanced-log.7z) [![](https://img.shields.io/badge/ReVanced%20Manager-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/revanced.manager.apk)
 
 [![](https://img.shields.io/badge/Click%20Here%20To%20View%20Full%20Releases-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases)
 
