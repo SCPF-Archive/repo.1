@@ -83,20 +83,10 @@
 [![](https://img.shields.io/badge/Messenger-00B2FF?style=for-the-badge&logo=messenger&logoColor=white)](https://m.me/fb.me.2)
 
 ### Credits :
-[![](https://img.shields.io/badge/ReVanced%20Team-black?&style=for-the-badge)](https://github.com/revanced)
+[![](https://img.shields.io/badge/ReVanced%20Team-black?&style=for-the-badge)](https://github.com/revanced) [![](https://img.shields.io/badge/Team%20Vanced-black?&style=for-the-badge)](https://github.com/TeamVanced)
 
-[![](https://img.shields.io/badge/Team%20Vanced-black?&style=for-the-badge)](https://github.com/TeamVanced)
+[![](https://img.shields.io/badge/microG%20Project-black?&style=for-the-badge)](https://github.com/microg) [![](https://img.shields.io/badge/Shields.IO-black?&style=for-the-badge)](https://github.com/badges)
 
-[![](https://img.shields.io/badge/microG%20Project-black?&style=for-the-badge)](https://github.com/microg)
+[![](https://img.shields.io/badge/n0k0m3-black?&style=for-the-badge)](https://github.com/n0k0m3) [![](https://img.shields.io/badge/j--hc-black?&style=for-the-badge)](https://github.com/j-hc) [![](https://img.shields.io/badge/inotia00-black?&style=for-the-badge)](https://github.com/inotia00)
 
-[![](https://img.shields.io/badge/Shields.IO-black?&style=for-the-badge)](https://github.com/badges)
-
-[![](https://img.shields.io/badge/n0k0m3-black?&style=for-the-badge)](https://github.com/n0k0m3)
-
-[![](https://img.shields.io/badge/j--hc-black?&style=for-the-badge)](https://github.com/j-hc)
-
-[![](https://img.shields.io/badge/vietanhbui2000-black?&style=for-the-badge)](https://github.com/vietanhbui2000)
-
-[![](https://img.shields.io/badge/inotia00-black?&style=for-the-badge)](https://github.com/inotia00)
-
-[![](https://img.shields.io/badge/SCP--017%20(From%20PH%20Corner)-black?&style=for-the-badge)](https://phc.onl/members/scp-017.1530736)
+[![](https://img.shields.io/badge/vietanhbui2000-black?&style=for-the-badge)](https://github.com/vietanhbui2000) [![](https://img.shields.io/badge/SCP--017-black?&style=for-the-badge)](https://phc.onl/members/scp-017.1530736)
