@@ -12,6 +12,8 @@
 ![](https://img.shields.io/github/downloads/SCP-017/ReVanced-Download/total?label=TOTAL%20DOWNLOADS&color=black&style=for-the-badge)
 
 ### Latest Files List :
+![](https://img.shields.io/badge/dynamic/json?color=black&label=NYX%20MUSIC%20PLAYER&query=%24%5B%22com.awedea.nyx.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Flatest%2Fversion.json&style=for-the-badge)
+
 ![](https://img.shields.io/badge/dynamic/json?color=black&label=REDDIT&query=%24%5B%22com.reddit.frontpage.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Flatest%2Fversion.json&style=for-the-badge)
 
 ![](https://img.shields.io/badge/dynamic/json?color=black&label=SPOTIFY&query=%24%5B%22com.spotify.music.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Flatest%2Fversion.json&style=for-the-badge)
@@ -72,6 +74,8 @@ To submit any patch request or bug report to the **ReVanced Team**, click [**her
 [![](https://img.shields.io/badge/Click%20To%20View%20Screenshots-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/screenshots.md)
 
 ### Download Latest :
+[![](https://img.shields.io/badge/Nyx%20Music%20Player-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/nyx.apk)
+
 [![](https://img.shields.io/badge/Reddit-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/reddit.apk) [![](https://img.shields.io/badge/Spotify-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/spotify.apk)
 
 [![](https://img.shields.io/badge/TikTok%20Asia-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/tiktok.asia.apk) [![](https://img.shields.io/badge/TikTok%20Global-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/tiktok.global.apk)
