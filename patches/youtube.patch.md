@@ -34,6 +34,7 @@
 - Enables downloading music and videos from YouTube.
 - Enables tap-to-seek on the seekbar of the video player.
 - Adds settings for ReVanced to YouTube.
+- Bypasses redirect links and allows opening links directly.
 - Allows YouTube ReVanced to run without root and under a different package name with Vanced MicroG.
 - Lets you change the buffers of videos.
 - Spoofs the YouTube or Vanced client to prevent playback issues.
