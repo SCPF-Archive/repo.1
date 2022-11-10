@@ -71,11 +71,11 @@ To submit any patch request or bug report to the **ReVanced Team**, click [**her
 [![](https://img.shields.io/badge/Arch%20Checker-v1.1-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/download/2022.10.29/arch.checker.apk)
 
 ### Download Prerelease :
-[![](https://img.shields.io/badge/dynamic/json?color=orange&label=YOUTUBE%20BETA%20V7A&query=%24%5B%22com.google.android.youtube.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Fprerelease%2Fversion.json&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/download/2022.11.09.beta/yt.music.v7a.apk)
+[![](https://img.shields.io/badge/dynamic/json?color=orange&label=YOUTUBE%20BETA&query=%24%5B%22com.google.android.youtube.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Fprerelease%2Fversion.json&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/download/2022.11.09.beta/youtube.apk)
 
-[![](https://img.shields.io/badge/dynamic/json?color=orange&label=YOUTUBE%20BETA%20V8A&query=%24%5B%22com.google.android.youtube.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Fprerelease%2Fversion.json&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/download/2022.11.09.beta/yt.music.v8a.apk)
+[![](https://img.shields.io/badge/dynamic/json?color=orange&label=YOUTUBE%20MUSIC%20V7A%20BETA&query=%24%5B%22com.google.android.apps.youtube.music.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Fprerelease%2Fversion.json&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/download/2022.11.09.beta/yt.music.v7a.apk)
 
-[![](https://img.shields.io/badge/dynamic/json?color=orange&label=YOUTUBE%20MUSIC%20BETA&query=%24%5B%22com.google.android.apps.youtube.music.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Fprerelease%2Fversion.json&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/download/2022.11.09.beta/youtube.apk)
+[![](https://img.shields.io/badge/dynamic/json?color=orange&label=YOUTUBE%20MUSIC%20V8A%20BETA&query=%24%5B%22com.google.android.apps.youtube.music.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Fprerelease%2Fversion.json&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/download/2022.11.09.beta/yt.music.v8a.apk)
 
 ### Full Release :
 [![](https://img.shields.io/badge/Click%20To%20View%20Full%20Release-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases)
