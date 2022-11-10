@@ -40,9 +40,6 @@
 
 To submit any patch request or bug report to the **ReVanced Team**, click [**here**](https://github.com/revanced/revanced-patches/issues/new/choose).
 
-### Application Screenshots :
-[![](https://img.shields.io/badge/Click%20To%20View%20Screenshots-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/screenshots.md)
-
 ### Download Latest :
 [![](https://img.shields.io/badge/dynamic/json?color=black&label=NYX%20MUSIC%20PLAYER&query=%24%5B%22com.awedea.nyx.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Flatest%2Fversion.json&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/nyx.apk)
 
