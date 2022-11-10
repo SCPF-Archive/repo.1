@@ -9,6 +9,8 @@
 
 ![](https://img.shields.io/github/v/tag/SCP-017/ReVanced-Download?include_prereleases&label=BETA%20VERSION&color=orange&style=for-the-badge)
 
+![](https://img.shields.io/github/downloads/SCP-017/ReVanced-Download/latest/total?color=black&label=DOWNLOADS%20TODAY&style=for-the-badge)
+
 ![](https://img.shields.io/github/downloads/SCP-017/ReVanced-Download/total?label=TOTAL%20DOWNLOADS&color=black&style=for-the-badge)
 
 ### Latest Files List :
