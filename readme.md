@@ -71,7 +71,7 @@ To submit any patch request or bug report to the **ReVanced Team**, click [**her
 
 ### Application Screenshots :
 
-[![](https://img.shields.io/badge/Click%20To%20View%20Screenshots-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/screenshots.md)
+[![](https://img.shields.io/badge/Click%20To%20View%20Screenshots-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/screenshots.md)
 
 ### Download Latest :
 [![](https://img.shields.io/badge/Nyx%20Music%20Player-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/nyx.apk)
