@@ -42,11 +42,7 @@
 ![](https://img.shields.io/badge/dynamic/json?color=orange&label=YOUTUBE%20MUSIC%20BETA&query=%24%5B%22com.google.android.apps.youtube.music.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Fprerelease%2Fversion.json&style=for-the-badge)
 
 ### Notes :
-- All the default patches are applied in the applications except for the **~~tasteBuilder-remover~~**, **~~custom-branding~~** and **~~premium-heading~~** patch because I just want it to look normal 🤦. To see the full patches that is applied here, [**click here**](https://github.com/SCP-017/ReVanced-Download/tree/main/patches) or [**here**](https://github.com/revanced/revanced-patches).
-- The **ReVanced Log.7z** contains all the ReVanced applications, archived and compressed for faster download of all the applications.
-- The **Micro G** application is needed to be installed in order to run **YouTube** and **YouTube Music** or else it will not work.
-- Uninstall your current **Micro G** because the **Micro G** here is updated version, modified from **Team Vanced Micro G** so there will be **signature conflict** if you update your current and old **Micro G** with the latest ones.
-- Both the **YouTube Music** and **YouTube** application are non-root variant so don't expect some **Magisk** modules here.
+[![](https://img.shields.io/badge/Click%20Here%20To%20View%20Notes-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/blob/main/notes/readme.md)
 
 ### ReVanced Versions :
 ![](https://img.shields.io/github/v/release/revanced/revanced-patches?color=black&label=PATCH%20VERSION&style=for-the-badge)
@@ -71,7 +67,7 @@ To submit any patch request or bug report to the **ReVanced Team**, click [**her
 
 ### Application Screenshots :
 
-[![](https://img.shields.io/badge/Click%20To%20View%20Screenshots-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/screenshots.md)
+[![](https://img.shields.io/badge/Click%20Here%20To%20View%20Screenshots-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/screenshots.md)
 
 ### Download Latest :
 [![](https://img.shields.io/badge/Nyx%20Music%20Player-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/nyx.apk)
