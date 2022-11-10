@@ -80,7 +80,7 @@ To submit any patch request or bug report to the **ReVanced Team**, click [**her
 ### Full Release :
 [![](https://img.shields.io/badge/Click%20To%20View%20Full%20Release-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases)
 
-### Contact Me :
+### Visit or Contact Me :
 [![](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:ph.server@pm.me)
 
 [![](https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white)](https://github.com/SCP-017)
