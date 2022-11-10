@@ -42,7 +42,10 @@
 ![](https://img.shields.io/badge/dynamic/json?color=orange&label=YOUTUBE%20MUSIC%20BETA&query=%24%5B%22com.google.android.apps.youtube.music.apk%22%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fdebug%2Fmain%2Fmain%2Fversion%2Fprerelease%2Fversion.json&style=for-the-badge)
 
 ### Notes :
-[![](https://img.shields.io/badge/Click%20Here%20To%20View%20Notes-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/blob/main/notes/readme.md)
+[![](https://img.shields.io/badge/Click%20To%20View%20Notes-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/blob/main/notes/readme.md)
+
+### Patch Info :
+[![](https://img.shields.io/badge/Click%20To%20View%20Patch%20Info-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/blob/main/patches/readme.md)
 
 ### ReVanced Versions :
 ![](https://img.shields.io/github/v/release/revanced/revanced-patches?color=black&label=PATCH%20VERSION&style=for-the-badge)
@@ -67,7 +70,7 @@ To submit any patch request or bug report to the **ReVanced Team**, click [**her
 
 ### Application Screenshots :
 
-[![](https://img.shields.io/badge/Click%20Here%20To%20View%20Screenshots-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/screenshots.md)
+[![](https://img.shields.io/badge/Click%20To%20View%20Screenshots-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/blob/main/assets/screenshots/preview/screenshots.md)
 
 ### Download Latest :
 [![](https://img.shields.io/badge/Nyx%20Music%20Player-black?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/latest/download/nyx.apk)
@@ -92,7 +95,7 @@ To submit any patch request or bug report to the **ReVanced Team**, click [**her
 [![](https://img.shields.io/badge/YouTube%20Beta-orange?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases/download/2022.11.09.beta/youtube.apk)
 
 ### Full Release :
-[![](https://img.shields.io/badge/Click%20Here%20To%20View%20All-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases)
+[![](https://img.shields.io/badge/Click%20To%20View%20Full%20Release-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/releases)
 
 ### Contact Me :
 [![](https://img.shields.io/badge/ProtonMail-8B89CC?style=for-the-badge&logo=protonmail&logoColor=white)](mailto:ph.server@pm.me)
