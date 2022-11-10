@@ -9,7 +9,7 @@
 
 ![](https://img.shields.io/github/v/tag/SCP-017/ReVanced-Download?include_prereleases&label=BETA%20VERSION&color=orange&style=for-the-badge)
 
-![](https://img.shields.io/github/downloads-pre/SCP-017/ReVanced-Download/latest/total?color=black&label=DOWNLOADS%20TODAY&style=for-the-badge)
+![](https://img.shields.io/github/downloads-pre/SCP-017/ReVanced-Download/latest/total?color=black&label=LATEST%20DOWNLOADS&style=for-the-badge)
 
 ![](https://img.shields.io/github/downloads/SCP-017/ReVanced-Download/total?label=TOTAL%20DOWNLOADS&color=black&style=for-the-badge)
 
@@ -20,18 +20,11 @@
 [![](https://img.shields.io/badge/Click%20To%20View%20Patch%20Info-gold?&style=for-the-badge)](https://github.com/SCP-017/ReVanced-Download/blob/main/patches/readme.md)
 
 ### ReVanced Versions :
-![](https://img.shields.io/github/v/release/revanced/revanced-patches?color=black&label=PATCH%20VERSION&style=for-the-badge)
+[![](https://img.shields.io/github/v/release/revanced/revanced-patches?color=black&label=🧩%20PATCH%20VERSION&style=for-the-badge)](https://github.com/revanced/revanced-patches/releases)
 
-![](https://img.shields.io/github/v/release/revanced/revanced-cli?color=black&label=CLI%20VERSION&style=for-the-badge)
+[![](https://img.shields.io/github/v/release/revanced/revanced-cli?color=black&label=💻%20CLI%20VERSION&style=for-the-badge)](https://github.com/revanced/revanced-cli/releases)
 
-![](https://img.shields.io/github/v/release/revanced/revanced-integrations?color=black&label=INTEGRATION%20VERSION&style=for-the-badge)
-
-### Click to view Changelog :
-[![](https://img.shields.io/badge/🧩-Patches%20Changelog-black?&style=for-the-badge)](https://github.com/revanced/revanced-patches/releases)
-
-[![](https://img.shields.io/badge/💻-CLI%20Changelog-black?&style=for-the-badge)](https://github.com/revanced/revanced-cli/releases)
-
-[![](https://img.shields.io/badge/🔩-Integrations%20Changelog-black?&style=for-the-badge)](https://github.com/revanced/revanced-integrations/releases)
+[![](https://img.shields.io/github/v/release/revanced/revanced-integrations?color=black&label=🔩%20INTEGRATION%20VERSION&style=for-the-badge)](https://github.com/revanced/revanced-integrations/releases)
 
 ### Patch Request or Bug?
 [![](https://img.shields.io/github/issues/revanced/revanced-patches/patch-request?color=blue&label=PATCH%20REQUESTS&style=for-the-badge)](https://github.com/revanced/revanced-patches/labels/patch-request)
