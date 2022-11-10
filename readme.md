@@ -34,9 +34,9 @@
 [![](https://img.shields.io/badge/🔩-Integrations%20Changelog-black?&style=for-the-badge)](https://github.com/revanced/revanced-integrations/releases)
 
 ### Patch Request or Bug?
-![](https://img.shields.io/github/issues/revanced/revanced-patches/patch-request?color=blue&label=PATCH%20REQUESTS&style=for-the-badge)
+[![](https://img.shields.io/github/issues/revanced/revanced-patches/patch-request?color=blue&label=PATCH%20REQUESTS&style=for-the-badge)](https://github.com/revanced/revanced-patches/labels/patch-request)
 
-![](https://img.shields.io/github/issues/revanced/revanced-patches/bug?color=red&label=BUG%20REPORTS&style=for-the-badge)
+[![](https://img.shields.io/github/issues/revanced/revanced-patches/bug?color=red&label=BUG%20REPORTS&style=for-the-badge)](https://github.com/revanced/revanced-patches/labels/bug)
 
 To submit any patch request or bug report to the **ReVanced Team**, click [**here**](https://github.com/revanced/revanced-patches/issues/new/choose).
 
