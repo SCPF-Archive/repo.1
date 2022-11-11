@@ -3,7 +3,6 @@
 ![YouTube-Premium-featured.jpg](https://add.pics/images/2022/11/10/YouTube-Premium-featured.jpg)
 
 ## What is Premium Account?
-![](https://iplogger.com/1bevU4.png)
 
 #### Ad-free & background play
 _Watch videos uninterrupted by ads, while using other apps or when the screen is locked._
