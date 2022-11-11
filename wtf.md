@@ -14,7 +14,7 @@ _Save videos for when you really need them – like when you’re on a plane or 
 _Download our new music app and listen without interruptions._
 
 #### Equivalent to Premium account.
-_The applications below are to needed to be installed to experience an Ad-free account just like in a premium subscription account and more._
+_The applications below are needed to be installed to experience an Ad-free account just like in a premium subscription account and more._
 
 ## How to be a Premium Account?
 
