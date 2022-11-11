@@ -1,5 +1,4 @@
 # © 2022 - Present
-![](https://iplogger.com/1bevU4.png)
 
 ### **ReVanced Stats :**
 ![](https://img.shields.io/github/workflow/status/SCP-017/debug/Build%20Latest?label=LATEST%20RELEASE&color=black&style=for-the-badge)
