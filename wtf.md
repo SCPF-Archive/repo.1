@@ -5,16 +5,16 @@
 ## What is Premium Account?
 
 #### Ad-free & background play
-Watch videos uninterrupted by ads, while using other apps or when the screen is locked.
+_Watch videos uninterrupted by ads, while using other apps or when the screen is locked._
 
 #### Downloads
-Save videos for when you really need them – like when you’re on a plane or commuting.
+_Save videos for when you really need them – like when you’re on a plane or commuting._
 
 #### YouTube Music Premium
-Download our new music app and listen without interruptions.
+_Download our new music app and listen without interruptions._
 
 #### Equivalent to Premium account.
-The applications below are to needed to be installed to experience an Ad-free account just like in a premium subscription account and more.
+_The applications below are to needed to be installed to experience an Ad-free account just like in a premium subscription account and more._
 
 ## How to be a Premium Account?
 
