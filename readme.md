@@ -1,9 +1,10 @@
+![](https://raw.githubusercontent.com/SCP-017/ReVanced-Download/main/assets/Website-Maintenance.jpg)
+
 ### Under Maintenance
 
-**Current fixing the scripts for the new applications and patches from ReVanced.**
+**Currently fixing the scripts for the new applications and patches from ReVanced.**
 
-<sub>
+> _New applications will be added when maintenance is over._
+>
+> _Please come again soon._
 
->_New applications will be added when maintenance is over. Please come again soon._
-
-</sub>
