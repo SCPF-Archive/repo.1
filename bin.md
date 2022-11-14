@@ -1,3 +1,5 @@
+# <p align="center"> ReVanced </p>
+
 <p align="center">
 <img src="https://avatars.githubusercontent.com/u/101597779?s=200&v=4">
 </p>
@@ -10,7 +12,7 @@ ReVanced is an unofficial continuation of Vanced and is unaffiliated with Vanced
 </sub>
 </p>
 
-### <p align="center"> ReVanced Stats </p>
+### <p align="center"> Repo Stats </p>
 
 <p align="center">
 <img src="https://img.shields.io/github/downloads/SCP-017/repo.1/total?labelColor=black&color=black&label=TOTAL%20DOWNLOADS&logo=GitHub&style=for-the-badge">
@@ -35,11 +37,11 @@ ReVanced is an unofficial continuation of Vanced and is unaffiliated with Vanced
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/github/v/release/revanced/revanced-patches?labelColor=black&color=black&label=PATCH%20VERSION&logo=GitHub&style=for-the-badge">
+<img src="https://img.shields.io/github/v/release/revanced/revanced-integrations?labelColor=black&color=black&label=INTEGRATION%20VERSION&logo=GitHub&style=for-the-badge">
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/github/v/release/revanced/revanced-integrations?labelColor=black&color=black&label=INTEGRATION%20VERSION&logo=GitHub&style=for-the-badge">
+<img src="https://img.shields.io/github/v/release/revanced/revanced-patches?labelColor=black&color=black&label=PATCH%20VERSION&logo=GitHub&style=for-the-badge">
 </p>
 
 ### <p align="center"> Download ReVanced </p>
