@@ -1,6 +1,4 @@
-<p align="center">
-<img src="https://img.utdstc.com/icon/0f9/912/0f99129b8f31cd62c2b4d4402dd49cb8ad36dd15defb187776d723c2459fb4f7:200">
-</p>
+<img src="https://img.utdstc.com/icon/0f9/912/0f99129b8f31cd62c2b4d4402dd49cb8ad36dd15defb187776d723c2459fb4f7:200" style="width: 45%">
 
 **APK Name : YouTube**
 
