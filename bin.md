@@ -41,3 +41,11 @@ ReVanced is an unofficial continuation of Vanced and is unaffiliated with Vanced
 <p align="center">
 <img src="https://img.shields.io/github/v/release/revanced/revanced-integrations?labelColor=black&color=black&label=INTEGRATION%20VERSION&logo=GitHub&style=for-the-badge">
 </p>
+
+## <p align="center"> Download ReVanced </p>
+
+<p align="center">
+<a href="https://github.com/SCP-017/repo.1/blob/a52473201a5925d378008a516c8a0c9c76df57a4/pages/download.md">
+<img src="https://github.com/SCP-017/repo.1/blob/066e7eb8e037ce1200abd9ca0c01b5c57dc1e650/assets/download.button.png">
+</a>
+</p>
