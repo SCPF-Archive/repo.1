@@ -1,11 +1,11 @@
 <p align="center">
-<img src="https://github.com/SCP-017/repo.1/blob/9a4f21450454ade711a9531f3233d7c3410e1350/assets/revanced.cover.jpg">
+<img src="https://avatars.githubusercontent.com/u/105079584">
 </p>
 
 <p align="center">
 <sub>
 <i>
-ReVanced is an unofficial continuation of Vanced and unaffiliated with Vanced, aiming to deliver new features. A team of developers who seized command of the Vanced project and built a new app called ReVanced without any relation with the YouTube Vanced team.
+ReVanced is an unofficial continuation of Vanced and is unaffiliated with Vanced.
 </i>
 </sub>
 </p>
