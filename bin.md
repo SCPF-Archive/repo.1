@@ -27,3 +27,17 @@ ReVanced is an unofficial continuation of Vanced and is unaffiliated with Vanced
 <p align="center">
 <img src="https://img.shields.io/github/workflow/status/SCP-017/main/ReVanced%20Latest?labelColor=black&color=black&label=BUILD%20REVANCED&logo=GitHub&style=for-the-badge">
 </p>
+
+## <p align="center"> ReVanced Versions </p>
+
+<p align="center">
+<img src="https://img.shields.io/github/v/release/revanced/revanced-cli?labelColor=black&color=black&label=CLI%20VERSION&logo=GitHub&style=for-the-badge">
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/github/v/release/revanced/revanced-patches?labelColor=black&color=black&label=PATCH%20VERSION&logo=GitHub&style=for-the-badge">
+</p>
+
+<p align="center">
+<img src="https://img.shields.io/github/v/release/revanced/revanced-integrations?labelColor=black&color=black&label=INTEGRATION%20VERSION&logo=GitHub&style=for-the-badge">
+</p>
