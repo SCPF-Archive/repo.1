@@ -1,4 +1,6 @@
-![](https://img.utdstc.com/icon/0f9/912/0f99129b8f31cd62c2b4d4402dd49cb8ad36dd15defb187776d723c2459fb4f7:200)
+<p align="center">
+<img src="https://img.utdstc.com/icon/0f9/912/0f99129b8f31cd62c2b4d4402dd49cb8ad36dd15defb187776d723c2459fb4f7:200">
+</p>
 
 **APK Name : YouTube**
 
@@ -11,5 +13,7 @@ YouTube is the official app for the world's largest and most popular video platf
 </sub>
 
 ### Download
+[![](https://img.shields.io/badge/dynamic/json?labelColor=black&color=black&label=YOUTUBE&query=%24%5B"com.google.android.youtube.apk"%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fmain%2Fmain%2Frevanced%2Fassets%2Fversions%2Flatest%2Fversions.json&logo=YouTube&style=for-the-badge)](https://github.com/SCP-017/repo.1/releases/latest/download/youtube.apk)
 
-[![](https://img.shields.io/badge/dynamic/json?labelColor=black&color=black&label=YOUTUBE&query=%24%5B"com.google.android.youtube.apk"%5D&url=https%3A%2F%2Fraw.githubusercontent.com%2FSCP-017%2Fmain%2Fmain%2Frevanced%2Fassets%2Fversions%2Flatest%2Fversions.json&logo=YouTube&style=for-the-badge)](https://github.com/SCP-017/repo.1/releases/latest/download/nyx.apk)
+### MOD Info
+- Hides the crowdfunding box between the player and video description.
