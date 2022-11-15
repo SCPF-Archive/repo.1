@@ -2,7 +2,7 @@
 
 ***APK Name : YouTube***
 
-***Offered by : _Google LLC_***
+***Offered by : Google LLC***
 
 #
 
