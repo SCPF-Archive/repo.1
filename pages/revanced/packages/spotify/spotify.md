@@ -23,6 +23,10 @@ Applied the official Patch bundle provided by ReVanced and the community.
 
 <details><summary><b> CLICK ME 🥺 </b></summary>
 
-> <sub></sub>
+> <sub> Applies a custom theme. </sub>
+
+> <sub> Allows capturing Spotify's audio output while screen sharing or screen recording. </sub>
+
+> <sub> ~Removes the premium tab from the navbar.~ (WIP)</sub>
 
 </details>
