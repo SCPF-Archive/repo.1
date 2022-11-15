@@ -29,4 +29,14 @@ Applied the official Patch bundle provided by ReVanced and the community.
 
 > <sub> Removes download restrictions and changes the default path to download to. </sub>
 
+> <sub> Show progress bar for all video. </sub>
+
+> <sub> Add settings menu to TikTok. </sub>
+
+> <sub> Do not force login. </sub>
+
+> <sub> Filters tiktok videos: removing ads, removing livestreams. </sub>
+
+> <sub> Watermark remover. </sub>
+
 </details>
