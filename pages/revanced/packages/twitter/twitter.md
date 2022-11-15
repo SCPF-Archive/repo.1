@@ -27,6 +27,6 @@ Applied the official Patch bundle provided by ReVanced and the community.
 
 > <sub> Replaces the default Twitter Blue with the users Material You palette. (Android 12+) </sub>
 
-> <sub> Adds a monochrome icon. (Android 12+) (WIP)</sub>
+> <sub> Adds a monochrome icon. (Android 12+) </sub>
 
 </details>
