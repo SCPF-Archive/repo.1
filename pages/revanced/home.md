@@ -56,31 +56,37 @@ ReVanced is an unofficial continuation of Vanced and is unaffiliated with Vanced
 <table>
 
 <tr>
-
-<th> microG </th>
+<th>
+microG
+</th>
 <th>
 <a href="https://is.gd/bNc41D">
 <img src="https://is.gd/NAHMQj">
 </a>
-</th></tr>
+</th>
+</tr>
 
 <tr>
-
-<th> Nyx Music Player </th>
+<th>
+Nyx Music Player
+</th>
 <th>
 <a href="https://is.gd/6DGkB1">
 <img src="https://is.gd/NAHMQj">
 </a>
-</th></tr>
+</th>
+</tr>
 
 <tr>
-
-<th> Reddit </th>
+<th>
+Reddit
+</th>
 <th>
 <a href="https://is.gd/4vQ8j9">
 <img src="https://is.gd/NAHMQj">
 </a>
-</th></tr>
+</th>
+</tr>
 
 </table>
 </p>
