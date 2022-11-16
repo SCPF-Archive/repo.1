@@ -145,10 +145,10 @@ Twitter
 
 <tr>
 <th>
-ReVanced Manager
+YouTube Music
 </th>
 <th>
-<a href="https://is.gd/vr96aU">
+<a href="https://is.gd/iyefSo">
 <img src="https://is.gd/NAHMQj">
 </a>
 </th>
@@ -156,10 +156,10 @@ ReVanced Manager
 
 <tr>
 <th>
-ReVanced Manager
+YouTube
 </th>
 <th>
-<a href="https://is.gd/vr96aU">
+<a href="https://is.gd/pu3qBh">
 <img src="https://is.gd/NAHMQj">
 </a>
 </th>
