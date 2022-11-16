@@ -16,6 +16,8 @@ YouTube Music is the official music app from YouTube. It lets you enjoy all the 
 ### Download
 [![](https://img.shields.io/badge/dynamic/json?logo=YouTubeMusic&label=YouTube%20Music%20ARM-V7A&color=black&labelColor=black&style=for-the-badge&query=%24%5B"com.google.android.apps.youtube.music.apk"%5D&url=https%3A%2F%2Fis.gd%2F2wPvAM)](https://is.gd/DaunCd)
 
+[![](https://img.shields.io/badge/dynamic/json?logo=YouTubeMusic&label=YouTube%20Music%20ARM64-V8A&color=black&labelColor=black&style=for-the-badge&query=%24%5B"com.google.android.apps.youtube.music.apk"%5D&url=https%3A%2F%2Fis.gd%2F2wPvAM)](https://is.gd/GJqtaT)
+
 #
 
 ### MOD Info
