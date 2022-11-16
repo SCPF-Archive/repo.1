@@ -53,7 +53,7 @@ ReVanced is an unofficial continuation of Vanced and is unaffiliated with Vanced
 ### <p align="center"> Download ReVanced </p>
 
 <p align="center">
-<a href="https://is.gd/i7gAJeS">
+<a href="https://is.gd/bUmROS">
 <img src="https://is.gd/NAHMQj">
 </a>
 </p>
