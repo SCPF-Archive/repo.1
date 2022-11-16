@@ -37,14 +37,19 @@ ReVanced is an unofficial continuation of Vanced and is unaffiliated with Vanced
 ### <p align="center"> ReVanced Versions </p>
 
 <p align="center">
+<a href="https://is.gd/XrXuYH">
 <img src="https://is.gd/yEgnzO">
+</a>
 </p>
 
 <p align="center">
+<a href="https://is.gd/qPVWKP">
 <img src="https://is.gd/KxC7mV">
+</a>
 </p>
 
 <p align="center">
+<a href="https://is.gd/QGEbzP">
 <img src="https://is.gd/wH7KH6">
 </p>
 
