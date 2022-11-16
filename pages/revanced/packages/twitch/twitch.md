@@ -23,10 +23,12 @@ Applied the official Patch bundle provided by ReVanced and the community.
 
 <details><summary><b> CLICK ME 🥺 </b></summary>
 
-> <sub> Applies a custom theme. </sub>
+> <sub> Enables Twitch's internal debugging mode. </sub>
 
-> <sub> Allows capturing Spotify's audio output while screen sharing or screen recording. </sub>
+> <sub> Blocks audio ads in streams and VODs. </sub>
 
-> <sub> ~Removes the premium tab from the navbar.~ (WIP)</sub>
+> <sub> Blocks video ads in streams and VODs. </sub>
+
+> <sub> Shows deleted chat messages behind a clickable spoiler. </sub>
 
 </details>
