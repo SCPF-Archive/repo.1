@@ -112,10 +112,10 @@ Spotify
 
 <tr>
 <th>
-ReVanced Manager
+TikTok
 </th>
 <th>
-<a href="https://is.gd/vr96aU">
+<a href="https://is.gd/F21l05">
 <img src="https://is.gd/NAHMQj">
 </a>
 </th>
@@ -123,10 +123,10 @@ ReVanced Manager
 
 <tr>
 <th>
-ReVanced Manager
+Twitch
 </th>
 <th>
-<a href="https://is.gd/vr96aU">
+<a href="https://is.gd/S66GQB">
 <img src="https://is.gd/NAHMQj">
 </a>
 </th>
@@ -134,10 +134,10 @@ ReVanced Manager
 
 <tr>
 <th>
-ReVanced Manager
+Twitter
 </th>
 <th>
-<a href="https://is.gd/vr96aU">
+<a href="https://is.gd/TAZHMa">
 <img src="https://is.gd/NAHMQj">
 </a>
 </th>
