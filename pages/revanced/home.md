@@ -88,5 +88,16 @@ Reddit
 </th>
 </tr>
 
+<tr>
+<th>
+ReVanced Manager
+</th>
+<th>
+<a href="https://is.gd/vr96aU">
+<img src="https://is.gd/NAHMQj">
+</a>
+</th>
+</tr>
+
 </table>
 </p>
