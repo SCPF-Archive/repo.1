@@ -1,7 +1,7 @@
 # <p align="center"> ReVanced </p>
 
 <p align="center">
-<img src="https://is.gd/P0bMUn">
+<img src="https://is.gd/3We1to" style="width: 45%">
 </p>
 
 <p align="center">
