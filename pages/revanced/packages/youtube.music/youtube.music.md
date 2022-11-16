@@ -23,10 +23,24 @@ Applied the official Patch bundle provided by ReVanced and the community.
 
 <details><summary><b> CLICK ME 🥺 </b></summary>
 
-> <sub> Applies a custom theme. </sub>
+> <sub> ~Removes the "Tell us which artists you like" card from the home screen.~ </sub>
 
-> <sub> Allows capturing Spotify's audio output while screen sharing or screen recording. </sub>
+> <sub> Removes all "Get Premium" evidences from the avatar menu. </sub>
 
-> <sub> ~Removes the premium tab from the navbar.~ (WIP)</sub>
+> <sub> Enables minimized playback on Kids music. </sub>
+
+> <sub> Hides the music category bar at the top of the homepage. </sub>
+
+> <sub> Removes the upgrade tab from the pivot bar. </sub>
+
+> <sub> Removes ads in the music player. </sub>
+
+> <sub> Enables playing music in the background. </sub>
+
+> <sub> Enables the option to play music without video. </sub>
+
+> <sub> Adds more audio codec options. The new audio codecs usually result in better audio quality. </sub>
+
+> <sub> Allows YouTube Music ReVanced to run without root and under a different package name. </sub>
 
 </details>
