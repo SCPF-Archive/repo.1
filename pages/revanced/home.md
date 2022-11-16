@@ -55,15 +55,12 @@ ReVanced is an unofficial continuation of Vanced and is unaffiliated with Vanced
 <p align="center">
 <table>
 
-<tr>
 <th> Nyx Music Player </th>
-<th> Nyx Download </th>
-</tr>
-
-<tr>
-<th> Spotify </th>
-<th> Spotify Download </th>
-</tr>
+<th>
+<a href="https://is.gd/6DGkB1">
+<img src="https://is.gd/NAHMQj">
+</a>
+</th>
 
 </table>
 </p>
