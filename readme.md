@@ -72,7 +72,7 @@ microG
 </th>
 <th>
 <a href="https://is.gd/bNc41D">
-<img src="https://is.gd/x2Kgig" style="width: 50%">
+<img src="https://is.gd/x2Kgig" style="width: 35%">
 </a>
 </th>
 </tr>
@@ -83,7 +83,7 @@ Nyx Music Player
 </th>
 <th>
 <a href="https://is.gd/6DGkB1">
-<img src="https://is.gd/x2Kgig" style="width: 50%">
+<img src="https://is.gd/x2Kgig" style="width: 35%">
 </a>
 </th>
 </tr>
@@ -94,7 +94,7 @@ Reddit
 </th>
 <th>
 <a href="https://is.gd/4vQ8j9">
-<img src="https://is.gd/x2Kgig" style="width: 50%">
+<img src="https://is.gd/x2Kgig" style="width: 35%">
 </a>
 </th>
 </tr>
@@ -105,7 +105,7 @@ ReVanced Manager
 </th>
 <th>
 <a href="https://is.gd/vr96aU">
-<img src="https://is.gd/x2Kgig" style="width: 50%">
+<img src="https://is.gd/x2Kgig" style="width: 35%">
 </a>
 </th>
 </tr>
@@ -116,7 +116,7 @@ Spotify
 </th>
 <th>
 <a href="https://is.gd/byNb8V">
-<img src="https://is.gd/x2Kgig" style="width: 50%">
+<img src="https://is.gd/x2Kgig" style="width: 35%">
 </a>
 </th>
 </tr>
@@ -127,7 +127,7 @@ TikTok
 </th>
 <th>
 <a href="https://is.gd/F21l05">
-<img src="https://is.gd/x2Kgig" style="width: 50%">
+<img src="https://is.gd/x2Kgig" style="width: 35%">
 </a>
 </th>
 </tr>
@@ -138,7 +138,7 @@ Twitch
 </th>
 <th>
 <a href="https://is.gd/S66GQB">
-<img src="https://is.gd/x2Kgig" style="width: 50%">
+<img src="https://is.gd/x2Kgig" style="width: 35%">
 </a>
 </th>
 </tr>
@@ -149,7 +149,7 @@ Twitter
 </th>
 <th>
 <a href="https://is.gd/TAZHMa">
-<img src="https://is.gd/x2Kgig" style="width: 50%">
+<img src="https://is.gd/x2Kgig" style="width: 35%">
 </a>
 </th>
 </tr>
@@ -160,7 +160,7 @@ YouTube Music
 </th>
 <th>
 <a href="https://is.gd/iyefSo">
-<img src="https://is.gd/x2Kgig" style="width: 50%">
+<img src="https://is.gd/x2Kgig" style="width: 35%">
 </a>
 </th>
 </tr>
@@ -171,7 +171,7 @@ YouTube
 </th>
 <th>
 <a href="https://is.gd/pu3qBh">
-<img src="https://is.gd/x2Kgig" style="width: 50%">
+<img src="https://is.gd/x2Kgig" style="width: 35%">
 </a>
 </th>
 </tr>
