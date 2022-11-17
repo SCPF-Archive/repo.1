@@ -6,5 +6,5 @@
 
 > _New applications will be added when maintenance is over._
 >
-> _Please come again soon._
+> _Please come again soon or maybe_ [**click here**](https://is.gd/nrIbc1) _to do the trick?_
 
