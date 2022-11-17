@@ -1,7 +1,9 @@
 # <p align="center"> ReVanced </p>
 
 <p align="center">
+<a href="https://revanced.app">
 <img src="https://is.gd/3We1to" style="width: 45%">
+</a>
 </p>
 
 <p align="center">
