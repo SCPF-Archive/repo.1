@@ -1,0 +1,20 @@
+name: Scan Files
+
+on:
+  workflow_dispatch:
+
+jobs:
+  Start:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Declare Variables
+      run: |
+        echo "MAIN_TAG=$(date +'%Y.%m.%d')" >> $GITHUB_ENV
+
+    - name: Scan Release for Viruses
+      uses: Particular/virus-scan-action@main
+      with:
+        owner: SCP-017
+        repo: repo.1
+        tag: "${{ env.MAIN_TAG }}"
+        github-access-token: ${{ secrets.GITHUB_TOKEN }}
