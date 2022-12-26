@@ -37,8 +37,8 @@ fi
 ###################################
 
 echo "CALL POPULATE PATCHES"
-[[ ! -z "$included_patches" ]] && populate_patches "-i" "$included_patches"
-[[ ! -z "$excluded_patches" ]] && populate_patches "-e" "$excluded_patches"
+[[ -n "$included_patches" ]] && populate_patches "-i" "$included_patches"
+[[ -n "$excluded_patches" ]] && populate_patches "-e" "$excluded_patches"
 
 ###################################
 
