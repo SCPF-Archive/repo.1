@@ -98,16 +98,6 @@ jobs:
         chmod +x sign.sh
         ./sign.sh
 
-    - name: Delete Older Releases
-      if: inputs.DELETE-OLD-RELEASES
-      uses: dev-drprasad/delete-older-releases@master
-      with:
-        repo: SCPF-Archive/repo.2
-        keep_latest: 0
-        delete_tag_pattern: ""
-      env:
-        GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
-
     - name: Upload ReVanced Applications
       if: inputs.UPLOAD
       uses: termux/upload-release-action@master
