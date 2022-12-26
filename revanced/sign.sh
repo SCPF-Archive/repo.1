@@ -1,7 +1,8 @@
 #!/bin/bash
 
 echo "DOWNLOADING APK SIGNER"
-wget https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/uber-apk-signer-1.2.1.jar
+wget -nv --progress=bar:force https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/uber-apk-signer-1.2.1.jar
+mv -v uber-apk-signer-1.2.1.jar signer.jar
 
 echo "PREPARING"
 mkdir -p packages/icon.pack.studio/output/release
@@ -25,34 +26,34 @@ then
 
     mv -v packages/manager/*.apk packages/latest/app/revanced.manager.apk
 
-    java -jar uber-apk-signer-1.2.1.jar --allowResign -a packages/icon.pack.studio/output -o packages/icon.pack.studio/output/release
+    java -jar signer.jar --allowResign -a packages/icon.pack.studio/output -o packages/icon.pack.studio/output/release
     mv -v packages/icon.pack.studio/output/release/icon.pack.studio-aligned-debugSigned.apk packages/latest/app/icon.pack.studio.apk
 
-    java -jar uber-apk-signer-1.2.1.jar --allowResign -a packages/nyx/output -o packages/nyx/output/release
+    java -jar signer.jar --allowResign -a packages/nyx/output -o packages/nyx/output/release
     mv -v packages/nyx/output/release/nyx-aligned-debugSigned.apk packages/latest/app/nyx.apk
 
-    java -jar uber-apk-signer-1.2.1.jar --allowResign -a packages/reddit/output -o packages/reddit/output/release
+    java -jar signer.jar --allowResign -a packages/reddit/output -o packages/reddit/output/release
     mv -v packages/reddit/output/release/reddit-aligned-debugSigned.apk packages/latest/app/reddit.apk
 
-    java -jar uber-apk-signer-1.2.1.jar --allowResign -a packages/spotify/output -o packages/spotify/output/release
+    java -jar signer.jar --allowResign -a packages/spotify/output -o packages/spotify/output/release
     mv -v packages/spotify/output/release/spotify-aligned-debugSigned.apk packages/latest/app/spotify.apk
 
-    java -jar uber-apk-signer-1.2.1.jar --allowResign -a packages/tiktok/output -o packages/tiktok/output/release
+    java -jar signer.jar --allowResign -a packages/tiktok/output -o packages/tiktok/output/release
     mv -v packages/tiktok/output/release/tiktok-aligned-debugSigned.apk packages/latest/app/tiktok.apk
 
-    java -jar uber-apk-signer-1.2.1.jar --allowResign -a packages/twitch/output -o packages/twitch/output/release
+    java -jar signer.jar --allowResign -a packages/twitch/output -o packages/twitch/output/release
     mv -v packages/twitch/output/release/twitch-aligned-debugSigned.apk packages/latest/app/twitch.apk
 
-    java -jar uber-apk-signer-1.2.1.jar --allowResign -a packages/twitter/output -o packages/twitter/output/release
+    java -jar signer.jar --allowResign -a packages/twitter/output -o packages/twitter/output/release
     mv -v packages/twitter/output/release/twitter-aligned-debugSigned.apk packages/latest/app/twitter.apk
 
-    java -jar uber-apk-signer-1.2.1.jar --allowResign -a packages/youtube/output -o packages/youtube/output/release
+    java -jar signer.jar --allowResign -a packages/youtube/output -o packages/youtube/output/release
     mv -v packages/youtube/output/release/youtube-aligned-debugSigned.apk packages/latest/app/youtube.apk
 
-    java -jar uber-apk-signer-1.2.1.jar --allowResign -a packages/youtube.music/v7a/output -o packages/youtube.music/v7a/output/release
+    java -jar signer.jar --allowResign -a packages/youtube.music/v7a/output -o packages/youtube.music/v7a/output/release
     mv -v packages/youtube.music/v7a/output/release/yt.music.v7a-aligned-debugSigned.apk packages/latest/app/yt.music.v7a.apk
 
-    java -jar uber-apk-signer-1.2.1.jar --allowResign -a packages/youtube.music/v8a/output -o packages/youtube.music/v8a/output/release
+    java -jar signer.jar --allowResign -a packages/youtube.music/v8a/output -o packages/youtube.music/v8a/output/release
     mv -v packages/youtube.music/v8a/output/release/yt.music.v8a-aligned-debugSigned.apk packages/latest/app/yt.music.v8a.apk
 fi
 
