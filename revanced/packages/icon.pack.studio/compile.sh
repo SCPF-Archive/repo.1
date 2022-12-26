@@ -1,3 +1,5 @@
+#!/bin/bash
+
 patches_file=./universal.patch
 
 included_start="$(grep -n -m1 'INCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
