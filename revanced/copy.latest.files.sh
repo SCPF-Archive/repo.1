@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "MAKING DIRECTORIES"
 mkdir -p packages/icon.pack.studio/versions
 mkdir -p packages/nyx/versions
