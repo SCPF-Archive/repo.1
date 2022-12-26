@@ -1,3 +1,5 @@
+#!/bin/bash
+
 echo "DECLARING VARIABLES"
 declare -A apks
 
