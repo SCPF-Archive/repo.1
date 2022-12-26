@@ -3,6 +3,13 @@
 echo "DOWNLOADING APK SIGNER"
 wget https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/uber-apk-signer-1.2.1.jar -o signer.jar
 
+echo "CLEANING UP"
+if [[ "$1" == "clean" ]]
+    then
+    rm -f signer.jar
+    exit
+fi
+
 echo "PREPARING"
 mkdir -p packages/icon.pack.studio/output/release
 mkdir -p packages/nyx/output/release
