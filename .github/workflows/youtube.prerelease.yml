@@ -1,4 +1,4 @@
-name: YouTube ReVanced
+name: Test Build
 
 on:
   workflow_dispatch:
@@ -10,11 +10,6 @@ on:
 
       SIGN:
         description: "Sign Packages"
-        type: boolean
-        default: true
-
-      DELETE-OLD-RELEASES:
-        description: "Delete Old Releases"
         type: boolean
         default: true
 
