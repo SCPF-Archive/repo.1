@@ -58,7 +58,7 @@ jobs:
       uses: robinraju/release-downloader@main
       with: 
         repository: "revanced/revanced-patches"
-        tag: "v2.142.0"
+        latest: true
         fileName: "*.jar"
         out-file-path: "revanced/assets/temp/patches"
 
@@ -77,45 +77,17 @@ jobs:
         fileName: "*.apk"
         out-file-path: "revanced/packages/micro-g"
 
-    - name: Compile YouTube Music arm-v7a
+    - name: Download
       if: inputs.BUILD
       run: |
-        cd revanced/packages/youtube.music/v7a
+        cd revanced/packages/icon.pack.studio
         chmod +x download.sh
         ./download.sh
 
-    - name: Compile YouTube Music arm-v7a
+    - name: Compile
       if: inputs.BUILD
       run: |
-        cd revanced/packages/youtube.music/v7a
-        chmod +x compile.sh
-        ./compile.sh experimental
-
-    - name: Download YouTube Music arm64-v8a
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/youtube.music/v8a
-        chmod +x download.sh
-        ./download.sh
-
-    - name: Compile YouTube Music arm64-v8a
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/youtube.music/v8a
-        chmod +x compile.sh
-        ./compile.sh experimental
-
-    - name: Download YouTube
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/youtube
-        chmod +x download.sh
-        ./download.sh
-
-    - name: Compile YouTube
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/youtube
+        cd revanced/packages/icon.pack.studio
         chmod +x compile.sh
         ./compile.sh experimental
 
@@ -130,7 +102,7 @@ jobs:
       if: inputs.DELETE-OLD-RELEASES
       uses: dev-drprasad/delete-older-releases@master
       with:
-        repo: SCP-017/main
+        repo: SCPF-Archive/repo.2
         keep_latest: 0
         delete_tag_pattern: ""
       env:
@@ -140,8 +112,8 @@ jobs:
       if: inputs.UPLOAD
       uses: termux/upload-release-action@master
       with:
-        repo_name: SCP-017/repo.2
-        repo_token: ${{ secrets.REPO_TOKEN }}
+        repo_name: SCPF-Archive/repo.2
+        repo_token: ${{ github.token }}
         release_name: "${{ github.run_id }}"
         tag: "${{ github.run_id }}"
         file: revanced/packages/latest/app/*
