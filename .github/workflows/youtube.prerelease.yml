@@ -1,0 +1,150 @@
+name: YouTube ReVanced
+
+on:
+  workflow_dispatch:
+    inputs:
+      BUILD:
+        description: "Build Packages"
+        type: boolean
+        default: true
+
+      SIGN:
+        description: "Sign Packages"
+        type: boolean
+        default: true
+
+      DELETE-OLD-RELEASES:
+        description: "Delete Old Releases"
+        type: boolean
+        default: true
+
+      UPLOAD:
+        description: "Upload Packages"
+        type: boolean
+        default: true
+
+jobs:
+  Start:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Setup Checkout
+      uses: actions/checkout@main
+
+    - name: Setup Java
+      uses: actions/setup-java@main
+      with:
+        distribution: "zulu"
+        java-version: "17"
+        java-package: jdk
+
+    - name: Download Integrations
+      uses: robinraju/release-downloader@main
+      with: 
+        repository: "revanced/revanced-integrations"
+        latest: true
+        fileName: "*.apk"
+        out-file-path: "revanced/assets/temp/integrations"
+
+    - name: Download CLI
+      uses: robinraju/release-downloader@main
+      with: 
+        repository: "revanced/revanced-cli"
+        latest: true
+        fileName: "*.jar"
+        out-file-path: "revanced/assets/temp/cli"
+
+    - name: Download Patches
+      uses: robinraju/release-downloader@main
+      with: 
+        repository: "revanced/revanced-patches"
+        tag: "v2.142.0"
+        fileName: "*.jar"
+        out-file-path: "revanced/assets/temp/patches"
+
+    - name: Copy Files
+      run: |
+        cd revanced
+        chmod +x copy.latest.files.sh
+        ./copy.latest.files.sh
+
+    - name: Download Micro G
+      if: inputs.BUILD
+      uses: robinraju/release-downloader@main
+      with: 
+        repository: "inotia00/VancedMicroG"
+        latest: true
+        fileName: "*.apk"
+        out-file-path: "revanced/packages/micro-g"
+
+    - name: Compile YouTube Music arm-v7a
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/youtube.music/v7a
+        chmod +x download.sh
+        ./download.sh
+
+    - name: Compile YouTube Music arm-v7a
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/youtube.music/v7a
+        chmod +x compile.sh
+        ./compile.sh experimental
+
+    - name: Download YouTube Music arm64-v8a
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/youtube.music/v8a
+        chmod +x download.sh
+        ./download.sh
+
+    - name: Compile YouTube Music arm64-v8a
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/youtube.music/v8a
+        chmod +x compile.sh
+        ./compile.sh experimental
+
+    - name: Download YouTube
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/youtube
+        chmod +x download.sh
+        ./download.sh
+
+    - name: Compile YouTube
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/youtube
+        chmod +x compile.sh
+        ./compile.sh experimental
+
+    - name: Sign Packages
+      if: inputs.SIGN
+      run: |
+        cd revanced
+        chmod +x sign.sh
+        ./sign.sh
+
+    - name: Delete Older Releases
+      if: inputs.DELETE-OLD-RELEASES
+      uses: dev-drprasad/delete-older-releases@master
+      with:
+        repo: SCP-017/main
+        keep_latest: 0
+        delete_tag_pattern: ""
+      env:
+        GITHUB_TOKEN: ${{ secrets.REPO_TOKEN }}
+
+    - name: Upload ReVanced Applications
+      if: inputs.UPLOAD
+      uses: termux/upload-release-action@master
+      with:
+        repo_name: SCP-017/repo.2
+        repo_token: ${{ secrets.REPO_TOKEN }}
+        release_name: "${{ github.run_id }}"
+        tag: "${{ github.run_id }}"
+        file: revanced/packages/latest/app/*
+        overwrite: true
+        file_glob: true
+        prerelease: true
