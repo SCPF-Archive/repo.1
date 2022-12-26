@@ -4,12 +4,6 @@ on:
   push:
     path: "revanced"
 
-  pull_request:
-    branches: [ "main" ]
-
-  schedule:
-    - cron: '16 5 * * 4'
-
   workflow_dispatch:
 
 permissions:
