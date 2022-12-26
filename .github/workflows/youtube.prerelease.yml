@@ -100,7 +100,7 @@ jobs:
         repo_name: SCPF-Archive/repo.2
         repo_token: ${{ github.token }}
         release_name: "${{ github.run_id }}"
-        tag: "${{ github.run_id }}"
+        tag: "test.build"
         file: revanced/packages/latest/app/*
         overwrite: true
         file_glob: true
