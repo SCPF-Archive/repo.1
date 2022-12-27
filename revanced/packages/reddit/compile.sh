@@ -5,8 +5,8 @@ patches_file=./reddit.patch
 included_start="$(grep -n -m1 'INCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
 excluded_start="$(grep -n -m1 'EXCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
 
-included_patches="$(tail -n +$included_start $patches_file | head -n "$(( excluded_start - included_start ))" | grep '^[^#[:blank:]]')"
-excluded_patches="$(tail -n +$excluded_start $patches_file | grep '^[^#[:blank:]]')"
+included_patches="$(tail -n +"$included_start" "$patches_file" | head -n "$(( excluded_start - included_start ))" | grep '^[^#[:blank:]]')"
+excluded_patches="$(tail -n +"$excluded_start" "$patches_file" | grep '^[^#[:blank:]]')"
 
 ###################################
 
@@ -52,8 +52,8 @@ if [ -f "com.reddit.frontpage.apk" ]
 then
     echo "PATCHING REDDIT"
     java -jar cli.jar -m integrations.apk -b patches.jar \
-        ${patches[@]} \
-        $EXPERIMENTAL \
+        "${patches[@]}" \
+        "$EXPERIMENTAL" \
         -a com.reddit.frontpage.apk -o output/reddit.apk
 else
     echo "NO BASE PACKAGE, SKIP COMPILING REDDIT"
