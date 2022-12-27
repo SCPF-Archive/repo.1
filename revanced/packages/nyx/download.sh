@@ -12,7 +12,7 @@ get_apk_download_url()
 }
 
 for apk in "${!apks[@]}"; do
-    if [ ! -f $apk ]; then
+    if [ ! -f "$apk" ]; then
         echo "Downloading $apk"
         dl_url=$(curl -s "${apks[$apk]}" | grep -oE "https:\/\/dw\.uptodown\.com.+\/")
         curl -sLo "$apk" "$dl_url"
