@@ -49,9 +49,10 @@ dl_reddit()
     local base_apk="com.reddit.frontpage.apk"
     if [ ! -f "$base_apk" ]
     then
-        declare -r dl_url=$(dl_apk "https://www.apkmirror.com/apk/redditinc/reddit/reddit-${last_ver//./-}-release/" \
+        dl_url=$(dl_apk "https://www.apkmirror.com/apk/redditinc/reddit/reddit-${last_ver//./-}-release/" \
                 "APK</span>[^@]*@\([^#]*\)" \
                 "$base_apk")
+        declare -r dl_url
         echo "REDDIT v${last_ver}"
         echo "DOWNLOADED FROM: [REDDIT - APK MIRROR]($dl_url)"
     fi
@@ -59,7 +60,7 @@ dl_reddit()
 
 for apk in "${!apks[@]}"
 do
-    if [ ! -f $apk ]
+    if [ ! -f "$apk" ]
     then
         echo "DOWNLOADING $apk"
         version=$(jq -r ".\"$apk\"" <versions/versions.json)
