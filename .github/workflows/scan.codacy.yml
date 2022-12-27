@@ -26,7 +26,7 @@ jobs:
 
       - name: Run Codacy Analysis CLI
         uses: codacy/codacy-analysis-cli-action@d840f886c4bd4edc059706d09c6a1586111c540b
-          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          project-token: "${{ secrets.CODACY_PROJECT_TOKEN }}"
           verbose: false
           output: results.sarif
           format: sarif
