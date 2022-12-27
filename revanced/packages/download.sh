@@ -5,8 +5,6 @@ declare -A apks
 
 apks["com.zhiliaoapp.musically.apk"]=dl_tiktok
 
-WGET_HEADER="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"
-
 req()
 { wget -nv -O "$2" --header="$WGET_HEADER" "$1"; }
 
@@ -49,9 +47,10 @@ dl_tiktok()
     local base_apk="com.zhiliaoapp.musically.apk"
     if [ ! -f "$base_apk" ]
     then
-        declare -r dl_url=$(dl_apk "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly/tik-tok-including-musical-ly-${last_ver//./-}-release/" \
+        dl_url=$(dl_apk "https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly/tik-tok-including-musical-ly-${last_ver//./-}-release/" \
                 "APK</span>[^@]*@\([^#]*\)" \
                 "$base_apk")
+        declare -r dl_url
         echo "TIKTOK v${last_ver}"
         echo "DOWNLOADED FROM: [TIKTOK - APK MIRROR]($dl_url)"
     fi
@@ -59,7 +58,7 @@ dl_tiktok()
 
 for apk in "${!apks[@]}"
 do
-    if [ ! -f $apk ]
+    if [ ! -f "$apk" ]
     then
         echo "DOWNLOADING $apk"
         version=$(jq -r ".\"$apk\"" <versions/versions.json)
