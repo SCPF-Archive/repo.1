@@ -52,8 +52,8 @@ if [ -f "com.spotify.music.apk" ]
 then
     echo "PATCHING SPOTIFY"
     java -jar cli.jar -m integrations.apk -b patches.jar \
-        ${patches[@]} \
-        $EXPERIMENTAL \
+        "${patches[@]}" \
+        "$EXPERIMENTAL" \
         -a com.spotify.music.apk -o output/spotify.apk
 else
     echo "NO BASE PACKAGE, SKIP COMPILING SPOTIFY"
