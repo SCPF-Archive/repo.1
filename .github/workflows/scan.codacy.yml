@@ -2,7 +2,7 @@ name: Codacy Security Scan
 
 on:
   push:
-    path: "revanced"
+    path: "xrevanced"
 
   workflow_dispatch:
 
