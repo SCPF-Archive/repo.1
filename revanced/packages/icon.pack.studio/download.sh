@@ -60,7 +60,7 @@ dl_iconpackstudio()
 
 for apk in "${!apks[@]}"
 do
-    if [ ! -f $apk ]
+    if [ ! -f "$apk" ]
     then
         echo "DOWNLOADING $apk"
         version=$(jq -r ".\"$apk\"" <versions/versions.json)
