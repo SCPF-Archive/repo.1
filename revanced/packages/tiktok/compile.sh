@@ -6,7 +6,7 @@ included_start="$(grep -n -m1 'INCLUDED PATCHES' "$patches_file" | cut -d':' -f1
 excluded_start="$(grep -n -m1 'EXCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
 
 included_patches="$(tail -n +"$included_start" "$patches_file" | head -n "$(( excluded_start - included_start ))" | grep '^[^#[:blank:]]')"
-excluded_patches="$(tail -n +"$excluded_start* "$patches_file" | grep '^[^#[:blank:]]')"
+excluded_patches="$(tail -n +"$excluded_start" "$patches_file" | grep '^[^#[:blank:]]')"
 
 ###################################
 
