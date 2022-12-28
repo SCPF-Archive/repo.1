@@ -53,7 +53,7 @@ then
     echo "PATCHING NYX MUSIC PLAYER"
     java -jar cli.jar -m integrations.apk -b patches.jar \
         "${patches[@]}" \
-        $EXPERIMENTAL \
+        "$EXPERIMENTAL" \
         -a com.awedea.nyx.apk -o output/nyx.apk
 else
     echo "NO BASE PACKAGE, SKIP COMPILING NYX MUSIC PLAYER"
