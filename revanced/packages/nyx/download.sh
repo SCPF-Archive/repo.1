@@ -6,8 +6,8 @@ apks["com.awedea.nyx.apk"]="https://nyx-music-player.en.uptodown.com/android/dow
 
 get_apk_download_url()
 {
-    version_url=$(curl -s "$1" | jq ".data[] | select(.version | contains(\"$2\")) | .versionURL")
-    dl_url=$(curl -s "${version_url:1:-1}" | grep -oE "https:\/\/dw\.uptodown\.com.+\/")
+    version_url="$(curl -s "$1" | jq ".data[] | select(.version | contains(\"$2\")) | .versionURL")"
+    dl_url="$(curl -s "${version_url:1:-1}" | grep -oE "https:\/\/dw\.uptodown\.com.+\/")"
     echo "$dl_url"
 }
 
