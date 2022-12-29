@@ -36,18 +36,6 @@ fi
 
 ###################################
 
-echo "FETCHING DEPENDENCIES"
-for artifact in "${!artifacts[@]}"
-do
-    if [ ! -f "$artifact" ]
-    then
-        echo "DOWNLOADING $artifact"
-        curl -sLo "$artifact" "$(get_artifact_download_url ${artifacts[$artifact]})"
-    fi
-done
-
-###################################
-
 echo "CALL POPULATE PATCHES"
 [[ -n "$included_patches" ]] && populate_patches "-i" "$included_patches"
 [[ -n "$excluded_patches" ]] && populate_patches "-e" "$excluded_patches"
