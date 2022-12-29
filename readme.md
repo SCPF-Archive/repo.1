@@ -17,24 +17,32 @@
 ---
 
 ## How to setup?
-1. Make sure you have a GitHub account, you can just [create](https://github.com/signup) or [login](https://github.com/login) your GitHub account to continue.
 
-2. After you logged in your account, fork this repo by clicking this [link](https://github.com/SCPF-Archive/repo.1/fork).
+#### Step 1.
+Make sure you have a GitHub account, you can just [create](https://github.com/signup) or [login](https://github.com/login) your GitHub account to continue.
 
-3. Go to `Actions` tab.
+#### Step 2.
+After you logged in your account, fork this repo by clicking this [link](https://github.com/SCPF-Archive/repo.1/fork).
+
+#### Step 3
+Go to `Actions` tab.
 
 ![Actions Tab](https://add.pics/images/2022/12/29/IMG_20221229_213615.jpeg)
 
-4. Click the `All workflows`.
+#### Step 4
+Click the `All workflows`.
 
 ![All Workflows](https://add.pics/images/2022/12/29/IMG_20221229_213911.jpeg)
 
-5. Click the `Release Latest`.
+#### Step 5
+Click the `Release Latest`.
 
 ![Release Latest](https://add.pics/images/2022/12/29/IMG_20221229_214041.jpeg)
 
-6. Click the `Run workflow`.
+#### Step 6
+Click the `Run workflow`.
 
 ![Run Workflow](https://add.pics/images/2022/12/29/IMG_20221229_214624.jpeg)
 
-7. Download the built apps in the releases.
+#### Step 7
+Download the built apps in the releases.
