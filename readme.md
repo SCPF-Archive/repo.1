@@ -1,5 +1,4 @@
 # ReVanced Builder
-
 **What?**
 - A repository which downloads and patches the supported ReVanced application with the latest ReVanced CLI, Integrations, and Patcher and the applications can be downloaded in the repository release assets.
 
@@ -9,15 +8,10 @@
 **How?**
 - Actually, I made this repo from scraping scripts and codes from the other repos here on GitHub.
 
----
-
 # Notes
-- The script will download the selected versions ([see here](/revanced/assets/versions)) of applications on **APK Mirror** and **UpToDown**, **NOT** the latest official version on Google Play.
-
----
+The script will download the selected versions ([see here](/revanced/assets/versions)) of applications on **APK Mirror** and **UpToDown**, **NOT** the latest official version on Google Play.
 
 # How to setup?
-
 #### Step 1.
 Make sure you have a GitHub account, you can just [create](https://github.com/signup) or [login](https://github.com/login) your GitHub account to continue.
 
