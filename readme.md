@@ -37,18 +37,21 @@ Go to `Actions` tab.
 
 #### Step 4
 Click the `All workflows`.
+
 ![All Workflows](https://add.pics/images/2022/12/29/IMG_20221229_213911.jpeg)
 
 ---
 
 #### Step 5
 Click the `Release Latest`.
+
 ![Release Latest](https://add.pics/images/2022/12/29/IMG_20221229_214041.jpeg)
 
 ---
 
 #### Step 6
 Click the `Run workflow`.
+
 ![Run Workflow](https://add.pics/images/2022/12/29/IMG_20221229_214624.jpeg)
 
 ---
