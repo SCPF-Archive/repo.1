@@ -11,5 +11,5 @@
 - [YouTube Music](https://www.apkmirror.com/apk/google-inc/youtube-music)
 
 #### Note
-- Update the versions in `version.json` file on [`latest`](https://is.gd/oPzZYR) folder.
+- Update the versions in `version.json` file on [`latest`](/revanced/assets/versions/latest/versions.json) folder.
 - If the version number/code have spaces (ex. 1.2.14 beta 1), make sure to replace the spaces with a `.` or `-` to make the download script work.
