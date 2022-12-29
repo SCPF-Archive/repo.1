@@ -18,8 +18,6 @@
 
 ## How to setup?
 
----
-
 #### Step 1.
 Make sure you have a GitHub account, you can just [create](https://github.com/signup) or [login](https://github.com/login) your GitHub account to continue.
 
