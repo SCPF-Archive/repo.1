@@ -42,7 +42,7 @@ do
     if [ ! -f "$artifact" ]
     then
         echo "DOWNLOADING $artifact"
-        curl -sLo "$artifact" $(get_artifact_download_url ${artifacts[$artifact]})
+        curl -sLo "$artifact" "$(get_artifact_download_url ${artifacts[$artifact]})"
     fi
 done
 
