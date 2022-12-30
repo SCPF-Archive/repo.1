@@ -61,6 +61,6 @@ do
     then
         echo "DOWNLOADING $apk"
         version=$(jq -r ".\"$apk\"" <versions/versions.json)
-        "${apks[$apk]}"
+        ${apks[$apk]}
     fi
 done
