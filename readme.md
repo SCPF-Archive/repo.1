@@ -83,3 +83,6 @@ Download the built apps in the releases.
 - `feed-filter` ([#1305](https://github.com/revanced/revanced-patches/issues/1305))
 
 - `return-youtube-dislike`
+
+# 🖤 Credits
+- [n0k0m3](https://github.com/n0k0m3)
