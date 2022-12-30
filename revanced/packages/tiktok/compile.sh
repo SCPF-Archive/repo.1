@@ -52,7 +52,7 @@ if [ -f "com.zhiliaoapp.musically.apk" ]
 then
     echo "PATCHING TIKTOK"
     java -jar cli.jar -m integrations.apk -b patches.jar \
-        "${patches[@]}" \
+        ${patches[@]} \
         $EXPERIMENTAL \
         -a com.zhiliaoapp.musically.apk -o output/tiktok.apk
 else

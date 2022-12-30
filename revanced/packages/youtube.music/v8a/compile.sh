@@ -38,7 +38,7 @@ if [ -f "com.google.android.apps.youtube.music.apk" ]
 then
     echo "PATCHING YOUTUBE MUSIC arm64-v8a"
     java -jar cli.jar -m integrations.apk -b patches.jar \
-        "${patches[@]}" \
+        ${patches[@]} \
         $EXPERIMENTAL \
         -a com.google.android.apps.youtube.music.apk -o output/yt.music.v8a.apk
 else

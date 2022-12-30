@@ -52,7 +52,7 @@ if [ -f "tv.twitch.android.app.apk" ]
 then
     echo "PATCHING TWITCH"
     java -jar cli.jar -m integrations.apk -b patches.jar \
-        "${patches[@]}" \
+        ${patches[@]} \
         $EXPERIMENTAL \
         -a tv.twitch.android.app.apk -o output/twitch.apk
 else

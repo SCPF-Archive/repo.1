@@ -52,7 +52,7 @@ if [ -f "com.reddit.frontpage.apk" ]
 then
     echo "PATCHING REDDIT"
     java -jar cli.jar -m integrations.apk -b patches.jar \
-        "${patches[@]}" \
+        ${patches[@]} \
         $EXPERIMENTAL \
         -a com.reddit.frontpage.apk -o output/reddit.apk
 else
