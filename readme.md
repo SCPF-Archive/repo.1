@@ -27,7 +27,34 @@ After you logged in your account, fork this repo by clicking this [**link**](htt
 ---
 
 #### Step 3
+Go to `Actions` tab.
 
+![Actions Tab](https://add.pics/images/2022/12/29/IMG_20221229_213615.jpeg)
+
+---
+
+#### Step 4
+Click the `All workflows`.
+
+![All Workflows](https://add.pics/images/2022/12/29/IMG_20221229_213911.jpeg)
+
+---
+
+#### Step 5
+Click the `Release Latest`.
+
+![Release Latest](https://add.pics/images/2022/12/29/IMG_20221229_214041.jpeg)
+
+---
+
+#### Step 6
+Click the `Run workflow`.
+
+![Run Workflow](https://add.pics/images/2022/12/29/IMG_20221229_214624.jpeg)
+
+> Note: You can also check the `Archive Packages` checkbox to release the builds as a compressed `.7z` archive file.
+
+---
 
 #### Step 7
 Download the built apps in the releases.
