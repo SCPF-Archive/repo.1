@@ -1,9 +1,6 @@
 name: Release Latest
 
 on:
-  push:
-    path: "*"
-
   workflow_dispatch:
     inputs:
       BUILD:
