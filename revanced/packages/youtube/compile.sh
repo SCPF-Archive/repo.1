@@ -53,7 +53,7 @@ then
     echo "PATCHING YOUTUBE"
     java -jar cli.jar -m integrations.apk -b patches.jar \
         "${patches[@]}" \
-        "$EXPERIMENTAL" \
+        $EXPERIMENTAL \
         -a com.google.android.youtube.apk -o output/youtube.apk
 else
     echo "NO BASE PACKAGE, SKIP COMPILING YOUTUBE"

@@ -53,7 +53,7 @@ then
     echo "PATCHING REDDIT"
     java -jar cli.jar -m integrations.apk -b patches.jar \
         "${patches[@]}" \
-        "$EXPERIMENTAL" \
+        $EXPERIMENTAL \
         -a com.reddit.frontpage.apk -o output/reddit.apk
 else
     echo "NO BASE PACKAGE, SKIP COMPILING REDDIT"

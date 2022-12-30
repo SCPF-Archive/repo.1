@@ -53,7 +53,7 @@ then
     echo "PATCHING TIKTOK"
     java -jar cli.jar -m integrations.apk -b patches.jar \
         "${patches[@]}" \
-        "$EXPERIMENTAL" \
+        $EXPERIMENTAL \
         -a com.zhiliaoapp.musically.apk -o output/tiktok.apk
 else
     echo "NO BASE PACKAGE, SKIP COMPILING TIKTOK"
