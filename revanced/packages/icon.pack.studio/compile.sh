@@ -37,8 +37,8 @@ fi
 ###################################
 
 echo "CALL POPULATE PATCHES"
-[[ ! -z "$included_patches" ]] && populate_patches "-i" "$included_patches"
-[[ ! -z "$excluded_patches" ]] && populate_patches "-e" "$excluded_patches"
+[[ -n "$included_patches" ]] && populate_patches "-i" "$included_patches"
+[[ -n "$excluded_patches" ]] && populate_patches "-e" "$excluded_patches"
 
 ###################################
 
@@ -51,7 +51,7 @@ echo "COMPILING ICON PACK STUDIO"
 if [ -f "ginlemon.iconpackstudio.apk" ]
 then
     echo "PATCHING ICON PACK STUDIO"
-    java -jar cli.jar -m integrations.apk -b patches.jar \
+    java -jar cli.jar ReVanced-CLI -m integrations.apk -b patches.jar \
         "${patches[@]}" \
         "$EXPERIMENTAL" \
         -a ginlemon.iconpackstudio.apk -o output/icon.pack.studio.apk
