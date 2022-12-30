@@ -53,7 +53,7 @@ then
     echo "PATCHING TWITTER"
     java -jar cli.jar -m integrations.apk -b patches.jar \
         "${patches[@]}" \
-        "$EXPERIMENTAL" \
+        $EXPERIMENTAL \
         -a com.twitter.android.apk -o output/twitter.apk
 else
     echo "NO BASE PACKAGE, SKIP COMPILING TWITTER"
