@@ -1,3 +1,6 @@
+# Changelog
+- Fixed GitHub Token ([6b7c786](https://github.com/SCPF-Archive/repo.1/commit/55575344eba08c2c897c3b5e6675ea098645bc68)).
+
 # ReVanced Builder
 **What?**
 - A repository which downloads and patches the supported ReVanced application with the latest ReVanced CLI, Integrations, and Patcher and the applications can be downloaded in the repository release assets.
