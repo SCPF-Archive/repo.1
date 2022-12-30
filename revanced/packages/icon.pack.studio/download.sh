@@ -49,9 +49,10 @@ dl_iconpackstudio()
     local base_apk="ginlemon.iconpackstudio.apk"
     if [ ! -f "$base_apk" ]
     then
-        declare -r dl_url=$(dl_apk "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/icon-pack-studio-${last_ver//./-}-release/" \
+        dl_url=$(dl_apk "https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio/icon-pack-studio-${last_ver//./-}-release/" \
                 "APK</span>[^@]*@\([^#]*\)" \
                 "$base_apk")
+        declare -r dl_url
         echo "ICON PACK STUDIO v${last_ver}"
         echo "DOWNLOADED FROM: [ICON PACK STUDIO - APK MIRROR]($dl_url)"
     fi
@@ -59,10 +60,10 @@ dl_iconpackstudio()
 
 for apk in "${!apks[@]}"
 do
-    if [ ! -f $apk ]
+    if [ ! -f "$apk" ]
     then
         echo "DOWNLOADING $apk"
-        version=$(jq -r ".\"$apk\"" <versions/versions.json)
-        ${apks[$apk]}
+        version="$(jq -r ".\"$apk\"" <versions/versions.json)"
+        "${apks[$apk]}"
     fi
 done
