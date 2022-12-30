@@ -52,7 +52,7 @@ if [ -f "ginlemon.iconpackstudio.apk" ]
 then
     echo "PATCHING ICON PACK STUDIO"
     java -jar cli.jar -m integrations.apk -b patches.jar \
-        ${patches[@]} \
+        "${patches[@]}" \
         $EXPERIMENTAL \
         -a ginlemon.iconpackstudio.apk -o output/icon.pack.studio.apk
 else
