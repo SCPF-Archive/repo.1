@@ -14,7 +14,7 @@
 - Without **microG**, **YouTube** and **YouTube Music** will crash due to missing **microG**, please install **microG**.
 
 # How to setup?
-<details><summary>CLICK TO VIEW</summary>
+<details><summary>CLICK TO VIEW STEPS</summary>
 
 #### Step 1.
 Make sure you have a GitHub account, you can just [**create**](https://github.com/signup) or [**login**](https://github.com/login) your GitHub account to continue.
