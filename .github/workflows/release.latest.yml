@@ -53,7 +53,7 @@ jobs:
     - name: Download CLI
       uses: robinraju/release-downloader@main
       with: 
-        repository: "revanced/revanced-cli"
+        repository: "inotia00/revanced-cli"
         latest: true
         fileName: "*.jar"
         out-file-path: "revanced/assets/temp/cli"
