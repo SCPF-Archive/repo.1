@@ -62,9 +62,10 @@ Download the built apps in the releases.
 </details>
 
 # Changelog
-- Changed CLI Repo ([a487933](https://github.com/SCPF-Archive/repo.1/commit/a4879331c420fc28e4c1a7a55c83f0461a68e8fa)).
-- Fixed Errors ([#3](https://github.com/SCPF-Archive/repo.1/pull/3)) ([b7e44ff](https://github.com/SCPF-Archive/repo.1/commit/b7e44ff412bfa47d0bffabcebdd4e3438c76ed36)).
-- Fixed GitHub Token ([5557534](https://github.com/SCPF-Archive/repo.1/commit/55575344eba08c2c897c3b5e6675ea098645bc68)).
+- Fixed Patch Selection Error ([#4](https://github.com/SCPF-Archive/repo.1/pull/4))
+- Changed CLI Repo ([a487933](https://github.com/SCPF-Archive/repo.1/commit/a4879331c420fc28e4c1a7a55c83f0461a68e8fa))
+- Fixed Patching Errors ([#3](https://github.com/SCPF-Archive/repo.1/pull/3))
+- Fixed GitHub Token ([5557534](https://github.com/SCPF-Archive/repo.1/commit/55575344eba08c2c897c3b5e6675ea098645bc68))
 
 # Failed Patches
 - `hide-premium-navbar` ([#621](https://github.com/revanced/revanced-patches/issues/621))
