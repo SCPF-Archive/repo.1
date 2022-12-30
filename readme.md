@@ -1,7 +1,3 @@
-# Changelog
-- Fixed Errors ([#3](https://github.com/SCPF-Archive/repo.1/pull/3)) ([b7e44ff](https://github.com/SCPF-Archive/repo.1/commit/b7e44ff412bfa47d0bffabcebdd4e3438c76ed36)).
-- Fixed GitHub Token ([6b7c786](https://github.com/SCPF-Archive/repo.1/commit/55575344eba08c2c897c3b5e6675ea098645bc68)).
-
 # ReVanced Builder
 **What?**
 - A repository which downloads and patches the supported ReVanced application with the latest ReVanced CLI, Integrations, and Patcher and the applications can be downloaded in the repository release assets.
@@ -16,6 +12,8 @@
 The script will download the selected versions ([**see here**](/revanced/assets/versions)) of applications on **APK Mirror** and **UpToDown**, **NOT** the latest official version on Google Play.
 
 # How to setup?
+<details><summary>CLICK TO VIEW</summary>
+
 #### Step 1.
 Make sure you have a GitHub account, you can just [**create**](https://github.com/signup) or [**login**](https://github.com/login) your GitHub account to continue.
 
@@ -58,3 +56,15 @@ Click the `Run workflow`.
 
 #### Step 7
 Download the built apps in the releases.
+
+</details>
+
+# Changelog
+- Fixed Errors ([#3](https://github.com/SCPF-Archive/repo.1/pull/3)) ([b7e44ff](https://github.com/SCPF-Archive/repo.1/commit/b7e44ff412bfa47d0bffabcebdd4e3438c76ed36)).
+- Fixed GitHub Token ([6b7c786](https://github.com/SCPF-Archive/repo.1/commit/55575344eba08c2c897c3b5e6675ea098645bc68)).
+
+# Failed Patches
+- `hide-premium-navbar` [#621](https://github.com/revanced/revanced-patches/issues/621)
+- `feed-filter` [#1305](https://github.com/revanced/revanced-patches/issues/1305)
+- `hide-views-stats`
+- `return-youtube-dislike`
