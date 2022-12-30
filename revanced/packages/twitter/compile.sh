@@ -52,7 +52,7 @@ if [ -f "com.twitter.android.apk" ]
 then
     echo "PATCHING TWITTER"
     java -jar cli.jar -m integrations.apk -b patches.jar \
-        "${patches[@]}" \
+        ${patches[@]} \
         $EXPERIMENTAL \
         -a com.twitter.android.apk -o output/twitter.apk
 else
