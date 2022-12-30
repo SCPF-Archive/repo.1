@@ -67,22 +67,35 @@ Download the built apps in the releases.
 </details>
 
 # 📝Changelog
-- Return To Official CLI ([9c68a07](https://github.com/SCPF-Archive/repo.1/commit/9c68a07fcba836bc06ca74bee36a1fea15f025c0))
+- Return To Official CLI ([**9c68a07**](https://github.com/SCPF-Archive/repo.1/commit/9c68a07fcba836bc06ca74bee36a1fea15f025c0))
 
-- Fixed Patch Selection Error ([#4](https://github.com/SCPF-Archive/repo.1/pull/4))
+- Fixed Patch Selection Error ([**#4**](https://github.com/SCPF-Archive/repo.1/pull/4))
 
-- Changed CLI Repo ([a487933](https://github.com/SCPF-Archive/repo.1/commit/a4879331c420fc28e4c1a7a55c83f0461a68e8fa))
+- Changed CLI Repo ([**a487933**](https://github.com/SCPF-Archive/repo.1/commit/a4879331c420fc28e4c1a7a55c83f0461a68e8fa))
 
-- Fixed Patching Errors ([#3](https://github.com/SCPF-Archive/repo.1/pull/3))
+- Fixed Patching Errors ([**#3**](https://github.com/SCPF-Archive/repo.1/pull/3))
 
-- Fixed GitHub Token ([5557534](https://github.com/SCPF-Archive/repo.1/commit/55575344eba08c2c897c3b5e6675ea098645bc68))
+- Fixed GitHub Token ([**5557534**](https://github.com/SCPF-Archive/repo.1/commit/55575344eba08c2c897c3b5e6675ea098645bc68))
 
 # 🐞Failed Patches
-- `hide-premium-navbar` ([#621](https://github.com/revanced/revanced-patches/issues/621))
+- `hide-premium-navbar` ([**#621**](https://github.com/revanced/revanced-patches/issues/621))
 
-- `feed-filter` ([#1305](https://github.com/revanced/revanced-patches/issues/1305))
+- `feed-filter` ([**#1305**](https://github.com/revanced/revanced-patches/issues/1305))
 
 - `return-youtube-dislike`
 
 # 🖤 Credits
-- [n0k0m3](https://github.com/n0k0m3)
+[**ReVanced**](https://github.com/revanced)
+- Obviously for the CLI, Patches, and Integrations that is used in this repo.
+
+[**n0k0m3**](https://github.com/n0k0m3)
+- For almost all the codes and scripts from here.
+
+[**inotia00**](https://github.com/inotia00)
+- For the microG that is used in this repo.
+
+[**Termux**](https://github.com/termux)
+- For the [upload-release-action](https://github.com/termux/upload-release-action).
+
+[**robinraju**](https://github.com/robinraju)
+- For the [release-downloader](https://github.com/robinraju/release-downloader).
