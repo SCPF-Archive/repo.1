@@ -53,7 +53,7 @@ then
     echo "PATCHING ICON PACK STUDIO"
     java -jar cli.jar -m integrations.apk -b patches.jar \
         "${patches[@]}" \
-        '$EXPERIMENTAL' \
+        $EXPERIMENTAL \
         -a ginlemon.iconpackstudio.apk -o output/icon.pack.studio.apk
 else
     echo "NO BASE PACKAGE, SKIP COMPILING ICON PACK STUDIO"
