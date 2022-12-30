@@ -1,4 +1,5 @@
 # Changelog
+- Fixed Errors ([#3](https://github.com/SCPF-Archive/repo.1/pull/3)) ([b7e44ff](https://github.com/SCPF-Archive/repo.1/commit/b7e44ff412bfa47d0bffabcebdd4e3438c76ed36)).
 - Fixed GitHub Token ([6b7c786](https://github.com/SCPF-Archive/repo.1/commit/55575344eba08c2c897c3b5e6675ea098645bc68)).
 
 # ReVanced Builder
