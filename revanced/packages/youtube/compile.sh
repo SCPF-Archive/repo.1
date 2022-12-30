@@ -52,7 +52,7 @@ if [ -f "com.google.android.youtube.apk" ]
 then
     echo "PATCHING YOUTUBE"
     java -jar cli.jar -m integrations.apk -b patches.jar \
-        "${patches[@]}" \
+        ${patches[@]} \
         $EXPERIMENTAL \
         -a com.google.android.youtube.apk -o output/youtube.apk
 else
