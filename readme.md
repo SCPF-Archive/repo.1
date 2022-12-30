@@ -67,7 +67,7 @@ Download the built apps in the releases.
 - Fixed GitHub Token ([5557534](https://github.com/SCPF-Archive/repo.1/commit/55575344eba08c2c897c3b5e6675ea098645bc68)).
 
 # Failed Patches
-- `hide-premium-navbar` [#621](https://github.com/revanced/revanced-patches/issues/621)
-- `feed-filter` [#1305](https://github.com/revanced/revanced-patches/issues/1305)
-- `hide-views-stats`
+- `hide-premium-navbar` ([#621](https://github.com/revanced/revanced-patches/issues/621))
+- `feed-filter` ([#1305](https://github.com/revanced/revanced-patches/issues/1305))
+- `hide-views-stats` ([#1394](https://github.com/revanced/revanced-patches/issues/1394))
 - `return-youtube-dislike`
