@@ -9,7 +9,9 @@
 - Actually, I made this repo from scraping scripts and codes from the other repos here on GitHub so there's no really hard work from this repo.
 
 # Notes
-The script will download the selected versions ([**see here**](/revanced/assets/versions)) of applications on **APK Mirror** and **UpToDown**, **NOT** the latest official version on Google Play.
+- The script will download the selected versions ([**see here**](/revanced/assets/versions)) of applications on **APK Mirror** and **UpToDown**, **NOT** the latest official version on Google Play.
+- The applications are **NON-ROOT** variant so don't expect some **Magisk** modules here.
+- Without **microG**, **YouTube** and **YouTube Music** will crash due to missing **microG**, please install **microG**.
 
 # How to setup?
 <details><summary>CLICK TO VIEW</summary>
