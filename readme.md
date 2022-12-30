@@ -62,6 +62,7 @@ Download the built apps in the releases.
 </details>
 
 # Changelog
+- Return To Official CLI ([9c68a07](https://github.com/SCPF-Archive/repo.1/commit/9c68a07fcba836bc06ca74bee36a1fea15f025c0))
 - Fixed Patch Selection Error ([#4](https://github.com/SCPF-Archive/repo.1/pull/4))
 - Changed CLI Repo ([a487933](https://github.com/SCPF-Archive/repo.1/commit/a4879331c420fc28e4c1a7a55c83f0461a68e8fa))
 - Fixed Patching Errors ([#3](https://github.com/SCPF-Archive/repo.1/pull/3))
@@ -70,4 +71,4 @@ Download the built apps in the releases.
 # Failed Patches
 - `hide-premium-navbar` ([#621](https://github.com/revanced/revanced-patches/issues/621))
 - `feed-filter` ([#1305](https://github.com/revanced/revanced-patches/issues/1305))
-- `hide-views-stats`
+- `return-youtube-dislike`
