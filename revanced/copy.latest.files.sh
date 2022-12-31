@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "MAKING DIRECTORIES"
+mkdir -p packages/citra.emulator/versions
 mkdir -p packages/icon.pack.studio/versions
 mkdir -p packages/nyx/versions
 mkdir -p packages/reddit/versions
@@ -12,6 +13,7 @@ mkdir -p packages/youtube.music/v7a/versions
 mkdir -p packages/youtube.music/v8a/versions
 
 echo "COPYING LATEST VERSION FILES"
+cp -p -v assets/versions/latest/versions.json packages/citra.emulator/versions
 cp -p -v assets/versions/latest/versions.json packages/icon.pack.studio/versions
 cp -p -v assets/versions/latest/versions.json packages/reddit/versions
 cp -p -v assets/versions/latest/versions.json packages/tiktok/versions
@@ -22,6 +24,7 @@ cp -p -v assets/versions/latest/versions.json packages/youtube.music/v7a/version
 mv -v assets/versions/latest/versions.json packages/youtube.music/v8a/versions
 
 echo "MOVING PATCH FILES"
+cp -p -v assets/patches/universal.patch packages/citra.emulator
 cp -p -v assets/patches/universal.patch packages/icon.pack.studio
 mv -v assets/patches/universal.patch packages/nyx
 mv -v assets/patches/reddit.patch packages/reddit
@@ -34,6 +37,7 @@ cp -p -v assets/patches/youtube.music.patch packages/youtube.music/v7a
 mv -v assets/patches/youtube.music.patch packages/youtube.music/v8a
 
 echo "COPYING REVANCED INTEGRATIONS"
+cp -p -v assets/temp/integrations/*.apk packages/citra.emulator/integrations.apk
 cp -p -v assets/temp/integrations/*.apk packages/icon.pack.studio/integrations.apk
 cp -p -v assets/temp/integrations/*.apk packages/nyx/integrations.apk
 cp -p -v assets/temp/integrations/*.apk packages/reddit/integrations.apk
@@ -46,6 +50,7 @@ cp -p -v assets/temp/integrations/*.apk packages/youtube.music/v7a/integrations.
 mv -v assets/temp/integrations/*.apk packages/youtube.music/v8a/integrations.apk
 
 echo "COPYING REVANCED CLI"
+cp -p -v assets/temp/cli/*.jar packages/citra.emulator/cli.jar
 cp -p -v assets/temp/cli/*.jar packages/icon.pack.studio/cli.jar
 cp -p -v assets/temp/cli/*.jar packages/nyx/cli.jar
 cp -p -v assets/temp/cli/*.jar packages/reddit/cli.jar
@@ -58,6 +63,7 @@ cp -p -v assets/temp/cli/*.jar packages/youtube.music/v7a/cli.jar
 mv -v assets/temp/cli/*.jar packages/youtube.music/v8a/cli.jar
 
 echo "COPYING REVANCED PATCHES"
+cp -p -v assets/temp/patches/*.jar packages/citra.emulator/patches.jar
 cp -p -v assets/temp/patches/*.jar packages/icon.pack.studio/patches.jar
 cp -p -v assets/temp/patches/*.jar packages/nyx/patches.jar
 cp -p -v assets/temp/patches/*.jar packages/reddit/patches.jar
