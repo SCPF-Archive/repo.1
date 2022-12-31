@@ -72,6 +72,20 @@ jobs:
         chmod +x copy.latest.files.sh
         ./copy.latest.files.sh
 
+    - name: Download Citra Emulator
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/citra.emulator
+        chmod +x download.sh
+        ./download.sh
+
+    - name: Compile Citra Emulator
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/citra.emulator
+        chmod +x compile.sh
+        ./compile.sh
+
     - name: Download Icon Pack Studio
       if: inputs.BUILD
       run: |
