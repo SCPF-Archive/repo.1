@@ -1,5 +1,6 @@
 #### Check the versions of the apk in APK Mirror by visiting the links when you click the application name.
 
+- [Citra Emulator](https://citra-emulator-3ds-emulator.en.uptodown.com/android/download) (Not Included)
 - [Icon Pack Studio](https://www.apkmirror.com/apk/smart-launcher-team/icon-pack-studio)
 - [Nyx Music Player](https://nyx-music-player.en.uptodown.com/android/download) (Not Included)
 - [Reddit](https://www.apkmirror.com/apk/redditinc/reddit)
