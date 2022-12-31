@@ -5,6 +5,7 @@ wget -nv --progress=bar:force https://github.com/patrickfav/uber-apk-signer/rele
 mv -v uber-apk-signer-1.2.1.jar signer.jar
 
 echo "PREPARING"
+mkdir -p packages/citra.emulator/output/release
 mkdir -p packages/icon.pack.studio/output/release
 mkdir -p packages/nyx/output/release
 mkdir -p packages/reddit/output/release
@@ -25,6 +26,9 @@ then
     mv -v packages/micro-g/microg.apk packages/latest/app/micro-g.apk
 
     mv -v packages/manager/*.apk packages/latest/app/revanced.manager.apk
+
+    java -jar signer.jar --allowResign -a packages/citra.emulator/output -o packages/citra.emulator/output/release
+    mv -v packages/citra.emulator/output/release/citra.emulator-aligned-debugSigned.apk packages/latest/app/citra.emulator.apk
 
     java -jar signer.jar --allowResign -a packages/icon.pack.studio/output -o packages/icon.pack.studio/output/release
     mv -v packages/icon.pack.studio/output/release/icon.pack.studio-aligned-debugSigned.apk packages/latest/app/icon.pack.studio.apk
