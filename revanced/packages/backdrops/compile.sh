@@ -1,6 +1,6 @@
 #!/bin/bash
 
-patches_file=./reddit.patch
+patches_file=./universal.patch
 
 included_start="$(grep -n -m1 'INCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
 excluded_start="$(grep -n -m1 'EXCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
