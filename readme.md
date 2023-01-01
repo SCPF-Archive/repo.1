@@ -86,7 +86,7 @@ Download the built apps in the releases.
 
 - `feed-filter` ([**#1305**](https://github.com/revanced/revanced-patches/issues/1305))
 
-- `return-youtube-dislike`
+- `hide-views-stats`
 
 # 🖤 Credits
 [**ReVanced**](https://github.com/revanced)
