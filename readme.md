@@ -67,6 +67,8 @@ Download the built apps in the releases.
 </details>
 
 # 📝Changelog
+- Add Backdrops Wallpapers ([**#6**](https://github.com/SCPF-Archive/repo.1/pull/6))
+
 - Add Citra Emulator ([**#5**](https://github.com/SCPF-Archive/repo.1/pull/5))
 
 - Return To Official CLI ([**9c68a07**](https://github.com/SCPF-Archive/repo.1/commit/9c68a07fcba836bc06ca74bee36a1fea15f025c0))
