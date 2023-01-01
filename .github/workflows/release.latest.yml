@@ -72,6 +72,20 @@ jobs:
         chmod +x copy.latest.files.sh
         ./copy.latest.files.sh
 
+    - name: Download Backdrops
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/backdrops
+        chmod +x download.sh
+        ./download.sh
+
+    - name: Compile Backdrops
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/backdrops
+        chmod +x compile.sh
+        ./compile.sh
+
     - name: Download Citra Emulator
       if: inputs.BUILD
       run: |
