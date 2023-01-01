@@ -1,6 +1,7 @@
 # INCLUDED PATCHES
 disable-capture-restriction
-hide-premium-navbar
+
 spotify-theme
 
 # EXCLUDED PATCHES
+hide-premium-navbar
