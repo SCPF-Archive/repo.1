@@ -98,12 +98,10 @@ jobs:
 
     - name: Download Micro G
       if: inputs.BUILD
-      uses: robinraju/release-downloader@main
-      with: 
-        repository: "inotia00/VancedMicroG"
-        latest: true
-        fileName: "*.apk"
-        out-file-path: "revanced/packages/micro-g"
+      run: |
+        cd revanced/packages/micro-g
+        chmod +x download.sh
+        ./download.sh
 
     - name: Download Nyx Music Player
       if: inputs.BUILD
