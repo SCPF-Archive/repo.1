@@ -42,29 +42,11 @@ jobs:
       run: |
         echo "MAIN_TAG=$(date +'%Y.%m.%d')" >> $GITHUB_ENV
 
-    - name: Download Integrations
-      uses: robinraju/release-downloader@main
-      with: 
-        repository: "revanced/revanced-integrations"
-        latest: true
-        fileName: "*.apk"
-        out-file-path: "revanced/assets/temp/integrations"
-
-    - name: Download CLI
-      uses: robinraju/release-downloader@main
-      with: 
-        repository: "revanced/revanced-cli"
-        latest: true
-        fileName: "*.jar"
-        out-file-path: "revanced/assets/temp/cli"
-
-    - name: Download Patches
-      uses: robinraju/release-downloader@main
-      with: 
-        repository: "revanced/revanced-patches"
-        latest: true
-        fileName: "*.jar"
-        out-file-path: "revanced/assets/temp/patches"
+    - name: Download Prerequisites
+      run: |
+        cd revanced/assets/temp
+        chmod +x download.prerequisites.sh
+        ./download.prerequisites.sh
 
     - name: Copy Files
       run: |
