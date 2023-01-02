@@ -10,7 +10,7 @@
 - Actually, I made this repo from scraping scripts and codes from the other repos here on GitHub so there's no really hard work from this repo.
 
 ## 🗒️Notes
-<details><summary><b>Click to Expand</b></summary>
+<details><summary><b>Click to View</b></summary>
 
 - The script will download the selected versions ([**see here**](/revanced/assets/versions)) of applications on **APK Mirror** and **UpToDown**, **NOT** the latest official version on Google Play.
 - The applications are **NON-ROOT** variant so don't expect some **Magisk** modules here.
@@ -19,12 +19,16 @@
 </details>
 
 ## 🤔How to setup?
+<details><summary><b>Click to View</b></summary>
+
 1. Fork this repo. DO NOT FORK if you need to set the new repo to private.
 2. That's it! You can now build ReVanced using Github Actions.
 3. Modify your desired custom patches [**here**](revanced/assets/patches).
 
+</details>
+
 ## 📝Changelog
-<details><summary><b>Click to Expand</b></summary>
+<details><summary><b>Click to View</b></summary>
 
 - Prerequisites and Versions ([**#7**](https://github.com/SCPF-Archive/repo.1/pull/7))
 - Add Backdrops Wallpapers ([**#6**](https://github.com/SCPF-Archive/repo.1/pull/6))
@@ -38,6 +42,8 @@
 </details>
 
 ## 🐞Bugs
+<details><summary><b>Click to View</b></summary>
+
 Reddit
 - Patches Doesn't Apply
 - `general-reddit-ads` ([**#1177**](https://github.com/revanced/revanced-patches/issues/1177))
@@ -53,8 +59,10 @@ TikTok
 - `sim-spoof`
 - Java Heap Space ([**#1358**](https://github.com/revanced/revanced-patches/issues/1358))
 
+</details>
+
 ## 🖤 Credits
-<details><summary><b>Click to Expand</b></summary>
+<details><summary><b>Click to View</b></summary>
 
 [**ReVanced**](https://github.com/revanced)
 - Obviously for the CLI, Patches, and Integrations that is used in this repo.
