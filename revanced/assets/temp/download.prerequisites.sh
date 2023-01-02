@@ -13,9 +13,9 @@ mv *.jar cli
 
 echo "DOWNLOADING INTEGRATIONS"
 INTEGRATIONS_REPO="revanced/revanced-integrations"
-INTEGRATIONS_ASSETS=".jar"
+INTEGRATIONS_ASSETS=".apk"
 wget --progress=dot:mega $(curl -s "https://api.github.com/repos/"$INTEGRATIONS_REPO"/releases/latest" | jq -r '.assets[] | select(.name | contains("'"${INTEGRATIONS_ASSETS}"'")) | .browser_download_url')
-mv *.jar integrations
+mv *.apk integrations
 
 echo "DOWNLOADING PATCHES"
 PATCHES_REPO="revanced/revanced-patches"
