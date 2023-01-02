@@ -133,12 +133,10 @@ jobs:
 
     - name: Download ReVanced Manager
       if: inputs.BUILD
-      uses: robinraju/release-downloader@main
-      with: 
-        repository: "revanced/revanced-manager"
-        latest: true
-        fileName: "*.apk"
-        out-file-path: "revanced/packages/manager"
+      run: |
+        cd revanced/packages/revanced.manager
+        chmod +x download.sh
+        ./download.sh
 
     - name: Download Spotify
       if: inputs.BUILD
