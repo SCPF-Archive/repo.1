@@ -85,20 +85,19 @@ Download the built apps in the releases.
 
 # 🐞Bugs
 Reddit
-  - `general-reddit-ads` ([**#1177**](https://github.com/revanced/revanced-patches/issues/1177))
-  - `premium-icon-reddit`
+- Patches Doesn't Apply
+- `general-reddit-ads` ([**#1177**](https://github.com/revanced/revanced-patches/issues/1177))
+- `premium-icon-reddit`
 
 Spotify
-  - `hide-premium-navbar` ([**#621**](https://github.com/revanced/revanced-patches/issues/621))
+- `hide-premium-navbar` ([**#621**](https://github.com/revanced/revanced-patches/issues/621))
 
 TikTok
-  - `downloads`
-  - `feed-filter` ([**#1305**](https://github.com/revanced/revanced-patches/issues/1305))
-  - `sim-spoof`
-  - Java Heap Space ([**#1358**](https://github.com/revanced/revanced-patches/issues/1358))
-
-Twitter
-  - `hide-views-stats`
+- `downloads`
+- `feed-filter` ([**#1305**](https://github.com/revanced/revanced-patches/issues/1305))
+- `settings`
+- `sim-spoof`
+- Java Heap Space ([**#1358**](https://github.com/revanced/revanced-patches/issues/1358))
 
 # 🖤 Credits
 [**ReVanced**](https://github.com/revanced)
