@@ -2,7 +2,7 @@
 
 echo "DOWNLOADING APK SIGNER"
 wget -nv --progress=bar:force https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/uber-apk-signer-1.2.1.jar
-mv -v uber-apk-signer-1.2.1.jar signer.jar
+mv uber-apk-signer-1.2.1.jar signer.jar
 
 echo "PREPARING"
 mkdir -p packages/backdrops/output/release
@@ -26,7 +26,7 @@ then
 
     mv -v packages/micro-g/microg.apk packages/latest/app/micro-g.apk
 
-    mv -v packages/manager/*.apk packages/latest/app/revanced.manager.apk
+    mv -v packages/revanced.manager/*.apk packages/latest/app/revanced.manager.apk
 
     java -jar signer.jar --allowResign -a packages/backdrops/output -o packages/backdrops/output/release
     mv -v packages/backdrops/output/release/backdrops-aligned-debugSigned.apk packages/latest/app/backdrops.apk
