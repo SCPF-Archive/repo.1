@@ -44,15 +44,15 @@
 ## 🐞Bugs
 <details><summary><b>Click to View</b></summary>
 
-Reddit
+**Reddit**
 - Patches Doesn't Apply
 - `general-reddit-ads` ([**#1177**](https://github.com/revanced/revanced-patches/issues/1177))
 - `premium-icon-reddit`
 
-Spotify
+**Spotify**
 - `hide-premium-navbar` ([**#621**](https://github.com/revanced/revanced-patches/issues/621))
 
-TikTok
+**TikTok**
 - `downloads`
 - `feed-filter` ([**#1305**](https://github.com/revanced/revanced-patches/issues/1305))
 - `settings`
