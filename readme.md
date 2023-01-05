@@ -76,7 +76,4 @@
 [**Termux**](https://github.com/termux)
 - For the [upload-release-action](https://github.com/termux/upload-release-action).
 
-[**robinraju**](https://github.com/robinraju)
-- For the [release-downloader](https://github.com/robinraju/release-downloader).
-
 </details>
