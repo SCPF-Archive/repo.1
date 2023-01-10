@@ -6,6 +6,7 @@
 - [Nyx Music Player](https://nyx-music-player.en.uptodown.com/android/download) (Not Included)
 - [Reddit](https://www.apkmirror.com/apk/redditinc/reddit)
 - [Spotify](https://spotify.en.uptodown.com/android/download) (Not Included)
+- [TickTick](https://www.apkmirror.com/apk/appest-inc/ticktick-to-do-list-with-reminder-day-planner)
 - [TikTok](https://www.apkmirror.com/apk/tiktok-pte-ltd/tik-tok-including-musical-ly)
 - [Twitch](https://www.apkmirror.com/apk/twitch-interactive-inc/twitch)
 - [Twitter](https://www.apkmirror.com/apk/twitter-inc/twitter)
