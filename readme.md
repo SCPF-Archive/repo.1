@@ -15,6 +15,7 @@
 - The script will download the selected versions ([**see here**](/revanced/assets/versions)) of applications on **APK Mirror** and **UpToDown**, **NOT** the latest official version on Google Play.
 - The applications are **NON-ROOT** variant so don't expect some **Magisk** modules here.
 - Without **microG**, **YouTube** and **YouTube Music** will crash due to missing **microG**, please install **microG**.
+- If the `Download Prerequisites` have an error or failed to run, just run the workflow again.
 
 </details>
 
