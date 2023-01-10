@@ -40,7 +40,7 @@ then
     java -jar cli.jar -m integrations.apk -b patches.jar \
         ${patches[@]} \
         $EXPERIMENTAL \
-        -a com.ticktick.task.apk -o output/ticktick.apk
+        -a com.ticktick.task.apk -o output/ticktick.v7a.apk
 else
     echo "NO BASE PACKAGE, SKIP COMPILING TICKTICK arm-v7a"
 fi
