@@ -29,7 +29,7 @@ cp -p assets/versions/latest/versions.json packages/youtube/versions
 cp -p assets/versions/latest/versions.json packages/youtube.music/v7a/versions
 cp -p assets/versions/latest/versions.json packages/youtube.music/v8a/versions
 
-echo "MOVING PATCH FILES"
+echo "COPYING PATCH FILES"
 cp -p assets/patches/universal.patch packages/backdrops
 cp -p assets/patches/universal.patch packages/citra.emulator
 cp -p assets/patches/universal.patch packages/icon.pack.studio
