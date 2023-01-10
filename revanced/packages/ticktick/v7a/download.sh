@@ -44,12 +44,12 @@ dl_apk()
 dl_ticktick()
 {
     local arch=$ARM_V7A
-    echo "DOWNLOADING YOUTUBE MUSIC arm-v7a"
+    echo "DOWNLOADING TICKTICK arm-v7a"
     local last_ver
     last_ver="$version"
-    last_ver="${last_ver:-$(get_apk_vers "https://www.apkmirror.com/uploads/?appcategory=youtube-music" | get_largest_ver)}"
+    last_ver="${last_ver:-$(get_apk_vers "https://www.apkmirror.com/uploads/?appcategory=ticktick-to-do-list-with-reminder-day-planner" | get_largest_ver)}"
     echo "SELECTED VERSION: ${last_ver}"
-    local base_apk="com.google.android.apps.youtube.music.apk"
+    local base_apk="com.ticktick.task.apk"
     if [ ! -f "$base_apk" ]
     then
         if [ "$arch" = "$ARM_V7A" ]
@@ -59,12 +59,12 @@ dl_ticktick()
 	then
             local regexp_arch='arm64-v8a</div>[^@]*@\([^"]*\)'
         fi
-        dl_url=$(dl_apk "https://www.apkmirror.com/apk/google-inc/youtube-music/youtube-music-${last_ver//./-}-release/" \
+        dl_url=$(dl_apk "https://www.apkmirror.com/apk/appest-inc/ticktick-to-do-list-with-reminder-day-planner/ticktick-to-do-list-with-reminder-day-planner-${last_ver//./-}-release/" \
                 "$regexp_arch" \
                 "$base_apk")
         declare -r dl_url
-        echo "YOUTUBE MUSIC arm-v7a v${last_ver}"
-        echo "DOWNLOADED FROM: [YOUTUBE MUSIC arm-v7a - APK MIRROR]($dl_url)"
+        echo "TICKTICK arm-v7a v${last_ver}"
+        echo "DOWNLOADED FROM: [TICKTICK arm-v7a - APK MIRROR]($dl_url)"
     fi
 }
 
