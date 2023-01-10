@@ -152,6 +152,34 @@ jobs:
         chmod +x compile.sh
         ./compile.sh
 
+    - name: Download TickTick arm-v7a
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/ticktick/v7a
+        chmod +x download.sh
+        ./download.sh
+
+    - name: Compile TickTick arm-v7a
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/ticktick/v7a
+        chmod +x compile.sh
+        ./compile.sh experimental
+
+    - name: Download TickTick arm64-v8a
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/ticktick/v8a
+        chmod +x download.sh
+        ./download.sh
+
+    - name: Compile TickTick arm64-v8a
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/ticktick/v8a
+        chmod +x compile.sh
+        ./compile.sh experimental
+
     - name: Download TikTok
       if: inputs.BUILD
       run: |
