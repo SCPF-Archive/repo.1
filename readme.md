@@ -31,6 +31,7 @@
 ## 📝Changelog
 <details><summary><b>Click to View</b></summary>
 
+- Smol Fix ([**#10**](https://github.com/SCPF-Archive/repo.1/pull/10))
 - Add TickTick ([**#9**](https://github.com/SCPF-Archive/repo.1/pull/9))
 - Fixed Upload Error ([**356adfa**](https://github.com/SCPF-Archive/repo.1/commit/356adfa11c99d3d11464c2f46ed36732cd6109b8))
 - Prerequisites and Versions ([**#7**](https://github.com/SCPF-Archive/repo.1/pull/7))
