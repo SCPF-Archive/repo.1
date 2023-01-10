@@ -1,6 +1,6 @@
 #!/bin/bash
 
-patches_file=./youtube.music.patch
+patches_file=./universal.patch
 
 included_start="$(grep -n -m1 'INCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
 excluded_start="$(grep -n -m1 'EXCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
@@ -33,16 +33,16 @@ echo "CALL POPULATE PATCHES"
 echo "MAKING DIRECTORY"
 mkdir -p output
 
-echo "COMPILING YOUTUBE MUSIC arm64-v8a"
-if [ -f "com.google.android.apps.youtube.music.apk" ]
+echo "COMPILING TICKTICK arm64-v8a"
+if [ -f "com.ticktick.task.apk" ]
 then
-    echo "PATCHING YOUTUBE MUSIC arm64-v8a"
+    echo "PATCHING TICKTICK arm64-v8a"
     java -jar cli.jar -m integrations.apk -b patches.jar \
         ${patches[@]} \
         $EXPERIMENTAL \
-        -a com.google.android.apps.youtube.music.apk -o output/yt.music.64-v8a.apk
+        -a com.ticktick.task.apk -o output/ticktick.64-v8a.apk
 else
-    echo "NO BASE PACKAGE, SKIP COMPILING YOUTUBE MUSIC arm64-v8a"
+    echo "NO BASE PACKAGE, SKIP COMPILING TICKTICK arm64-v8a"
 fi
 
 echo "DONE"
