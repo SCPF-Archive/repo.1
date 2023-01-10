@@ -40,7 +40,7 @@ then
     java -jar cli.jar -m integrations.apk -b patches.jar \
         ${patches[@]} \
         $EXPERIMENTAL \
-        -a com.google.android.apps.youtube.music.apk -o output/yt.music.v8a.apk
+        -a com.google.android.apps.youtube.music.apk -o output/yt.music.64-v8a.apk
 else
     echo "NO BASE PACKAGE, SKIP COMPILING YOUTUBE MUSIC arm64-v8a"
 fi
