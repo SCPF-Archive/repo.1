@@ -11,6 +11,8 @@ mkdir -p packages/icon.pack.studio/output/release
 mkdir -p packages/nyx/output/release
 mkdir -p packages/reddit/output/release
 mkdir -p packages/spotify/output/release
+mkdir -p packages/ticktick/v7a/output/release
+mkdir -p packages/ticktick/v8a/output/release
 mkdir -p packages/tiktok/output/release
 mkdir -p packages/twitch/output/release
 mkdir -p packages/twitter/output/release
@@ -46,6 +48,12 @@ then
     java -jar signer.jar --allowResign -a packages/spotify/output -o packages/spotify/output/release
     mv -v packages/spotify/output/release/spotify-aligned-debugSigned.apk packages/latest/app/spotify.apk
 
+    java -jar signer.jar --allowResign -a packages/ticktick/v7a/output -o packages/ticktick/v7a/output/release
+    mv -v packages/ticktick/v7a/output/release/ticktick.v7a-aligned-debugSigned.apk packages/latest/app/ticktick.v7a.apk
+
+    java -jar signer.jar --allowResign -a packages/ticktick/v8a/output -o packages/ticktick/v8a/output/release
+    mv -v packages/ticktick/v8a/output/release/ticktick.64-v8a-aligned-debugSigned.apk packages/latest/app/ticktick.64-v8a.apk
+
     java -jar signer.jar --allowResign -a packages/tiktok/output -o packages/tiktok/output/release
     mv -v packages/tiktok/output/release/tiktok-aligned-debugSigned.apk packages/latest/app/tiktok.apk
 
@@ -62,7 +70,7 @@ then
     mv -v packages/youtube.music/v7a/output/release/yt.music.v7a-aligned-debugSigned.apk packages/latest/app/yt.music.v7a.apk
 
     java -jar signer.jar --allowResign -a packages/youtube.music/v8a/output -o packages/youtube.music/v8a/output/release
-    mv -v packages/youtube.music/v8a/output/release/yt.music.v8a-aligned-debugSigned.apk packages/latest/app/yt.music.v8a.apk
+    mv -v packages/youtube.music/v8a/output/release/yt.music.64-v8a-aligned-debugSigned.apk packages/latest/app/yt.music.64-v8a.apk
 fi
 
 echo "DONE SIGNING"
