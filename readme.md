@@ -56,10 +56,6 @@
 - `hide-premium-navbar` ([**#621**](https://github.com/revanced/revanced-patches/issues/621))
 
 **TikTok**
-- `downloads`
-- `feed-filter` ([**#1305**](https://github.com/revanced/revanced-patches/issues/1305))
-- `settings`
-- `sim-spoof`
 - Java Heap Space ([**#1358**](https://github.com/revanced/revanced-patches/issues/1358))
 
 </details>
