@@ -47,9 +47,6 @@
 ## 🐞Bugs
 <details><summary><b>Click to View</b></summary>
 
-**Reddit**
-- No Update ([**#1177**](https://github.com/revanced/revanced-patches/issues/1177))
-
 **Spotify**
 - `hide-premium-navbar` ([**#621**](https://github.com/revanced/revanced-patches/issues/621))
 
