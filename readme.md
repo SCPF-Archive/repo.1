@@ -48,9 +48,7 @@
 <details><summary><b>Click to View</b></summary>
 
 **Reddit**
-- Patches Doesn't Apply
-- `general-reddit-ads` ([**#1177**](https://github.com/revanced/revanced-patches/issues/1177))
-- `premium-icon-reddit`
+- No Update ([**#1177**](https://github.com/revanced/revanced-patches/issues/1177))
 
 **Spotify**
 - `hide-premium-navbar` ([**#621**](https://github.com/revanced/revanced-patches/issues/621))
