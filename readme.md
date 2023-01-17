@@ -21,9 +21,32 @@
 ## 🤔How to setup?
 <details><summary><b>Click to View</b></summary>
 
-1. Fork this repo. DO NOT FORK if you need to set the new repo to private.
-2. That's it! You can now build ReVanced using Github Actions.
-3. Modify your desired custom patches [**here**](revanced/assets/patches).
+> If you want to create your own release, there are only few steps to do it.
+
+#### Step 1:
+Fork this repository.
+- [**How to fork a repository?**](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
+- To fork this repository on mobile browser, kindly click [**here**](https://github.com/SCPF-Archive/repo.1/fork).
+
+#### Step 2:
+After you forked this repository and made your own repo, go now to your GitHub Actions tab.
+
+#### Step 3:
+Run the `Release Latest` workflow to generate the applications.
+
+#### Step 4:
+After the workflow is finished, download the generated applications in the releases section.
+
+---
+
+**Note**
+
+Don't forget to always check and update these folders :
+
+- [**Patches Folder**](revanced/assets/patches)
+- [**Versions Folder**](revanced/assets/versions)
+
+Those folders are meant to be checked and updated.
 
 </details>
 
