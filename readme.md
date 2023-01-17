@@ -21,25 +21,27 @@
 ## 🤔How to setup?
 <details><summary><b>Click to View</b></summary>
 
-> If you want to create your own release, there are only few steps to do it.
-
 #### Step 1:
 Fork this repository.
 - [**How to fork a repository?**](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
 - To fork this repository on mobile browser, kindly click [**here**](https://github.com/SCPF-Archive/repo.1/fork).
 
+> **DO NOT FORK** if you need to set the new repo to private, import this repository instead.
+
 #### Step 2:
-After you forked this repository and made your own repo, go now to your GitHub Actions tab.
+After you forked or imported this repository and made your own repo, go now to your GitHub Actions tab.
 
 #### Step 3:
 Run the `Release Latest` workflow to generate the applications.
+
+> In the checkboxes, you can put a check the `Archive Packages` to release the applications in a compressed .7z archive instead.
 
 #### Step 4:
 After the workflow is finished, download the generated applications in the releases section.
 
 ---
 
-**Note**
+**Reminder :**
 
 Don't forget to always check and update these folders :
 
