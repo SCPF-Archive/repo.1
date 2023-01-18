@@ -40,7 +40,7 @@ cp -p assets/patches/universal.patch packages/nyx
 cp -p assets/patches/reddit.patch packages/reddit
 cp -p assets/patches/spotify.patch packages/spotify
 cp -p assets/patches/universal.patch packages/ticktick/v7a
-cp -p assets/patches/universal.patch packages/ticktick/v7a
+cp -p assets/patches/universal.patch packages/ticktick/v8a
 cp -p assets/patches/tiktok.patch packages/tiktok
 cp -p assets/patches/twitch.patch packages/twitch
 cp -p assets/patches/twitter.patch packages/twitter
