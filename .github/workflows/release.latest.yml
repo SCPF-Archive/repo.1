@@ -143,7 +143,7 @@ jobs:
       run: |
         cd revanced/packages/reddit
         chmod +x compile.sh
-        ./compile.sh
+        ./compile.sh experimental
 
     - name: Download ReVanced Manager
       if: inputs.BUILD
