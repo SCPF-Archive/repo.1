@@ -101,7 +101,7 @@ Those folders are meant to be checked and updated.
 
 </details>
 
-## 🛠️ Application List
+## 🛠️ Applications List
 <details><summary><b>Click to View</b></summary>
 
 - Backdrops - Wallpapers
