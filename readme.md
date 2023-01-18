@@ -74,7 +74,7 @@ Those folders are meant to be checked and updated.
 <details><summary><b>Click to View</b></summary>
 
 **UpToDown**
-- Download script broken for `Nyx Music Player` and `Spotify` applications.
+- Download Script Broken
 
 **Spotify**
 - `hide-premium-navbar` ([**#621**](https://github.com/revanced/revanced-patches/issues/621))
@@ -97,6 +97,27 @@ Those folders are meant to be checked and updated.
 - For the microG that is used in this repo.
 
 [**Termux**](https://github.com/termux)
-- For the [upload-release-action](https://github.com/termux/upload-release-action).
+- For the [**upload-release-action**](https://github.com/termux/upload-release-action).
+
+</details>
+
+## 🛠️ Application List
+<details><summary><b>Click to View</b></summary>
+
+- Backdrops - Wallpapers
+- Citra Emulator
+- Icon Pack Studio
+- microG (by [**inotia00**](https://github.com/inotia00))
+- Nova Launcher
+- ~Nyx Music Player~
+- Reddit
+- ReVanced Manager
+- ~Spotify~
+- TickTick: To-do list & Tasks
+- TikTok
+- Twitch: Live Game Streaming
+- Twitter
+- YouTube Music
+- YouTube
 
 </details>
