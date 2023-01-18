@@ -4,6 +4,7 @@ echo "MAKING DIRECTORIES"
 mkdir -p packages/backdrops/versions
 mkdir -p packages/citra.emulator/versions
 mkdir -p packages/icon.pack.studio/versions
+mkdir -p packages/nova.launcher/versions
 mkdir -p packages/nyx/versions
 mkdir -p packages/reddit/versions
 mkdir -p packages/ticktick/v7a/versions
@@ -19,6 +20,7 @@ echo "COPYING LATEST VERSION FILES"
 cp -p assets/versions/latest/versions.json packages/backdrops/versions
 cp -p assets/versions/latest/versions.json packages/citra.emulator/versions
 cp -p assets/versions/latest/versions.json packages/icon.pack.studio/versions
+cp -p assets/versions/latest/versions.json packages/nova.launcher/versions
 cp -p assets/versions/latest/versions.json packages/reddit/versions
 cp -p assets/versions/latest/versions.json packages/ticktick/v7a/versions
 cp -p assets/versions/latest/versions.json packages/ticktick/v8a/versions
@@ -33,6 +35,7 @@ echo "COPYING PATCH FILES"
 cp -p assets/patches/universal.patch packages/backdrops
 cp -p assets/patches/universal.patch packages/citra.emulator
 cp -p assets/patches/universal.patch packages/icon.pack.studio
+cp -p assets/patches/universal.patch packages/nova.launcher
 cp -p assets/patches/universal.patch packages/nyx
 cp -p assets/patches/reddit.patch packages/reddit
 cp -p assets/patches/spotify.patch packages/spotify
@@ -45,26 +48,11 @@ cp -p assets/patches/youtube.patch packages/youtube
 cp -p assets/patches/youtube.music.patch packages/youtube.music/v7a
 cp -p assets/patches/youtube.music.patch packages/youtube.music/v8a
 
-echo "COPYING REVANCED INTEGRATIONS"
-cp -p assets/temp/integrations/*.apk packages/backdrops/integrations.apk
-cp -p assets/temp/integrations/*.apk packages/citra.emulator/integrations.apk
-cp -p assets/temp/integrations/*.apk packages/icon.pack.studio/integrations.apk
-cp -p assets/temp/integrations/*.apk packages/nyx/integrations.apk
-cp -p assets/temp/integrations/*.apk packages/reddit/integrations.apk
-cp -p assets/temp/integrations/*.apk packages/spotify/integrations.apk
-cp -p assets/temp/integrations/*.apk packages/ticktick/v7a/integrations.apk
-cp -p assets/temp/integrations/*.apk packages/ticktick/v8a/integrations.apk
-cp -p assets/temp/integrations/*.apk packages/tiktok/integrations.apk
-cp -p assets/temp/integrations/*.apk packages/twitch/integrations.apk
-cp -p assets/temp/integrations/*.apk packages/twitter/integrations.apk
-cp -p assets/temp/integrations/*.apk packages/youtube/integrations.apk
-cp -p assets/temp/integrations/*.apk packages/youtube.music/v7a/integrations.apk
-cp -p assets/temp/integrations/*.apk packages/youtube.music/v8a/integrations.apk
-
 echo "COPYING REVANCED CLI"
 cp -p assets/temp/cli/*.jar packages/backdrops/cli.jar
 cp -p assets/temp/cli/*.jar packages/citra.emulator/cli.jar
 cp -p assets/temp/cli/*.jar packages/icon.pack.studio/cli.jar
+cp -p assets/temp/cli/*.jar packages/nova.launcher/cli.jar
 cp -p assets/temp/cli/*.jar packages/nyx/cli.jar
 cp -p assets/temp/cli/*.jar packages/reddit/cli.jar
 cp -p assets/temp/cli/*.jar packages/spotify/cli.jar
@@ -77,10 +65,28 @@ cp -p assets/temp/cli/*.jar packages/youtube/cli.jar
 cp -p assets/temp/cli/*.jar packages/youtube.music/v7a/cli.jar
 cp -p assets/temp/cli/*.jar packages/youtube.music/v8a/cli.jar
 
+echo "COPYING REVANCED INTEGRATIONS"
+cp -p assets/temp/integrations/*.apk packages/backdrops/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/citra.emulator/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/icon.pack.studio/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/nova.launcher/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/nyx/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/reddit/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/spotify/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/ticktick/v7a/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/ticktick/v8a/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/tiktok/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/twitch/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/twitter/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/youtube/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/youtube.music/v7a/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/youtube.music/v8a/integrations.apk
+
 echo "COPYING REVANCED PATCHES"
 cp -p assets/temp/patches/*.jar packages/backdrops/patches.jar
 cp -p assets/temp/patches/*.jar packages/citra.emulator/patches.jar
 cp -p assets/temp/patches/*.jar packages/icon.pack.studio/patches.jar
+cp -p assets/temp/patches/*.jar packages/nova.launcher/patches.jar
 cp -p assets/temp/patches/*.jar packages/nyx/patches.jar
 cp -p assets/temp/patches/*.jar packages/reddit/patches.jar
 cp -p assets/temp/patches/*.jar packages/spotify/patches.jar
