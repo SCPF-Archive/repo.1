@@ -73,6 +73,9 @@ Those folders are meant to be checked and updated.
 ## 🐞Bugs
 <details><summary><b>Click to View</b></summary>
 
+**UpToDown**
+- Download script broken for `Nyx Music Player` and `Spotify` applications.
+
 **Spotify**
 - `hide-premium-navbar` ([**#621**](https://github.com/revanced/revanced-patches/issues/621))
 
