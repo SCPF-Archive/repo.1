@@ -1,14 +1,15 @@
 {
     "com.backdrops.wallpapers.apk": "4.52",
-    "org.citra.citra_emu.apk": "nightly-1816",
+    "org.citra.citra_emu.apk": "bed6a4f12",
     "ginlemon.iconpackstudio.apk": "2.1.build.028",
+    "com.teslacoilsw.launcher.apk": "7.0.57",
     "com.awedea.nyx.apk": "2.2.2",
-    "com.reddit.frontpage.apk": "2023.01.0",
-    "com.spotify.music.apk": "8.7.92.521",
-    "com.ticktick.task.apk": "6.4.3.1",
-    "com.zhiliaoapp.musically.apk": "27.8.3",
-    "tv.twitch.android.app.apk": "14.3.2",
-    "com.twitter.android.apk": "9.69.1-release.0",
+    "com.reddit.frontpage.apk": "2023.02.0",
+    "com.spotify.music.apk": "8.8.0.347",
+    "com.ticktick.task.apk": "6.4.4.1",
+    "com.zhiliaoapp.musically.apk": "27.8.4",
+    "tv.twitch.android.app.apk": "11.0.0.0005",
+    "com.twitter.android.apk": "9.71.0-release.0",
     "com.google.android.youtube.apk": "17.49.37",
     "com.google.android.apps.youtube.music.apk": "5.39.52"
 }

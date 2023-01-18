@@ -3,7 +3,7 @@
 echo "DECLARING VARIABLES"
 declare -A apks
 
-apks["org.citra.citra_emu.apk"]=dl_citra
+apks["com.teslacoilsw.launcher.apk"]=dl_nova-launcher
 
 WGET_HEADER="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"
 
@@ -38,23 +38,23 @@ dl_apk()
     req "$url" "$output"
 }
 
-dl_citra()
+dl_nova-launcher()
 {
-    echo "DOWNLOADING CITRA EMULATOR"
+    echo "DOWNLOADING NOVA LAUNCHER"
     local last_ver
     last_ver="$version"
-    last_ver="${last_ver:-$(get_apk_vers "https://www.apkmirror.com/uploads/?appcategory=citra-emulator" | get_largest_ver)}"
+    last_ver="${last_ver:-$(get_apk_vers "https://www.apkmirror.com/uploads/?appcategory=nova-launcher" | get_largest_ver)}"
 
     echo "SELECTED VERSION: ${last_ver}"
-    local base_apk="org.citra.citra_emu.apk"
+    local base_apk="com.teslacoilsw.launcher.apk"
     if [ ! -f "$base_apk" ]
     then
-        dl_url=$(dl_apk "https://www.apkmirror.com/apk/citra-emulator/citra-emulator/citra-emulator-${last_ver//./-}-release/" \
+        dl_url=$(dl_apk "https://www.apkmirror.com/apk/teslacoil-software/nova-launcher/nova-launcher-${last_ver//./-}-release/" \
                 "APK</span>[^@]*@\([^#]*\)" \
                 "$base_apk")
         declare -r dl_url
-        echo "CITRA EMULATOR v${last_ver}"
-        echo "DOWNLOADED FROM: [CITRA EMULATOR - APK MIRROR]($dl_url)"
+        echo "NOVA LAUNCHER v${last_ver}"
+        echo "DOWNLOADED FROM: [NOVA LAUNCHER - APK MIRROR]($dl_url)"
     fi
 }
 

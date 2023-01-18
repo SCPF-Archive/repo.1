@@ -103,6 +103,20 @@ jobs:
         chmod +x download.sh
         ./download.sh
 
+    - name: Download Nova Launcher
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/nova.launcher
+        chmod +x download.sh
+        ./download.sh
+
+    - name: Compile Nova Launcher
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/nova.launcher
+        chmod +x compile.sh
+        ./compile.sh
+
     - name: Download Nyx Music Player
       if: inputs.BUILD
       run: |
