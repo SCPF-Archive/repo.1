@@ -1,13 +1,14 @@
 #!/bin/bash
 
 echo "DOWNLOADING APK SIGNER"
-wget -nv --progress=bar:force https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/uber-apk-signer-1.2.1.jar
+wget -nv https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/uber-apk-signer-1.2.1.jar
 mv uber-apk-signer-1.2.1.jar signer.jar
 
 echo "PREPARING"
 mkdir -p packages/backdrops/output/release
 mkdir -p packages/citra.emulator/output/release
 mkdir -p packages/icon.pack.studio/output/release
+mkdir -p packages/nova.launcher/output/release
 mkdir -p packages/nyx/output/release
 mkdir -p packages/reddit/output/release
 mkdir -p packages/spotify/output/release
@@ -38,6 +39,9 @@ then
 
     java -jar signer.jar --allowResign -a packages/icon.pack.studio/output -o packages/icon.pack.studio/output/release
     mv -v packages/icon.pack.studio/output/release/icon.pack.studio-aligned-debugSigned.apk packages/latest/app/icon.pack.studio.apk
+
+    java -jar signer.jar --allowResign -a packages/nova.launcher/output -o packages/nova.launcher/output/release
+    mv -v packages/nova.launcher/output/release/nova.launcher-aligned-debugSigned.apk packages/latest/app/nova.launcher.apk
 
     java -jar signer.jar --allowResign -a packages/nyx/output -o packages/nyx/output/release
     mv -v packages/nyx/output/release/nyx-aligned-debugSigned.apk packages/latest/app/nyx.apk
