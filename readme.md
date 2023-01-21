@@ -81,9 +81,6 @@ Those folders are meant to be checked and updated.
 **Spotify**
 - `hide-premium-navbar` ([**#621**](https://github.com/revanced/revanced-patches/issues/621))
 
-**TikTok**
-- Java Heap Space ([**#1358**](https://github.com/revanced/revanced-patches/issues/1358))
-
 </details>
 
 ## 🖤 Credits
