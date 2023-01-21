@@ -60,6 +60,12 @@ dl_ticktick()
 	elif [ "$arch" = "$ARM64_V8A" ]
 	then
             local regexp_arch='arm64-v8a</div>[^@]*@\([^"]*\)'
+        elif [ "$arch" = "$X86_64" ]
+	then
+            local regexp_arch='x86_64</div>[^@]*@\([^"]*\)'
+        elif [ "$arch" = "$X86" ]
+	then
+            local regexp_arch='x86</div>[^@]*@\([^"]*\)'
         fi
         dl_url=$(dl_apk "https://www.apkmirror.com/apk/appest-inc/ticktick-to-do-list-with-reminder-day-planner/ticktick-to-do-list-with-reminder-day-planner-${last_ver//./-}-release/" \
                 "$regexp_arch" \
