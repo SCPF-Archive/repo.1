@@ -91,5 +91,8 @@ then
     mv -v packages/youtube/output/release/*.apk .release/youtube.apk
 fi
 
+echo "REMOVING CACHE"
+rm -rf *
+
 echo "DONE SIGNING"
 
