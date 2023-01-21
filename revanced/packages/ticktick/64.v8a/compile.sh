@@ -2,6 +2,13 @@
 
 patches_file=./universal.patch
 
+ARM_V7A="arm-v7a"
+ARM64_V8A="arm64-v8a"
+X86_64="x86_64"
+X86="x86"
+
+arch=$ARM64_V8A
+
 included_start="$(grep -n -m1 'INCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
 excluded_start="$(grep -n -m1 'EXCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
 
@@ -33,16 +40,16 @@ echo "CALL POPULATE PATCHES"
 echo "MAKING DIRECTORY"
 mkdir -p output
 
-echo "COMPILING TICKTICK arm64-v8a"
+echo "COMPILING TICKTICK $arch"
 if [ -f "com.ticktick.task.apk" ]
 then
-    echo "PATCHING TICKTICK arm64-v8a"
+    echo "PATCHING TICKTICK $arch"
     java -jar cli.jar -m integrations.apk -b patches.jar \
         ${patches[@]} \
         $EXPERIMENTAL \
-        -a com.ticktick.task.apk -o output/ticktick.64-v8a.apk
+        -a com.ticktick.task.apk -o output/ticktick.$arch.apk
 else
-    echo "NO BASE PACKAGE, SKIP COMPILING TICKTICK arm64-v8a"
+    echo "NO BASE PACKAGE, SKIP COMPILING TICKTICK $arch"
 fi
 
 echo "DONE"
