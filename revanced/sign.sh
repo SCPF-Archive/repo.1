@@ -92,7 +92,7 @@ then
 fi
 
 echo "REMOVING CACHE"
-rm -rf *
+rm -rf packages
 
 echo "DONE SIGNING"
 
