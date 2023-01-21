@@ -2,6 +2,13 @@
 
 patches_file=./youtube.music.patch
 
+ARM_V7A="arm-v7a"
+ARM64_V8A="arm64-v8a"
+X86_64="x86_64"
+X86="x86"
+
+arch=$ARM_V7A
+
 included_start="$(grep -n -m1 'INCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
 excluded_start="$(grep -n -m1 'EXCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
 
@@ -33,16 +40,16 @@ echo "CALL POPULATE PATCHES"
 echo "MAKING DIRECTORY"
 mkdir -p output
 
-echo "COMPILING YOUTUBE MUSIC arm-v7a"
+echo "COMPILING YOUTUBE MUSIC $arch"
 if [ -f "com.google.android.apps.youtube.music.apk" ]
 then
-    echo "PATCHING YOUTUBE MUSIC arm-v7a"
+    echo "PATCHING YOUTUBE MUSIC $arch"
     java -jar cli.jar -m integrations.apk -b patches.jar \
         ${patches[@]} \
         $EXPERIMENTAL \
-        -a com.google.android.apps.youtube.music.apk -o output/yt.music.v7a.apk
+        -a com.google.android.apps.youtube.music.apk -o output/yt.music.$arch.apk
 else
-    echo "NO BASE PACKAGE, SKIP COMPILING YOUTUBE MUSIC arm-v7a"
+    echo "NO BASE PACKAGE, SKIP COMPILING YOUTUBE MUSIC $arch"
 fi
 
 echo "DONE"
