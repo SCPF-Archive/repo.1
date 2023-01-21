@@ -12,8 +12,10 @@ mkdir -p packages/nova.launcher/output/release
 mkdir -p packages/nyx/output/release
 mkdir -p packages/reddit/output/release
 mkdir -p packages/spotify/output/release
+mkdir -p packages/ticktick/64.v8a/output/release
 mkdir -p packages/ticktick/v7a/output/release
-mkdir -p packages/ticktick/v8a/output/release
+mkdir -p packages/ticktick/x86.64/output/release
+mkdir -p packages/ticktick/x86/output/release
 mkdir -p packages/tiktok/output/release
 mkdir -p packages/twitch/output/release
 mkdir -p packages/twitter/output/release
@@ -52,11 +54,14 @@ then
     java -jar signer.jar --allowResign -a packages/spotify/output -o packages/spotify/output/release
     mv -v packages/spotify/output/release/spotify-aligned-debugSigned.apk packages/latest/app/spotify.apk
 
+    java -jar signer.jar --allowResign -a packages/ticktick/64.v8a/output -o packages/ticktick/64.v8a/output/release
+    mv -v packages/ticktick/64.v8a/output/release/ticktick.64-v8a-aligned-debugSigned.apk packages/latest/app/ticktick.64-v8a.apk
     java -jar signer.jar --allowResign -a packages/ticktick/v7a/output -o packages/ticktick/v7a/output/release
     mv -v packages/ticktick/v7a/output/release/ticktick.v7a-aligned-debugSigned.apk packages/latest/app/ticktick.v7a.apk
-
-    java -jar signer.jar --allowResign -a packages/ticktick/v8a/output -o packages/ticktick/v8a/output/release
-    mv -v packages/ticktick/v8a/output/release/ticktick.64-v8a-aligned-debugSigned.apk packages/latest/app/ticktick.64-v8a.apk
+    java -jar signer.jar --allowResign -a packages/ticktick/x86.64/output -o packages/ticktick/x86.64/output/release
+    mv -v packages/ticktick/x86.64/output/release/ticktick.x86.64-aligned-debugSigned.apk packages/latest/app/ticktick.x86.64.apk
+    java -jar signer.jar --allowResign -a packages/ticktick/x86/output -o packages/ticktick/x86/output/release
+    mv -v packages/ticktick/x86/output/release/ticktick.x86-aligned-debugSigned.apk packages/latest/app/ticktick.x86.apk
 
     java -jar signer.jar --allowResign -a packages/tiktok/output -o packages/tiktok/output/release
     mv -v packages/tiktok/output/release/tiktok-aligned-debugSigned.apk packages/latest/app/tiktok.apk
