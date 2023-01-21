@@ -51,5 +51,5 @@ then
 else
     echo "NO BASE PACKAGE, SKIP COMPILING TICKTICK $arch"
 fi
-ls
+
 echo "DONE"
