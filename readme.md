@@ -55,6 +55,7 @@ Those folders are meant to be checked and updated.
 ## 📝Changelog
 <details><summary><b>Click to View</b></summary>
 
+- Add x86_64 and x86 ([**#14**](https://github.com/SCPF-Archive/repo.1/pull/14))
 - Fix Spotify Download ([**#13**](https://github.com/SCPF-Archive/repo.1/pull/13))
 - Add Nova Launcher ([**#12**](https://github.com/SCPF-Archive/repo.1/pull/12))
 - Smol Fix ([**#10**](https://github.com/SCPF-Archive/repo.1/pull/10))
