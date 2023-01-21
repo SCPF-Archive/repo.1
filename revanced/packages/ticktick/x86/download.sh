@@ -7,6 +7,8 @@ apks["com.ticktick.task.apk"]=dl_ticktick
 
 ARM_V7A="arm-v7a"
 ARM64_V8A="arm64-v8a"
+X86_64="x86_64"
+X86="x86"
 
 WGET_HEADER="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"
 
@@ -43,8 +45,8 @@ dl_apk()
 
 dl_ticktick()
 {
-    local arch=$ARM64_V8A
-    echo "DOWNLOADING TICKTICK arm64-v8a"
+    local arch=$X86
+    echo "DOWNLOADING TICKTICK $arch"
     local last_ver
     last_ver="$version"
     last_ver="${last_ver:-$(get_apk_vers "https://www.apkmirror.com/uploads/?appcategory=ticktick-to-do-list-with-reminder-day-planner" | get_largest_ver)}"
@@ -58,13 +60,18 @@ dl_ticktick()
 	elif [ "$arch" = "$ARM64_V8A" ]
 	then
             local regexp_arch='arm64-v8a</div>[^@]*@\([^"]*\)'
+        elif [ "$arch" = "$X86_64" ]
+	then
+            local regexp_arch='x86_64</div>[^@]*@\([^"]*\)'
+        elif [ "$arch" = "$X86" ]
+	then
+            local regexp_arch='x86</div>[^@]*@\([^"]*\)'
         fi
         dl_url=$(dl_apk "https://www.apkmirror.com/apk/appest-inc/ticktick-to-do-list-with-reminder-day-planner/ticktick-to-do-list-with-reminder-day-planner-${last_ver//./-}-release/" \
                 "$regexp_arch" \
                 "$base_apk")
         declare -r dl_url
-        echo "TICKTICK arm64-v8a v${last_ver}"
-        echo "DOWNLOADED FROM: [TICKTICK arm64-v8a - APK MIRROR]($dl_url)"
+        echo "TICKTICK $arch v${last_ver}"
     fi
 }
 

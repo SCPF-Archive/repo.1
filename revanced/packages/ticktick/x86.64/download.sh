@@ -45,7 +45,7 @@ dl_apk()
 
 dl_ticktick()
 {
-    local arch=$ARM_V7A
+    local arch=$X86_64
     echo "DOWNLOADING TICKTICK $arch"
     local last_ver
     last_ver="$version"

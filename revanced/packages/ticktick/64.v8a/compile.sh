@@ -7,7 +7,7 @@ ARM64_V8A="arm64-v8a"
 X86_64="x86_64"
 X86="x86"
 
-arch=$ARM_V7A
+arch=$ARM64_V8A
 
 included_start="$(grep -n -m1 'INCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
 excluded_start="$(grep -n -m1 'EXCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"

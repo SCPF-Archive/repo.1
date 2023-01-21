@@ -1,13 +1,13 @@
 #!/bin/bash
 
-patches_file=./universal.patch
+patches_file=./youtube.music.patch
 
 ARM_V7A="arm-v7a"
 ARM64_V8A="arm64-v8a"
 X86_64="x86_64"
 X86="x86"
 
-arch=$ARM_V7A
+arch=$X86_64
 
 included_start="$(grep -n -m1 'INCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
 excluded_start="$(grep -n -m1 'EXCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
@@ -40,16 +40,16 @@ echo "CALL POPULATE PATCHES"
 echo "MAKING DIRECTORY"
 mkdir -p output
 
-echo "COMPILING TICKTICK $arch"
-if [ -f "com.ticktick.task.apk" ]
+echo "COMPILING YOUTUBE MUSIC $arch"
+if [ -f "com.google.android.apps.youtube.music.apk" ]
 then
-    echo "PATCHING TICKTICK $arch"
+    echo "PATCHING YOUTUBE MUSIC $arch"
     java -jar cli.jar -m integrations.apk -b patches.jar \
         ${patches[@]} \
         $EXPERIMENTAL \
-        -a com.ticktick.task.apk -o output/ticktick.$arch.apk
+        -a com.google.android.apps.youtube.music.apk -o output/yt.music.$arch.apk
 else
-    echo "NO BASE PACKAGE, SKIP COMPILING TICKTICK $arch"
+    echo "NO BASE PACKAGE, SKIP COMPILING YOUTUBE MUSIC $arch"
 fi
 
 echo "DONE"
