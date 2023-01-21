@@ -7,6 +7,8 @@ apks["com.google.android.apps.youtube.music.apk"]=dl_youtube-music
 
 ARM_V7A="arm-v7a"
 ARM64_V8A="arm64-v8a"
+X86_64="x86_64"
+X86="x86"
 
 WGET_HEADER="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"
 
@@ -58,13 +60,18 @@ dl_youtube-music()
 	elif [ "$arch" = "$ARM64_V8A" ]
 	then
             local regexp_arch='arm64-v8a</div>[^@]*@\([^"]*\)'
+        elif [ "$arch" = "$X86_64" ]
+	then
+            local regexp_arch='x86_64</div>[^@]*@\([^"]*\)'
+        elif [ "$arch" = "$X86" ]
+	then
+            local regexp_arch='x86</div>[^@]*@\([^"]*\)'
         fi
         dl_url=$(dl_apk "https://www.apkmirror.com/apk/google-inc/youtube-music/youtube-music-${last_ver//./-}-release/" \
                 "$regexp_arch" \
                 "$base_apk")
         declare -r dl_url
-        echo "YOUTUBE MUSIC arm64-v8a v${last_ver}"
-        echo "DOWNLOADED FROM: [YOUTUBE MUSIC arm64-v8a - APK MIRROR]($dl_url)"
+        echo "YOUTUBE MUSIC $arch v${last_ver}"
     fi
 }
 
