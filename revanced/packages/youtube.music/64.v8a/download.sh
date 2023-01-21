@@ -46,7 +46,7 @@ dl_apk()
 dl_youtube-music()
 {
     local arch=$ARM64_V8A
-    echo "DOWNLOADING YOUTUBE MUSIC arm64-v8a"
+    echo "DOWNLOADING YOUTUBE MUSIC $arch"
     local last_ver
     last_ver="$version"
     last_ver="${last_ver:-$(get_apk_vers "https://www.apkmirror.com/uploads/?appcategory=youtube-music" | get_largest_ver)}"
