@@ -22,73 +22,73 @@ mkdir -p packages/twitter/output/release
 mkdir -p packages/youtube/output/release
 mkdir -p packages/youtube.music/v7a/output/release
 mkdir -p packages/youtube.music/v8a/output/release
-mkdir -p .release
+mkdir -p release
 
 echo "SIGNING PACKAGES"
 if [ -f "sign.sh" ]
 then
-    mv -v packages/micro-g/microg-google-icon.apk .release/microg.google-icon.apk
+    mv -v packages/micro-g/microg-google-icon.apk release/microg.google-icon.apk
 
-    mv -v packages/micro-g/microg.apk .release/microg.apk
+    mv -v packages/micro-g/microg.apk release/microg.apk
 
-    mv -v packages/revanced.manager/*.apk .release/revanced.manager.apk
+    mv -v packages/revanced.manager/*.apk release/revanced.manager.apk
 
     java -jar signer.jar --allowResign -a packages/backdrops/output -o packages/backdrops/output/release
-    mv -v packages/backdrops/output/release/*.apk .release/backdrops.apk
+    mv -v packages/backdrops/output/release/*.apk release/backdrops.apk
 
     java -jar signer.jar --allowResign -a packages/citra.emulator/output -o packages/citra.emulator/output/release
-    mv -v packages/citra.emulator/output/release/*.apk .release/citra.emulator.apk
+    mv -v packages/citra.emulator/output/release/*.apk release/citra.emulator.apk
 
     java -jar signer.jar --allowResign -a packages/icon.pack.studio/output -o packages/icon.pack.studio/output/release
-    mv -v packages/icon.pack.studio/output/release/*.apk .release/icon.pack.studio.apk
+    mv -v packages/icon.pack.studio/output/release/*.apk release/icon.pack.studio.apk
 
     java -jar signer.jar --allowResign -a packages/nova.launcher/output -o packages/nova.launcher/output/release
-    mv -v packages/nova.launcher/output/release/*.apk .release/nova.launcher.apk
+    mv -v packages/nova.launcher/output/release/*.apk release/nova.launcher.apk
 
     java -jar signer.jar --allowResign -a packages/nyx/output -o packages/nyx/output/release
-    mv -v packages/nyx/output/release/*.apk .release/nyx.apk
+    mv -v packages/nyx/output/release/*.apk release/nyx.apk
 
     java -jar signer.jar --allowResign -a packages/reddit/output -o packages/reddit/output/release
-    mv -v packages/reddit/output/release/*.apk .release/reddit.apk
+    mv -v packages/reddit/output/release/*.apk release/reddit.apk
 
     java -jar signer.jar --allowResign -a packages/spotify/output -o packages/spotify/output/release
-    mv -v packages/spotify/output/release/*.apk .release/spotify.apk
+    mv -v packages/spotify/output/release/*.apk release/spotify.apk
 
     java -jar signer.jar --allowResign -a packages/ticktick/64.v8a/output -o packages/ticktick/64.v8a/output/release
-    mv -v packages/ticktick/64.v8a/output/release/*.apk .release/ticktick.64.v8a.apk
+    mv -v packages/ticktick/64.v8a/output/release/*.apk release/ticktick.64.v8a.apk
 
     java -jar signer.jar --allowResign -a packages/ticktick/v7a/output -o packages/ticktick/v7a/output/release
-    mv -v packages/ticktick/v7a/output/release/*.apk .release/ticktick.v7a.apk
+    mv -v packages/ticktick/v7a/output/release/*.apk release/ticktick.v7a.apk
 
     java -jar signer.jar --allowResign -a packages/ticktick/x86.64/output -o packages/ticktick/x86.64/output/release
-    mv -v packages/ticktick/x86.64/output/release/*.apk .release/ticktick.x86.64.apk
+    mv -v packages/ticktick/x86.64/output/release/*.apk release/ticktick.x86.64.apk
 
     java -jar signer.jar --allowResign -a packages/ticktick/x86/output -o packages/ticktick/x86/output/release
-    mv -v packages/ticktick/x86/output/release/*.apk .release/ticktick.x86.apk
+    mv -v packages/ticktick/x86/output/release/*.apk release/ticktick.x86.apk
 
     java -jar signer.jar --allowResign -a packages/tiktok/output -o packages/tiktok/output/release
-    mv -v packages/tiktok/output/release/*.apk .release/tiktok.apk
+    mv -v packages/tiktok/output/release/*.apk release/tiktok.apk
 
     java -jar signer.jar --allowResign -a packages/twitch/output -o packages/twitch/output/release
-    mv -v packages/twitch/output/release/*.apk .release/twitch.apk
+    mv -v packages/twitch/output/release/*.apk release/twitch.apk
 
     java -jar signer.jar --allowResign -a packages/twitter/output -o packages/twitter/output/release
-    mv -v packages/twitter/output/release/*.apk .release/twitter.apk
+    mv -v packages/twitter/output/release/*.apk release/twitter.apk
 
     java -jar signer.jar --allowResign -a packages/youtube.music/64.v8a/output -o packages/youtube.music/64.v8a/output/release
-    mv -v packages/youtube.music/64.v8a/output/release/*.apk .release/yt.music.64.v8a.apk
+    mv -v packages/youtube.music/64.v8a/output/release/*.apk release/yt.music.64.v8a.apk
 
     java -jar signer.jar --allowResign -a packages/youtube.music/v7a/output -o packages/youtube.music/v7a/output/release
-    mv -v packages/youtube.music/v7a/output/release/*.apk .release/yt.music.v7a.apk
+    mv -v packages/youtube.music/v7a/output/release/*.apk release/yt.music.v7a.apk
 
     java -jar signer.jar --allowResign -a packages/youtube.music/x86.64/output -o packages/youtube.music/x86.64/output/release
-    mv -v packages/youtube.music/x86.64/output/release/*.apk .release/yt.music.x86.64.apk
+    mv -v packages/youtube.music/x86.64/output/release/*.apk release/yt.music.x86.64.apk
 
     java -jar signer.jar --allowResign -a packages/youtube.music/x86/output -o packages/youtube.music/x86/output/release
-    mv -v packages/youtube.music/x86/output/release/*.apk .release/yt.music.x86.apk
+    mv -v packages/youtube.music/x86/output/release/*.apk release/yt.music.x86.apk
 
     java -jar signer.jar --allowResign -a packages/youtube/output -o packages/youtube/output/release
-    mv -v packages/youtube/output/release/*.apk .release/youtube.apk
+    mv -v packages/youtube/output/release/*.apk release/youtube.apk
 fi
 
 echo "REMOVING CACHE"
