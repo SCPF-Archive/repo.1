@@ -99,7 +99,7 @@ jobs:
     - name: Download Micro G
       if: inputs.BUILD
       run: |
-        cd revanced/packages/micro-g
+        cd revanced/packages/microg
         chmod +x download.sh
         ./download.sh
 
