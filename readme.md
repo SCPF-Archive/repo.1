@@ -55,6 +55,7 @@ Those folders are meant to be checked and updated.
 ## 📝Changelog
 <details><summary><b>Click to View</b></summary>
 
+- Fix Spotify Download ([**#13**](https://github.com/SCPF-Archive/repo.1/pull/13))
 - Add Nova Launcher ([**#12**](https://github.com/SCPF-Archive/repo.1/pull/12))
 - Smol Fix ([**#10**](https://github.com/SCPF-Archive/repo.1/pull/10))
 - Add TickTick ([**#9**](https://github.com/SCPF-Archive/repo.1/pull/9))
@@ -112,7 +113,7 @@ Those folders are meant to be checked and updated.
 - ~Nyx Music Player~
 - Reddit
 - ReVanced Manager
-- ~Spotify~
+- Spotify
 - TickTick: To-do list & Tasks
 - TikTok
 - Twitch: Live Game Streaming
