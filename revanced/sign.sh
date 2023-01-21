@@ -55,7 +55,8 @@ then
     mv -v packages/spotify/output/release/spotify-aligned-debugSigned.apk packages/latest/app/spotify.apk
 
     java -jar signer.jar --allowResign -a packages/ticktick/64.v8a/output -o packages/ticktick/64.v8a/output/release
-    mv -v packages/ticktick/64.v8a/output/release/ticktick.64-v8a-aligned-debugSigned.apk packages/latest/app/ticktick.64-v8a.apk
+    mv -v packages/ticktick/64.v8a/output/release/*.apk packages/latest/app/ticktick.64-v8a.apk
+    ls packages/ticktick/64.v8a/output/release/*
     java -jar signer.jar --allowResign -a packages/ticktick/v7a/output -o packages/ticktick/v7a/output/release
     mv -v packages/ticktick/v7a/output/release/ticktick.v7a-aligned-debugSigned.apk packages/latest/app/ticktick.v7a.apk
     java -jar signer.jar --allowResign -a packages/ticktick/x86.64/output -o packages/ticktick/x86.64/output/release
