@@ -27,9 +27,9 @@ mkdir -p packages/latest/app
 echo "SIGNING PACKAGES"
 if [ -f "sign.sh" ]
 then
-    mv -v packages/micro-g/microg-google-icon.apk packages/latest/app/micro-g.google-icon.apk
+    mv -v packages/micro-g/microg-google-icon.apk packages/latest/app/microg.google-icon.apk
 
-    mv -v packages/micro-g/microg.apk packages/latest/app/micro-g.apk
+    mv -v packages/micro-g/microg.apk packages/latest/app/microg.apk
 
     mv -v packages/revanced.manager/*.apk packages/latest/app/revanced.manager.apk
 
@@ -55,7 +55,7 @@ then
     mv -v packages/spotify/output/release/*.apk packages/latest/app/spotify.apk
 
     java -jar signer.jar --allowResign -a packages/ticktick/64.v8a/output -o packages/ticktick/64.v8a/output/release
-    mv -v packages/ticktick/64.v8a/output/release/*.apk packages/latest/app/ticktick.64-v8a.apk
+    mv -v packages/ticktick/64.v8a/output/release/*.apk packages/latest/app/ticktick.64.v8a.apk
 
     java -jar signer.jar --allowResign -a packages/ticktick/v7a/output -o packages/ticktick/v7a/output/release
     mv -v packages/ticktick/v7a/output/release/*.apk packages/latest/app/ticktick.v7a.apk
@@ -75,11 +75,17 @@ then
     java -jar signer.jar --allowResign -a packages/twitter/output -o packages/twitter/output/release
     mv -v packages/twitter/output/release/*.apk packages/latest/app/twitter.apk
 
+    java -jar signer.jar --allowResign -a packages/youtube.music/64.v8a/output -o packages/youtube.music/64.v8a/output/release
+    mv -v packages/youtube.music/64.v8a/output/release/*.apk packages/latest/app/yt.music.64.v8a.apk
+
     java -jar signer.jar --allowResign -a packages/youtube.music/v7a/output -o packages/youtube.music/v7a/output/release
     mv -v packages/youtube.music/v7a/output/release/*.apk packages/latest/app/yt.music.v7a.apk
 
-    java -jar signer.jar --allowResign -a packages/youtube.music/v8a/output -o packages/youtube.music/v8a/output/release
-    mv -v packages/youtube.music/v8a/output/release/*.apk packages/latest/app/yt.music.64-v8a.apk
+    java -jar signer.jar --allowResign -a packages/youtube.music/x86.64/output -o packages/youtube.music/x86.64/output/release
+    mv -v packages/youtube.music/x86.64/output/release/*.apk packages/latest/app/yt.music.x86.64.apk
+
+    java -jar signer.jar --allowResign -a packages/youtube.music/x86/output -o packages/youtube.music/x86/output/release
+    mv -v packages/youtube.music/x86/output/release/*.apk packages/latest/app/yt.music.x86.apk
 
     java -jar signer.jar --allowResign -a packages/youtube/output -o packages/youtube/output/release
     mv -v packages/youtube/output/release/*.apk packages/latest/app/youtube.apk
