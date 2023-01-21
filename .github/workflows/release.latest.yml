@@ -301,7 +301,7 @@ jobs:
         release_name: "${{ github.run_id }}"
         tag: "${{ env.MAIN_TAG }}"
         checksums: sha256
-        file: revanced/packages/latest/app/*
+        file: revanced/release/*
         overwrite: true
         file_glob: true
         prerelease: false
