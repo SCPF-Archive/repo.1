@@ -206,7 +206,7 @@ jobs:
       run: |
         cd revanced/packages/tiktok
         chmod +x compile.sh
-        ./compile.sh
+        ./compile.sh experimental
 
     - name: Download Twitch
       if: inputs.BUILD
