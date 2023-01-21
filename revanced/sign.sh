@@ -27,9 +27,7 @@ mkdir -p release
 echo "SIGNING PACKAGES"
 if [ -f "sign.sh" ]
 then
-    mv -v packages/micro-g/microg-google-icon.apk release/microg.google-icon.apk
-
-    mv -v packages/micro-g/microg.apk release/microg.apk
+    mv -v packages/microg/*.apk release/microg.apk
 
     mv -v packages/revanced.manager/*.apk release/revanced.manager.apk
 
