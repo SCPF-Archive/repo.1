@@ -7,6 +7,8 @@ apks["com.ticktick.task.apk"]=dl_ticktick
 
 ARM_V7A="arm-v7a"
 ARM64_V8A="arm64-v8a"
+X86_64="x86_64"
+X86="x86"
 
 WGET_HEADER="User-Agent: Mozilla/5.0 (X11; Linux x86_64; rv:102.0) Gecko/20100101 Firefox/102.0"
 
