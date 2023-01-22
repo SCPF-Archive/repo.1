@@ -27,7 +27,7 @@ You need to have a GitHub account for the following steps.
 #### Step 1:
 Fork this repository.
 - [**How to fork a repository?**](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
-- To fork this repository on mobile browser, kindly click [**here**](https://github.com/SCPF-Archive/repo.1/fork).
+- To fork this repository on desktop or mobile browser, kindly click [**here**](https://github.com/SCPF-Archive/repo.1/fork).
 > **DO NOT FORK** if you need to set the new repo to private, import this repository instead. I recommend to fork this repo instead of importing so you can update your repository whenever there's an update on the main repository.
 
 ![IMG 001](.github/assets/img.001.jpg)
