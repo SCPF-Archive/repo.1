@@ -21,6 +21,9 @@
 ## 🤔How to setup?
 <details><summary><b>Click to View</b></summary>
 
+#### Step 0:
+You need to have a GitHub account for the following steps.
+
 #### Step 1:
 Fork this repository.
 - [**How to fork a repository?**](https://docs.github.com/en/get-started/quickstart/fork-a-repo)
