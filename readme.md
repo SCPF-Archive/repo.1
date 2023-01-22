@@ -56,10 +56,12 @@ Click the `Run workflow`.
 Click the `Run workflow` button to generate the applications.
 > In the checkboxes, you can put a check the `Archive Packages` to release the applications in a compressed .7z archive instead.
 
+> The estimated time length of the workflow run is about 20 minutes.
+
 ![IMG 006](.github/assets/img.006.jpg) 
 
 #### Step 7:
-After the workflow is finished (when the indicator is now green colored with check mark), click your repository name above.
+After the workflow is finished (when the indicator is now **green colored** with **check mark**), click your repository name above.
 
 ![IMG 007](.github/assets/img.007.jpg)
 
