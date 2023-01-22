@@ -92,6 +92,11 @@ Don't forget to always check and update these folders :
 
 > Those folders are meant to be checked and updated.
 
+#### Reminder 2:
+When you see that you are `# commit/s behind`, update your repo by clicking the `Sync fork` -> `Update branch`.
+
+![IMG 010](.github/assets/img.010.jpg)
+
 </details>
 
 ## 📝Changelog
