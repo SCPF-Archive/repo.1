@@ -54,45 +54,30 @@ jobs:
         chmod +x copy.latest.files.sh
         ./copy.latest.files.sh
 
-    - name: Download Backdrops
+    - name: Patch Backdrops
       if: inputs.BUILD
       run: |
         cd revanced/packages/backdrops
         chmod +x download.sh
         ./download.sh
-
-    - name: Compile Backdrops
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/backdrops
         chmod +x compile.sh
         ./compile.sh
 
-    - name: Download Citra Emulator
+    - name: Patch Citra Emulator
       if: inputs.BUILD
       run: |
         cd revanced/packages/citra.emulator
         chmod +x download.sh
         ./download.sh
-
-    - name: Compile Citra Emulator
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/citra.emulator
         chmod +x compile.sh
         ./compile.sh
 
-    - name: Download Icon Pack Studio
+    - name: Patch Icon Pack Studio
       if: inputs.BUILD
       run: |
         cd revanced/packages/icon.pack.studio
         chmod +x download.sh
         ./download.sh
-
-    - name: Compile Icon Pack Studio
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/icon.pack.studio
         chmod +x compile.sh
         ./compile.sh
 
@@ -103,45 +88,30 @@ jobs:
         chmod +x download.sh
         ./download.sh
 
-    - name: Download Nova Launcher
+    - name: Patch Nova Launcher
       if: inputs.BUILD
       run: |
         cd revanced/packages/nova.launcher
         chmod +x download.sh
         ./download.sh
-
-    - name: Compile Nova Launcher
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/nova.launcher
         chmod +x compile.sh
         ./compile.sh
 
-    - name: Download Nyx Music Player
+    - name: Patch Nyx Music Player
       if: inputs.BUILD
       run: |
         cd revanced/packages/nyx
         chmod +x download.sh
         ./download.sh
-
-    - name: Compile Nyx Music Player
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/nyx
         chmod +x compile.sh
         ./compile.sh
 
-    - name: Download Reddit
+    - name: Patch Reddit
       if: inputs.BUILD
       run: |
         cd revanced/packages/reddit
         chmod +x download.sh
         ./download.sh
-
-    - name: Compile Reddit
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/reddit
         chmod +x compile.sh
         ./compile.sh experimental
 
@@ -152,129 +122,120 @@ jobs:
         chmod +x download.sh
         ./download.sh
 
-    - name: Download Spotify
+    - name: Patch Spotify
       if: inputs.BUILD
       run: |
         cd revanced/packages/spotify
         chmod +x download.sh
         ./download.sh
-
-    - name: Compile Spotify
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/spotify
         chmod +x compile.sh
         ./compile.sh
 
-    - name: Download TickTick arm-v7a
+    - name: Patch TickTick arm64-v8a
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/ticktick/64.v8a
+        chmod +x download.sh
+        ./download.sh
+        chmod +x compile.sh
+        ./compile.sh experimental
+
+    - name: Patch TickTick arm-v7a
       if: inputs.BUILD
       run: |
         cd revanced/packages/ticktick/v7a
         chmod +x download.sh
         ./download.sh
-
-    - name: Compile TickTick arm-v7a
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/ticktick/v7a
         chmod +x compile.sh
         ./compile.sh experimental
 
-    - name: Download TickTick arm64-v8a
+    - name: Patch TickTick x86_64
       if: inputs.BUILD
       run: |
-        cd revanced/packages/ticktick/v8a
+        cd revanced/packages/ticktick/x86.64
         chmod +x download.sh
         ./download.sh
-
-    - name: Compile TickTick arm64-v8a
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/ticktick/v8a
         chmod +x compile.sh
         ./compile.sh experimental
 
-    - name: Download TikTok
+    - name: Patch TickTick x86
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/ticktick/x86
+        chmod +x download.sh
+        ./download.sh
+        chmod +x compile.sh
+        ./compile.sh experimental
+
+    - name: Patch TikTok
       if: inputs.BUILD
       run: |
         cd revanced/packages/tiktok
         chmod +x download.sh
         ./download.sh
-
-    - name: Compile TikTok
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/tiktok
         chmod +x compile.sh
         ./compile.sh experimental
 
-    - name: Download Twitch
+    - name: Patch Twitch
       if: inputs.BUILD
       run: |
         cd revanced/packages/twitch
         chmod +x download.sh
         ./download.sh
-
-    - name: Compile Twitch
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/twitch
         chmod +x compile.sh
         ./compile.sh
 
-    - name: Download Twitter
+    - name: Patch Twitter
       if: inputs.BUILD
       run: |
         cd revanced/packages/twitter
         chmod +x download.sh
         ./download.sh
-
-    - name: Compile Twitter
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/twitter
         chmod +x compile.sh
         ./compile.sh
 
-    - name: Download YouTube Music arm-v7a
+    - name: Patch YouTube Music arm64-v8a
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/youtube.music/64.v8a
+        chmod +x download.sh
+        ./download.sh
+        chmod +x compile.sh
+        ./compile.sh experimental
+
+    - name: Patch YouTube Music arm-v7a
       if: inputs.BUILD
       run: |
         cd revanced/packages/youtube.music/v7a
         chmod +x download.sh
         ./download.sh
-
-    - name: Compile YouTube Music arm-v7a
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/youtube.music/v7a
         chmod +x compile.sh
         ./compile.sh experimental
 
-    - name: Download YouTube Music arm64-v8a
+    - name: Patch YouTube Music x86_64
       if: inputs.BUILD
       run: |
-        cd revanced/packages/youtube.music/v8a
+        cd revanced/packages/youtube.music/x86.64
         chmod +x download.sh
         ./download.sh
-
-    - name: Compile YouTube Music arm64-v8a
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/youtube.music/v8a
         chmod +x compile.sh
         ./compile.sh experimental
 
-    - name: Download YouTube
+    - name: Patch YouTube Music x86
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/youtube.music/x86
+        chmod +x download.sh
+        ./download.sh
+        chmod +x compile.sh
+        ./compile.sh experimental
+
+    - name: Patch YouTube
       if: inputs.BUILD
       run: |
         cd revanced/packages/youtube
         chmod +x download.sh
         ./download.sh
-
-    - name: Compile YouTube
-      if: inputs.BUILD
-      run: |
-        cd revanced/packages/youtube
         chmod +x compile.sh
         ./compile.sh experimental
 
