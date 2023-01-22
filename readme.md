@@ -55,6 +55,7 @@ Those folders are meant to be checked and updated.
 ## 📝Changelog
 <details><summary><b>Click to View</b></summary>
 
+- Update Workflow File ([**#16**](https://github.com/SCPF-Archive/repo.1/pull/16))
 - Add x86_64 and x86 ([**#14**](https://github.com/SCPF-Archive/repo.1/pull/14))
 - Fix Spotify Download ([**#13**](https://github.com/SCPF-Archive/repo.1/pull/13))
 - Add Nova Launcher ([**#12**](https://github.com/SCPF-Archive/repo.1/pull/12))
