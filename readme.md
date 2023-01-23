@@ -9,6 +9,9 @@
 **How?**
 - Actually, I made this repo from scraping scripts and codes from the other repos here on GitHub so there's no really hard work from this repo.
 
+**Fair Trade?**
+- I receive a star on this repository, you receive a more dedicated work for this repo.
+
 ## 🗒️Notes
 <details><summary><b>Click to View</b></summary>
 
