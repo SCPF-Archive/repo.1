@@ -97,10 +97,37 @@ jobs:
         chmod +x compile.sh
         ./compile.sh
 
-    - name: Patch Nyx Music Player
+    - name: Patch Nyx Music Player arm64-v8a
       if: inputs.BUILD
       run: |
-        cd revanced/packages/nyx
+        cd revanced/packages/nyx.music.player/64.v8a
+        chmod +x download.sh
+        ./download.sh
+        chmod +x compile.sh
+        ./compile.sh
+
+    - name: Patch Nyx Music Player arm-v7a
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/nyx.music.player/v7a
+        chmod +x download.sh
+        ./download.sh
+        chmod +x compile.sh
+        ./compile.sh
+
+    - name: Patch Nyx Music Player x86_64
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/nyx.music.player/x86.64
+        chmod +x download.sh
+        ./download.sh
+        chmod +x compile.sh
+        ./compile.sh
+
+    - name: Patch Nyx Music Player x86
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/nyx.music.player/x86
         chmod +x download.sh
         ./download.sh
         chmod +x compile.sh

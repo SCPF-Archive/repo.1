@@ -2,6 +2,13 @@
 
 patches_file=./universal.patch
 
+ARM_V7A="arm-v7a"
+ARM64_V8A="arm64-v8a"
+X86_64="x86_64"
+X86="x86"
+
+arch=$ARM_V7A
+
 included_start="$(grep -n -m1 'INCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
 excluded_start="$(grep -n -m1 'EXCLUDED PATCHES' "$patches_file" | cut -d':' -f1)"
 
@@ -47,16 +54,16 @@ mkdir -p output
 
 ###################################
 
-echo "COMPILING NYX MUSIC PLAYER"
+echo "COMPILING NYX MUSIC PLAYER $arch"
 if [ -f "com.awedea.nyx.apk" ]
 then
-    echo "PATCHING NYX MUSIC PLAYER"
+    echo "PATCHING NYX MUSIC PLAYER $arch"
     java -jar cli.jar -m integrations.apk -b patches.jar \
         ${patches[@]} \
         $EXPERIMENTAL \
-        -a com.awedea.nyx.apk -o output/nyx.apk
+        -a com.awedea.nyx.apk -o output/nyx.music.player.$arch.apk
 else
-    echo "NO BASE PACKAGE, SKIP COMPILING NYX MUSIC PLAYER"
+    echo "NO BASE PACKAGE, SKIP COMPILING NYX MUSIC PLAYER $arch"
 fi
 
 echo "DONE"
