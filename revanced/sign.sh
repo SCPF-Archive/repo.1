@@ -9,7 +9,10 @@ mkdir -p packages/backdrops/output/release
 mkdir -p packages/citra.emulator/output/release
 mkdir -p packages/icon.pack.studio/output/release
 mkdir -p packages/nova.launcher/output/release
-mkdir -p packages/nyx/output/release
+mkdir -p packages/nyx.music.player/64.v8a/output/release
+mkdir -p packages/nyx.music.player/v7a/output/release
+mkdir -p packages/nyx.music.player/x86.64/output/release
+mkdir -p packages/nyx.music.player/x86/output/release
 mkdir -p packages/reddit/output/release
 mkdir -p packages/spotify/output/release
 mkdir -p packages/ticktick/64.v8a/output/release
@@ -43,8 +46,17 @@ then
     java -jar signer.jar --allowResign -a packages/nova.launcher/output -o packages/nova.launcher/output/release
     mv -v packages/nova.launcher/output/release/*.apk release/nova.launcher.apk
 
-    java -jar signer.jar --allowResign -a packages/nyx/output -o packages/nyx/output/release
-    mv -v packages/nyx/output/release/*.apk release/nyx.apk
+    java -jar signer.jar --allowResign -a packages/nyx.music.player/64.v8a/output -o packages/nyx.music.player/64.v8a/output/release
+    mv -v packages/nyx.music.player/64.v8a/output/release/*.apk release/nyx.music.player.64.v8a.apk
+
+    java -jar signer.jar --allowResign -a packages/nyx.music.player/v7a/output -o packages/nyx.music.player/v7a/output/release
+    mv -v packages/nyx.music.player/v7a/output/release/*.apk release/nyx.music.player.v7a.apk
+
+    java -jar signer.jar --allowResign -a packages/nyx.music.player/x86.64/output -o packages/nyx.music.player/x86.64/output/release
+    mv -v packages/nyx.music.player/x86.64/output/release/*.apk release/nyx.music.player.x86.64.apk
+
+    java -jar signer.jar --allowResign -a packages/nyx.music.player/x86/output -o packages/nyx.music.player/x86/output/release
+    mv -v packages/nyx.music.player/x86/output/release/*.apk release/nyx.music.player.x86.apk
 
     java -jar signer.jar --allowResign -a packages/reddit/output -o packages/reddit/output/release
     mv -v packages/reddit/output/release/*.apk release/reddit.apk
