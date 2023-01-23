@@ -107,6 +107,7 @@ When you see that you are `# commit/s behind`, update your repo by clicking the 
 ## 📝Changelog
 <details><summary><b>Click to View</b></summary>
 
+- Fix Nyx Download ([**#18**](https://github.com/SCPF-Archive/repo.1/pull/18))
 - Update Setup Steps ([**#17**](https://github.com/SCPF-Archive/repo.1/pull/17))
 - Update Workflow File ([**#16**](https://github.com/SCPF-Archive/repo.1/pull/16))
 - Add x86_64 and x86 ([**#14**](https://github.com/SCPF-Archive/repo.1/pull/14))
@@ -128,9 +129,6 @@ When you see that you are `# commit/s behind`, update your repo by clicking the 
 
 ## 🐞Bugs
 <details><summary><b>Click to View</b></summary>
-
-**UpToDown**
-- Download Script Broken
 
 **Spotify**
 - `hide-premium-navbar` ([**#621**](https://github.com/revanced/revanced-patches/issues/621))
@@ -162,7 +160,7 @@ When you see that you are `# commit/s behind`, update your repo by clicking the 
 - Icon Pack Studio
 - microG (by [**inotia00**](https://github.com/inotia00))
 - Nova Launcher
-- ~Nyx Music Player~
+- Nyx Music Player
 - Reddit
 - ReVanced Manager
 - Spotify
