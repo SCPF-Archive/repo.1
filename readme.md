@@ -45,7 +45,15 @@ Click the `I understand my workflows, go ahead and enable them.`.
 #### Step 4:
 After you enabled the workflows, click the `Release Latest`.
 
+On Desktop:
+
 ![IMG 004](/.github/assets/img.004.jpg)
+
+On Mobile:
+
+![IMG 011](/.github/assets/img.011.jpg)
+
+![IMG 012](/.github/assets/img.012.jpg)
 
 #### Step 5:
 Click the `Run workflow`.
