@@ -5,7 +5,10 @@ mkdir -p packages/backdrops/versions
 mkdir -p packages/citra.emulator/versions
 mkdir -p packages/icon.pack.studio/versions
 mkdir -p packages/nova.launcher/versions
-mkdir -p packages/nyx/versions
+mkdir -p packages/nyx.music.player/64.v8a/versions
+mkdir -p packages/nyx.music.player/v7a/versions
+mkdir -p packages/nyx.music.player/x86.64/versions
+mkdir -p packages/nyx.music.player/x86/versions
 mkdir -p packages/reddit/versions
 mkdir -p packages/ticktick/64.v8a/versions
 mkdir -p packages/ticktick/v7a/versions
@@ -25,6 +28,10 @@ cp -p assets/versions/latest/versions.json packages/backdrops/versions
 cp -p assets/versions/latest/versions.json packages/citra.emulator/versions
 cp -p assets/versions/latest/versions.json packages/icon.pack.studio/versions
 cp -p assets/versions/latest/versions.json packages/nova.launcher/versions
+cp -p assets/versions/latest/versions.json packages/nyx.music.player/64.v8a/versions
+cp -p assets/versions/latest/versions.json packages/nyx.music.player/v7a/versions
+cp -p assets/versions/latest/versions.json packages/nyx.music.player/x86.64/versions
+cp -p assets/versions/latest/versions.json packages/nyx.music.player/x86/versions
 cp -p assets/versions/latest/versions.json packages/reddit/versions
 cp -p assets/versions/latest/versions.json packages/ticktick/64.v8a/versions
 cp -p assets/versions/latest/versions.json packages/ticktick/v7a/versions
@@ -44,7 +51,10 @@ cp -p assets/patches/universal.patch packages/backdrops
 cp -p assets/patches/universal.patch packages/citra.emulator
 cp -p assets/patches/universal.patch packages/icon.pack.studio
 cp -p assets/patches/universal.patch packages/nova.launcher
-cp -p assets/patches/universal.patch packages/nyx
+cp -p assets/patches/universal.patch packages/nyx.music.player/64.v8a
+cp -p assets/patches/universal.patch packages/nyx.music.player/v7a
+cp -p assets/patches/universal.patch packages/nyx.music.player/x86.64
+cp -p assets/patches/universal.patch packages/nyx.music.player/x86
 cp -p assets/patches/reddit.patch packages/reddit
 cp -p assets/patches/spotify.patch packages/spotify
 cp -p assets/patches/universal.patch packages/ticktick/64.v8a
@@ -65,7 +75,10 @@ cp -p assets/temp/cli/*.jar packages/backdrops/cli.jar
 cp -p assets/temp/cli/*.jar packages/citra.emulator/cli.jar
 cp -p assets/temp/cli/*.jar packages/icon.pack.studio/cli.jar
 cp -p assets/temp/cli/*.jar packages/nova.launcher/cli.jar
-cp -p assets/temp/cli/*.jar packages/nyx/cli.jar
+cp -p assets/temp/cli/*.jar packages/nyx.music.player/64.v8a/cli.jar
+cp -p assets/temp/cli/*.jar packages/nyx.music.player/v7a/cli.jar
+cp -p assets/temp/cli/*.jar packages/nyx.music.player/x86.64/cli.jar
+cp -p assets/temp/cli/*.jar packages/nyx.music.player/x86/cli.jar
 cp -p assets/temp/cli/*.jar packages/reddit/cli.jar
 cp -p assets/temp/cli/*.jar packages/spotify/cli.jar
 cp -p assets/temp/cli/*.jar packages/ticktick/64.v8a/cli.jar
@@ -86,7 +99,10 @@ cp -p assets/temp/integrations/*.apk packages/backdrops/integrations.apk
 cp -p assets/temp/integrations/*.apk packages/citra.emulator/integrations.apk
 cp -p assets/temp/integrations/*.apk packages/icon.pack.studio/integrations.apk
 cp -p assets/temp/integrations/*.apk packages/nova.launcher/integrations.apk
-cp -p assets/temp/integrations/*.apk packages/nyx/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/nyx.music.player/64.v8a/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/nyx.music.player/v7a/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/nyx.music.player/x86.64/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/nyx.music.player/x86/integrations.apk
 cp -p assets/temp/integrations/*.apk packages/reddit/integrations.apk
 cp -p assets/temp/integrations/*.apk packages/spotify/integrations.apk
 cp -p assets/temp/integrations/*.apk packages/ticktick/64.v8a/integrations.apk
@@ -107,7 +123,10 @@ cp -p assets/temp/patches/*.jar packages/backdrops/patches.jar
 cp -p assets/temp/patches/*.jar packages/citra.emulator/patches.jar
 cp -p assets/temp/patches/*.jar packages/icon.pack.studio/patches.jar
 cp -p assets/temp/patches/*.jar packages/nova.launcher/patches.jar
-cp -p assets/temp/patches/*.jar packages/nyx/patches.jar
+cp -p assets/temp/patches/*.jar packages/nyx.music.player/64.v8a/patches.jar
+cp -p assets/temp/patches/*.jar packages/nyx.music.player/v7a/patches.jar
+cp -p assets/temp/patches/*.jar packages/nyx.music.player/x86.64/patches.jar
+cp -p assets/temp/patches/*.jar packages/nyx.music.player/x86/patches.jar
 cp -p assets/temp/patches/*.jar packages/reddit/patches.jar
 cp -p assets/temp/patches/*.jar packages/spotify/patches.jar
 cp -p assets/temp/patches/*.jar packages/ticktick/64.v8a/patches.jar
