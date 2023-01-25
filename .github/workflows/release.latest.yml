@@ -40,6 +40,7 @@ jobs:
 
     - name: Prerequisites
       run: |
+        pwd
         echo "MAIN_TAG=$(date +'%Y.%m.%d')" >> $GITHUB_ENV
         cd revanced/assets/temp && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd ~
         cd revanced && chmod +x copy.latest.files.sh && ./copy.latest.files.sh
