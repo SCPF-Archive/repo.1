@@ -54,7 +54,6 @@ dl_backdrops()
                 "$base_apk")
         declare -r dl_url
         echo "BACKDROPS v${last_ver}"
-        echo "DOWNLOADED FROM: [BACKDROPS - APK MIRROR]($dl_url)"
     fi
 }
 
