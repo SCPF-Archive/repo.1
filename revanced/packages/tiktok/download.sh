@@ -54,7 +54,6 @@ dl_tiktok()
                 "$base_apk")
         declare -r dl_url
         echo "TIKTOK v${last_ver}"
-        echo "DOWNLOADED FROM: [TIKTOK - APK MIRROR]($dl_url)"
     fi
 }
 
