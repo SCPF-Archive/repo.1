@@ -38,5 +38,5 @@ cp -p assets/temp/patches/*.jar packages/*/*/patches.jar
 
 echo "DONE COPYING FILES"
 
-echo "CLEANING TEMP FILES"
+echo "CLEANING CACHE"
 rm -rf assets
