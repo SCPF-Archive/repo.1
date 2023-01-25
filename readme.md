@@ -118,6 +118,7 @@ When you see that you are `# commit/s behind`, update your repo by clicking the 
 ## 📝Changelog
 <details><summary><b>Click to View</b></summary>
 
+- Simplify Workflow ([**#19**](https://github.com/SCPF-Archive/repo.1/pull/19))
 - Fix Nyx Download ([**#18**](https://github.com/SCPF-Archive/repo.1/pull/18))
 - Update Setup Steps ([**#17**](https://github.com/SCPF-Archive/repo.1/pull/17))
 - Update Workflow File ([**#16**](https://github.com/SCPF-Archive/repo.1/pull/16))

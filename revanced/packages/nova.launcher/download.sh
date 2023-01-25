@@ -54,7 +54,6 @@ dl_nova-launcher()
                 "$base_apk")
         declare -r dl_url
         echo "NOVA LAUNCHER v${last_ver}"
-        echo "DOWNLOADED FROM: [NOVA LAUNCHER - APK MIRROR]($dl_url)"
     fi
 }
 

@@ -54,7 +54,6 @@ dl_iconpackstudio()
                 "$base_apk")
         declare -r dl_url
         echo "ICON PACK STUDIO v${last_ver}"
-        echo "DOWNLOADED FROM: [ICON PACK STUDIO - APK MIRROR]($dl_url)"
     fi
 }
 

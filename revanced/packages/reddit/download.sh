@@ -54,7 +54,6 @@ dl_reddit()
                 "$base_apk")
         declare -r dl_url
         echo "REDDIT v${last_ver}"
-        echo "DOWNLOADED FROM: [REDDIT - APK MIRROR]($dl_url)"
     fi
 }
 

@@ -54,7 +54,6 @@ dl_twitch()
                 "$base_apk")
         declare -r dl_url
         echo "TWITCH v${last_ver}"
-        echo "DOWNLOADED FROM: [TWITCH - APK MIRROR]($dl_url)"
     fi
 }
 

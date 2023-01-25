@@ -54,7 +54,6 @@ dl_citra()
                 "$base_apk")
         declare -r dl_url
         echo "CITRA EMULATOR v${last_ver}"
-        echo "DOWNLOADED FROM: [CITRA EMULATOR - APK MIRROR]($dl_url)"
     fi
 }
 
