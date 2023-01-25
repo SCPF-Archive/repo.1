@@ -54,7 +54,6 @@ dl_twitter()
                 "$base_apk")
         declare -r dl_url
         echo "TWITTER v${last_ver}"
-        echo "DOWNLOADED FROM: [TWITTER - APK MIRROR]($dl_url)"
     fi
 }
 
