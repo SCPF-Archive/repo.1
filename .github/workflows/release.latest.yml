@@ -40,9 +40,9 @@ jobs:
 
     - name: Prerequisites
       run: |
-        pwd
+        HOMEDIR="/"$(pwd)
         echo "MAIN_TAG=$(date +'%Y.%m.%d')" >> $GITHUB_ENV
-        cd revanced/assets/temp && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd ~
+        cd revanced/assets/temp && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
         cd revanced && chmod +x copy.latest.files.sh && ./copy.latest.files.sh
 
     - name: Patch Backdrops
