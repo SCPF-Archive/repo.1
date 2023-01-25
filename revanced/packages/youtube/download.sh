@@ -54,7 +54,6 @@ dl_youtube()
                 "$base_apk")
         declare -r dl_url
         echo "YOUTUBE v${last_ver}"
-        echo "DOWNLOADED FROM: [YOUTUBE - APK MIRROR]($dl_url)"
     fi
 }
 
