@@ -5,26 +5,11 @@ wget -nv https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/
 mv uber-apk-signer-1.2.1.jar signer.jar
 
 echo "PREPARING"
-mkdir -p packages/backdrops/output/release
-mkdir -p packages/citra.emulator/output/release
-mkdir -p packages/icon.pack.studio/output/release
-mkdir -p packages/nova.launcher/output/release
-mkdir -p packages/nyx.music.player/64.v8a/output/release
-mkdir -p packages/nyx.music.player/v7a/output/release
-mkdir -p packages/nyx.music.player/x86.64/output/release
-mkdir -p packages/nyx.music.player/x86/output/release
-mkdir -p packages/reddit/output/release
-mkdir -p packages/spotify/output/release
-mkdir -p packages/ticktick/64.v8a/output/release
-mkdir -p packages/ticktick/v7a/output/release
-mkdir -p packages/ticktick/x86.64/output/release
-mkdir -p packages/ticktick/x86/output/release
-mkdir -p packages/tiktok/output/release
-mkdir -p packages/twitch/output/release
-mkdir -p packages/twitter/output/release
-mkdir -p packages/youtube/output/release
-mkdir -p packages/youtube.music/v7a/output/release
-mkdir -p packages/youtube.music/v8a/output/release
+mkdir -p packages/*/output/release
+mkdir -p packages/*/64.v8a/output/release
+mkdir -p packages/*/v7a/output/release
+mkdir -p packages/*/x86.64/output/release
+mkdir -p packages/*/x86/output/release
 mkdir -p release
 
 echo "SIGNING PACKAGES"
