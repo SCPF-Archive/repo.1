@@ -144,5 +144,5 @@ cp -p assets/temp/patches/*.jar packages/youtube/patches.jar
 
 echo "DONE COPYING FILES"
 
-echo "CLEANING TEMP FILES"
+echo "CLEANING CACHE"
 rm -rf assets
