@@ -34,20 +34,16 @@ cd $HOMEDIR
 
 ##########
 
-build_packages ()
-{
-select ITEM in bower npm gem pip
+select ITEM in bower backdrops citra_emulator install_rv
 do
   echo -n "Enter the package name: " && read PACKAGE
   case $ITEM in
-    bower) bower install $PACKAGE ;;
-    npm)   npm   install $PACKAGE ;;
-    gem)   gem   install $PACKAGE ;;
-    pip)   pip   install $PACKAGE ;;
+    backdrops) bower install $PACKAGE ;;
+    citra_emulator)   npm   install $PACKAGE ;;
+    install_rv)   gem   install $PACKAGE ;;
   esac
   break
 done
-}
 
 ##########
 
@@ -59,5 +55,4 @@ install_rv = Download Revanced Prerequisites
 backdrops = Backdrops
 citra.emulator = Citra Emulator
 
-EXAMPLE : ./tmux.sh backdrops
 "
