@@ -143,6 +143,3 @@ cp -p assets/temp/patches/*.jar packages/youtube.music/x86/patches.jar
 cp -p assets/temp/patches/*.jar packages/youtube/patches.jar
 
 echo "DONE COPYING FILES"
-
-echo "CLEANING CACHE"
-rm -rf assets
