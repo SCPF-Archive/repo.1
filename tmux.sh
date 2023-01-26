@@ -36,17 +36,17 @@ cd $HOMEDIR
 
 build_packages ()
 {
-case "$1" in
-  "backdrops"|"citra.emulator")
-    select_apk
-  ;;
-  "install_rv")
-    prerequisites
-  ;;
-  "*")
-    echo "Invalid Argument"
-  ;;
-esac
+select ITEM in bower npm gem pip
+do
+  echo -n "Enter the package name: " && read PACKAGE
+  case $ITEM in
+    bower) bower install $PACKAGE ;;
+    npm)   npm   install $PACKAGE ;;
+    gem)   gem   install $PACKAGE ;;
+    pip)   pip   install $PACKAGE ;;
+  esac
+  break
+done
 }
 
 ##########
