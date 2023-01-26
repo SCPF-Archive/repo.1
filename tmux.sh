@@ -5,15 +5,6 @@ HOMEDIR="$PWD"
 
 ##########
 
-rv_packages ()
-{
-cd revanced/assets/temp
-echo "$(ls cli/*.jar)"
-cd $HOMEDIR
-}
-
-##########
-
 prerequisites ()
 {
 cd revanced/assets/temp && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
@@ -29,7 +20,7 @@ cd revanced/assets/temp && rm -rf cli integrations patches && cd $HOMEDIR
 
 ##########
 
-backdrops ()
+select_backdrops ()
 {
 cd revanced/packages/backdrops
 chmod +x download.sh && ./download.sh && chmod +x compile.sh && ./compile.sh experimental
@@ -39,22 +30,10 @@ cd $HOMEDIR
 
 ##########
 
-check_rv ()
-{
-if [[ rv_packages == "*.jar" ]] ; then
-  echo "ReVanced packages confirmed, proceeding..."
-else
-  prerequisites
-  copy_latest_files
-fi
-}
-
-##########
-
-build ()
+build_packages ()
 {
 if [[ $APPS == "1" ]] ; then
-  backdrops
+  select_backdrops
 elif [[ $APPS == "2" ]] ; then
   echo "NXF Disabled"
 else
@@ -64,7 +43,7 @@ fi
 
 ##########
 
-check_rv && build && sleep 3 && clear
+build_packages && sleep 3 && clear
 
 echo "UNDER DEVELOPMENT
 CHOICES:
