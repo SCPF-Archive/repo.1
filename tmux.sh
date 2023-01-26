@@ -3,9 +3,15 @@
 APPS="$1"
 HOMEDIR="$PWD"
 
+prerequisites ()
+{
+cd revanced/assets/temp && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
+cd revanced && chmod +x copy.latest.files.sh && ./copy.latest.files.sh
+}
+
 backdrops ()
 {
-cd packages/backdrops
+cd revanced/packages/backdrops
 chmod +x download.sh && ./download.sh && chmod +x compile.sh && ./compile.sh experimental
 cd $HOMEDIR
 }
