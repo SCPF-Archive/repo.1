@@ -1,20 +1,19 @@
 #!/bin/bash
 
 APPS="$1"
+HOMEDIR="$PWD"
 
-countdown ()
+backdrops ()
 {
-for i in {5..1}; do
-  echo "$i"
-  sleep 1
-done
-echo "Installation Done"
+cd packages/backdrops
+chmod +x download.sh && ./download.sh && chmod +x compile.sh && ./compile.sh experimental
+cd $HOMEDIR
 }
 
 build ()
 {
 if [[ $APPS == "1" ]] ; then
-  countdown
+  backdrops
 elif [[ $APPS == "2" ]] ; then
   echo "NXF Disabled"
 else
