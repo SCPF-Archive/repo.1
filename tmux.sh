@@ -3,12 +3,30 @@
 APPS="$1"
 HOMEDIR="$PWD"
 
+##########
+
+rv_packages ()
+{
+cd revanced/assets/temp
+echo "$(ls cli/*.jar)"
+}
+
+##########
+
 prerequisites ()
 {
 cd revanced/assets/temp && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
 cd revanced && chmod +x copy.latest.files.sh && ./copy.latest.files.sh && cd $HOMEDIR
+}
+
+##########
+
+copy_latest_files ()
+{
 cd revanced/assets/temp && rm -rf cli integrations patches && cd $HOMEDIR
 }
+
+##########
 
 backdrops ()
 {
@@ -18,10 +36,23 @@ rm -rf *.jar *.apk *.patch versions
 cd $HOMEDIR
 }
 
+##########
+
+check_rv ()
+{
+if [[ rv_packages == "*.jar" ]]
+  echo "ReVanced packages confirmed, proceeding..."
+else
+  prerequisites
+fi
+}
+
+##########
+
 build ()
 {
 if [[ $APPS == "1" ]] ; then
-  prerequisites
+  copy_latest_files
   backdrops
 elif [[ $APPS == "2" ]] ; then
   echo "NXF Disabled"
@@ -30,7 +61,9 @@ else
 fi
 }
 
-build && sleep 3 && clear
+##########
+
+check_rv && build && sleep 3 && clear
 
 echo "UNDER DEVELOPMENT
 CHOICES:
