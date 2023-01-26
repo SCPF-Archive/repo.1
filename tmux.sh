@@ -9,6 +9,7 @@ rv_packages ()
 {
 cd revanced/assets/temp
 echo "$(ls cli/*.jar)"
+cd $HOMEDIR
 }
 
 ##########
@@ -63,7 +64,7 @@ fi
 
 ##########
 
-check_rv && cd $HOMEDIR && build && sleep 3 && clear
+check_rv && build && sleep 3 && clear
 
 echo "UNDER DEVELOPMENT
 CHOICES:
