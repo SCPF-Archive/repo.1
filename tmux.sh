@@ -59,6 +59,5 @@ install_rv = Download Revanced Prerequisites
 backdrops = Backdrops
 citra.emulator = Citra Emulator
 
-NOTE : CHOOSE NUMBER ONLY
 EXAMPLE : ./tmux.sh backdrops
 "
