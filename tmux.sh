@@ -36,14 +36,14 @@ cd $HOMEDIR
 
 build_packages ()
 {
-case "$extension" in
+case "$1" in
   "backdrops"|"citra.emulator")
     select_apk
   ;;
   "install_rv")
     prerequisites
   ;;
-  *)
+  "*")
     echo "Invalid Argument"
   ;;
 esac
