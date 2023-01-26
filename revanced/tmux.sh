@@ -22,7 +22,7 @@ else
 fi
 }
 
-choice_nxf && sleep 3 && clear
+build && sleep 3 && clear
 
 echo "UNDER DEVELOPMENT
 CHOICES:
