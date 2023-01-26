@@ -1,6 +1,6 @@
 #!/bin/bash
 
-NXF="true"
+APPS="$1"
 
 countdown ()
 {
@@ -8,14 +8,14 @@ for i in {5..1}; do
   echo "$i"
   sleep 1
 done
-echo "NXF Installation Done"
+echo "Installation Done"
 }
 
-choice_nxf ()
+build ()
 {
-if [[ $NXF == "true" ]] ; then
+if [[ $APPS == "1" ]] ; then
   countdown
-elif [[ $NXF == "false" ]] ; then
+elif [[ $APPS == "2" ]] ; then
   echo "NXF Disabled"
 else
   echo "Unknown command."
@@ -24,4 +24,11 @@ fi
 
 choice_nxf && sleep 3 && clear
 
-echo "UNDER DEVELOPMENT"
+echo "UNDER DEVELOPMENT
+CHOICES:
+1. Backdrops
+2. Citra Emulator
+
+NOTE : CHOOSE NUMBER ONLY
+EXAMPLE : ./tmux.sh 1
+"
