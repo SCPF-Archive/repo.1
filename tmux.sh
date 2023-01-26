@@ -41,7 +41,7 @@ cd $HOMEDIR
 
 check_rv ()
 {
-if [[ rv_packages == "*.jar" ]]
+if [[ rv_packages == "*.jar" ]] ; then
   echo "ReVanced packages confirmed, proceeding..."
 else
   prerequisites
