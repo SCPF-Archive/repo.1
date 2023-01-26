@@ -45,6 +45,7 @@ if [[ rv_packages == "*.jar" ]] ; then
   echo "ReVanced packages confirmed, proceeding..."
 else
   prerequisites
+  copy_latest_files
 fi
 }
 
@@ -53,7 +54,6 @@ fi
 build ()
 {
 if [[ $APPS == "1" ]] ; then
-  copy_latest_files
   backdrops
 elif [[ $APPS == "2" ]] ; then
   echo "NXF Disabled"
