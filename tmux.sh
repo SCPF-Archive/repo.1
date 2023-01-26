@@ -63,7 +63,7 @@ fi
 
 ##########
 
-check_rv && build && sleep 3 && clear
+check_rv && cd $HOMEDIR && build && sleep 3 && clear
 
 echo "UNDER DEVELOPMENT
 CHOICES:
