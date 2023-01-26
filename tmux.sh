@@ -20,9 +20,13 @@ cd revanced/assets/temp && rm -rf cli integrations patches && cd $HOMEDIR
 
 ##########
 
-select_backdrops ()
+select_apk ()
 {
-cd revanced/packages/backdrops
+cp revanced/assets/versions/latest/versions.json revanced/packages/$1/versions
+cp revanced/assets/temp/cli/*.jar revanced/packages/$1
+cp revanced/assets/temp/integrations/*.apk revanced/packages/$1
+cp revanced/assets/temp/patches/*.jar revanced/packages/$1
+cd revanced/packages/$1
 chmod +x download.sh && ./download.sh && chmod +x compile.sh && ./compile.sh experimental
 rm -rf *.jar *.apk *.patch versions
 cd $HOMEDIR
@@ -32,13 +36,17 @@ cd $HOMEDIR
 
 build_packages ()
 {
-if [[ $APPS == "1" ]] ; then
-  select_backdrops
-elif [[ $APPS == "2" ]] ; then
-  echo "NXF Disabled"
-else
-  echo "Unknown command."
-fi
+case "$extension" in
+  "backdrops"|"citra.emulator")
+    select_apk
+  ;;
+  "install_rv")
+    prerequisites
+  ;;
+  *)
+    echo "Invalid Argument"
+  ;;
+esac
 }
 
 ##########
@@ -47,9 +55,10 @@ build_packages && sleep 3 && clear
 
 echo "UNDER DEVELOPMENT
 CHOICES:
-1. Backdrops
-2. Citra Emulator
+install_rv = Download Revanced Prerequisites
+backdrops = Backdrops
+citra.emulator = Citra Emulator
 
 NOTE : CHOOSE NUMBER ONLY
-EXAMPLE : ./tmux.sh 1
+EXAMPLE : ./tmux.sh backdrops
 "
