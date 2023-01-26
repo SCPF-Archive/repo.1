@@ -13,9 +13,8 @@ cd revanced/assets/temp && rm -rf cli integrations patches && cd $HOMEDIR
 backdrops ()
 {
 cd revanced/packages/backdrops
-rm -rf *.apk
 chmod +x download.sh && ./download.sh && chmod +x compile.sh && ./compile.sh experimental
-rm -rf *.jar *.apk
+rm -rf *.jar *.apk *.patch versions
 cd $HOMEDIR
 }
 
