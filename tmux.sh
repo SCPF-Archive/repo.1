@@ -38,7 +38,6 @@ CHOICES:
 install_rv = Download Revanced Prerequisites
 backdrops = Backdrops
 citra.emulator = Citra Emulator
-
 "
 
 ##########
