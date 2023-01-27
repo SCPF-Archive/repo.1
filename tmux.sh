@@ -25,6 +25,7 @@ cd revanced/assets/temp && rm -rf cli integrations patches && cd $HOMEDIR
 
 select_apk ()
 {
+mkdir revanced/packages/$APKS/versions
 cp revanced/assets/versions/latest/versions.json revanced/packages/$APKS/versions
 cp revanced/assets/temp/cli/*.jar revanced/packages/$ZXYX
 cp revanced/assets/temp/integrations/*.apk revanced/packages/$APKS
