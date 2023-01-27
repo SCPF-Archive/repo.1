@@ -22,11 +22,11 @@ cd revanced/assets/temp && rm -rf cli integrations patches && cd $HOMEDIR
 
 select_apk ()
 {
-cp revanced/assets/versions/latest/versions.json revanced/packages/$1/versions
-cp revanced/assets/temp/cli/*.jar revanced/packages/$1
-cp revanced/assets/temp/integrations/*.apk revanced/packages/$1
-cp revanced/assets/temp/patches/*.jar revanced/packages/$1
-cd revanced/packages/$1
+cp revanced/assets/versions/latest/versions.json revanced/packages/$ZXYX/versions
+cp revanced/assets/temp/cli/*.jar revanced/packages/$ZXYX
+cp revanced/assets/temp/integrations/*.apk revanced/packages/$ZXYX
+cp revanced/assets/temp/patches/*.jar revanced/packages/$ZXYX
+cd revanced/packages/$ZXYX
 chmod +x download.sh && ./download.sh && chmod +x compile.sh && ./compile.sh experimental
 rm -rf *.jar *.apk *.patch versions
 cd $HOMEDIR
@@ -34,25 +34,21 @@ cd $HOMEDIR
 
 ##########
 
-select ITEM in bower backdrops citra_emulator install_rv
+select ZXYX in install_rv backdrops citra.emulator
 do
-  echo -n "Enter the package name: " && read PACKAGE
-  case $ITEM in
-    backdrops) bower install $PACKAGE ;;
-    citra_emulator)   npm   install $PACKAGE ;;
-    install_rv)   gem   install $PACKAGE ;;
+  echo "UNDER DEVELOPMENT
+  CHOICES:
+  install_rv = Download Revanced Prerequisites
+  backdrops = Backdrops
+  citra.emulator = Citra Emulator"
+
+  case $ZXYX in
+    install_rv) prerequisites ;;
+    *) select_apk ;;
   esac
   break
 done
 
-##########
 
-build_packages && sleep 3 && clear
 
-echo "UNDER DEVELOPMENT
-CHOICES:
-install_rv = Download Revanced Prerequisites
-backdrops = Backdrops
-citra.emulator = Citra Emulator
 
-"
