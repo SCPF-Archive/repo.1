@@ -37,15 +37,18 @@ echo "UNDER DEVELOPMENT
 CHOICES:
 install_rv = Download Revanced Prerequisites
 backdrops = Backdrops
-citra.emulator = Citra Emulator"
+citra.emulator = Citra Emulator
+
+"
 
 ##########
 
-select ZXYX in install_rv backdrops citra.emulator
+select ZXYX in "Install ReVanced" "Backdrops" "Citra Emulator" "Exit Script"
 do
   case $ZXYX in
-    install_rv) prerequisites ;;
-    *) select_apk ;;
+    "Install ReVanced") prerequisites ;;
+    "Backdrops") select_apk ;;
+    "Citra Emulator") select_apk ;;
+    *) break ;;
   esac
-  break
 done
