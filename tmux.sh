@@ -11,6 +11,7 @@ clear
 git reset --hard
 git pull
 chmod +x tmux.sh
+clear
 }
 
 ##########
