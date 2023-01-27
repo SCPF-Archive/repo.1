@@ -7,6 +7,7 @@ HOMEDIR="$PWD"
 
 update_script ()
 {
+clear
 git reset --hard
 git pull
 chmod +x tmux.sh
@@ -16,6 +17,7 @@ chmod +x tmux.sh
 
 prerequisites ()
 {
+clear
 cd revanced/assets/temp && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
 cd revanced && chmod +x copy.latest.files.sh && ./copy.latest.files.sh && cd $HOMEDIR
 echo "ReVanced Prerequisites Updated/Installed"
@@ -34,6 +36,7 @@ cd revanced/assets/temp && rm -rf cli integrations patches && cd $HOMEDIR
 
 select_apk ()
 {
+clear
 mkdir revanced/packages/$APKS/versions
 cp revanced/assets/versions/latest/versions.json revanced/packages/$APKS/versions
 cp revanced/assets/temp/cli/*.jar revanced/packages/$ZXYX
@@ -49,6 +52,7 @@ cd $HOMEDIR
 
 wlcmsg ()
 {
+clear
 echo "UNDER DEVELOPMENT
 CHOICES:
 install_rv = Download Revanced Prerequisites
