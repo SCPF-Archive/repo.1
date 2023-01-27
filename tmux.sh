@@ -9,6 +9,9 @@ prerequisites ()
 {
 cd revanced/assets/temp && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
 cd revanced && chmod +x copy.latest.files.sh && ./copy.latest.files.sh && cd $HOMEDIR
+echo "ReVanced Prerequisites Updated/Installed"
+echo "Going back to menu..."
+sleep 3
 }
 
 ##########
@@ -34,22 +37,25 @@ cd $HOMEDIR
 
 ##########
 
+welc_msg ()
+{
 echo "UNDER DEVELOPMENT
 CHOICES:
 install_rv = Download Revanced Prerequisites
 Backdrops = Install Backdrops
 Citra Emulator = Install Citra Emulator
 "
+}
 
 ##########
 
 select ZXYX in "Install ReVanced" "Backdrops" "Citra Emulator" "Exit Script"
 do
   case $ZXYX in
-    "Install ReVanced") prerequisites ;;
-    "Backdrops") APKS="backdrops" && select_apk && unset APKS ;;
-    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS;;
+    "Install ReVanced") prerequisites && clear && welc_msg ;;
+    "Backdrops") APKS="backdrops" && select_apk && unset APKS && clear && welc_msg ;;
+    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && clear && welc_msg ;;
     "Exit Script") break ;;
-    *) echo "Command not valid." ;;
+    *) echo "Command not valid." && clear && welc_msg;;
   esac
 done
