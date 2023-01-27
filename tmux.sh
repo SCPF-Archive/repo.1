@@ -41,10 +41,10 @@ welc_msg ()
 {
 echo "UNDER DEVELOPMENT
 CHOICES:
-1.) install_rv = Download Revanced Prerequisites
-2.) Backdrops = Install Backdrops
-3.) Citra Emulator = Install Citra Emulator
-4.) Exit
+install_rv = Download Revanced Prerequisites
+Backdrops = Install Backdrops
+Citra Emulator = Install Citra Emulator
+Exit = Exit Script
 "
 }
 
@@ -55,10 +55,10 @@ welc_msg
 select ZXYX in "Install ReVanced" "Backdrops" "Citra Emulator" "Exit Script"
 do
   case $ZXYX in
-    "Install ReVanced") prerequisites && clear && welc_msg ;;
-    "Backdrops") APKS="backdrops" && select_apk && unset APKS && welc_msg ;;
-    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && welc_msg ;;
+    "Install ReVanced") prerequisites ;;
+    "Backdrops") APKS="backdrops" && select_apk && unset APKS ;;
+    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS ;;
     "Exit Script") break ;;
-    *) echo "Command not valid." && welc_msg ;;
+    *) echo "Command not valid." ;;
   esac
 done
