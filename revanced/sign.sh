@@ -102,7 +102,7 @@ then
 fi
 
 echo "REMOVING CACHE"
-rm -rf packages
+rm -rf *.jar
 
 echo "DONE SIGNING"
 
