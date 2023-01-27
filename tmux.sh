@@ -49,6 +49,8 @@ Citra Emulator = Install Citra Emulator
 
 ##########
 
+welc_msg
+
 select ZXYX in "Install ReVanced" "Backdrops" "Citra Emulator" "Exit Script"
 do
   case $ZXYX in
