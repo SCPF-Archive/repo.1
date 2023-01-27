@@ -5,20 +5,8 @@ HOMEDIR="$PWD" ## /data/data/com.termux/files/home/dev/revanced
 
 ##########
 
-# This updates the repo.
+# This downloads the ReVanced CLI, Integrations, and Patches.
 
-update_script ()
-{
-clear
-git reset --hard
-git pull
-chmod +x tmux.sh
-clear
-}
-
-##########
-
-# This downloads 
 prerequisites ()
 {
 clear
@@ -38,6 +26,8 @@ cd assets/temp && rm -rf cli integrations patches && cd $HOMEDIR
 
 ##########
 
+# This patches the application.
+
 select_apk ()
 {
 clear
@@ -54,6 +44,8 @@ cd $HOMEDIR
 
 ##########
 
+# This signs the the application.
+
 sign_packages ()
 {
 clear
@@ -66,6 +58,21 @@ cd $HOMEDIR
 }
 
 ##########
+
+# This updates the repo.
+
+update_script ()
+{
+clear
+git reset --hard
+git pull
+chmod +x tmux.sh
+clear
+}
+
+##########
+
+# This is a welcome message.
 
 wlcmsg ()
 {
@@ -80,6 +87,8 @@ Exit = Exit Script
 }
 
 ##########
+
+# This is the main function.
 
 wlcmsg
 
