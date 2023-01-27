@@ -83,7 +83,7 @@ do
     "Install Prerequisites") prerequisites ;;
     "Backdrops") APKS="backdrops" && select_apk && unset APKS && break ;;
     "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && break ;;
-    "Sign Packages") sign_packages ;;
+    "Sign Packages") sign_packages && break ;;
     "Update Script") update_script && break ;;
     "Exit Script") break ;;
     *) echo "Command not valid." ;;
