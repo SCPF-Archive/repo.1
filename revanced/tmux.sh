@@ -53,8 +53,11 @@ cd $HOMEDIR
 
 sign_packages ()
 {
+clear
 chmod +x sign.sh
 ./sign.sh
+clear
+ls release/*
 cd $HOMEDIR
 }
 
