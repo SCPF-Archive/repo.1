@@ -1,9 +1,11 @@
 #!/bin/bash
 
 clear
-HOMEDIR="$PWD" ## home/dev/revanced
+HOMEDIR="$PWD" ## /data/data/com.termux/files/home/dev/revanced
 
 ##########
+
+# This updates the repo.
 
 update_script ()
 {
@@ -16,6 +18,7 @@ clear
 
 ##########
 
+# This downloads 
 prerequisites ()
 {
 clear
@@ -61,6 +64,8 @@ clear
 ls release/*.apk
 cd $HOMEDIR
 }
+
+##########
 
 wlcmsg ()
 {
