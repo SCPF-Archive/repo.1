@@ -49,6 +49,7 @@ do
     "Install ReVanced") prerequisites ;;
     "Backdrops") select_apk ;;
     "Citra Emulator") select_apk ;;
-    *) break ;;
+    "Exit Script") break ;;
+    *) echo "Command not valid, exiting..." && break ;;
   esac
 done
