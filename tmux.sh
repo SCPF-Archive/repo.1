@@ -50,6 +50,6 @@ do
     "Backdrops") APKS="backdrops" && select_apk && unset APKS ;;
     "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS;;
     "Exit Script") break ;;
-    *) echo "Command not valid." && clear ;;
+    *) echo "Command not valid." ;;
   esac
 done
