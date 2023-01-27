@@ -63,9 +63,11 @@ cd $HOMEDIR
 
 move_packages ()
 {
-echo "Moving the packages."
+echo "Moving the packages..."
+cd /
 mkdir /storage/emulated/0/ReVanced
-mv release/*.apk /storage/emulated/0/ReVanced
+mv $HOMEDIR/release/*.apk /storage/emulated/0/ReVanced
+cd $HOMEDIR
 }
 
 ##########
