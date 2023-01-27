@@ -38,7 +38,7 @@ cd $HOMEDIR
 
 ##########
 
-welc_msg ()
+wlcmsg ()
 {
 echo "UNDER DEVELOPMENT
 CHOICES:
@@ -51,14 +51,14 @@ Exit = Exit Script
 
 ##########
 
-welc_msg
+wlcmsg
 
 select ZXYX in "Install ReVanced" "Backdrops" "Citra Emulator" "Exit Script"
 do
   case $ZXYX in
     "Install ReVanced") prerequisites ;;
-    "Backdrops") APKS="backdrops" && select_apk && unset APKS && ./$0 ;;
-    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && ./$0 ;;
+    "Backdrops") APKS="backdrops" && select_apk && unset APKS && wlcmsg ;;
+    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && wlcmsg ;;
     "Exit Script") break ;;
     *) echo "Command not valid." ;;
   esac
