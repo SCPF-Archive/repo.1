@@ -54,8 +54,8 @@ cd $HOMEDIR
 sign_packages ()
 {
 cd revanced
-chmod +x sign2.sh
-./sign2.sh
+chmod +x sign.tmux.sh
+./sign.tmux.sh
 cd ..
 }
 
