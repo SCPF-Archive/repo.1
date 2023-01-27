@@ -74,7 +74,7 @@ Exit = Exit Script
 
 wlcmsg
 
-select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Update Script" "Exit Script"
+select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Sign Packages" "Update Script" "Exit Script"
 do
   case $ZXYX in
     "Install Prerequisites") prerequisites ;;
