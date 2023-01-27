@@ -33,14 +33,16 @@ cd $HOMEDIR
 
 ##########
 
+echo "UNDER DEVELOPMENT
+CHOICES:
+install_rv = Download Revanced Prerequisites
+backdrops = Backdrops
+citra.emulator = Citra Emulator"
+
+##########
+
 select ZXYX in install_rv backdrops citra.emulator
 do
-  echo "UNDER DEVELOPMENT
-  CHOICES:
-  install_rv = Download Revanced Prerequisites
-  backdrops = Backdrops
-  citra.emulator = Citra Emulator"
-
   case $ZXYX in
     install_rv) prerequisites ;;
     *) select_apk ;;
