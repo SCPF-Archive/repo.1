@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear
-HOMEDIR="$PWD"
+HOMEDIR="$PWD" ## home/dev/revanced
 
 ##########
 
@@ -19,8 +19,8 @@ clear
 prerequisites ()
 {
 clear
-cd revanced/assets/temp && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
-cd revanced && chmod +x copy.latest.files.sh && ./copy.latest.files.sh && cd $HOMEDIR
+cd assets/temp && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
+chmod +x copy.latest.files.sh && ./copy.latest.files.sh && cd $HOMEDIR
 echo "ReVanced Prerequisites Updated/Installed"
 echo "Going back to menu..."
 sleep 3
@@ -30,7 +30,7 @@ sleep 3
 
 copy_latest_files ()
 {
-cd revanced/assets/temp && rm -rf cli integrations patches && cd $HOMEDIR
+cd assets/temp && rm -rf cli integrations patches && cd $HOMEDIR
 }
 
 ##########
@@ -38,12 +38,12 @@ cd revanced/assets/temp && rm -rf cli integrations patches && cd $HOMEDIR
 select_apk ()
 {
 clear
-mkdir revanced/packages/$APKS/versions
-cp revanced/assets/versions/latest/versions.json revanced/packages/$APKS/versions
-cp revanced/assets/temp/cli/*.jar revanced/packages/$ZXYX
-cp revanced/assets/temp/integrations/*.apk revanced/packages/$APKS
-cp revanced/assets/temp/patches/*.jar revanced/packages/$APKS
-cd revanced/packages/$APKS
+mkdir packages/$APKS/versions
+cp assets/versions/latest/versions.json revanced/packages/$APKS/versions
+cp assets/temp/cli/*.jar revanced/packages/$ZXYX
+cp assets/temp/integrations/*.apk revanced/packages/$APKS
+cp assets/temp/patches/*.jar revanced/packages/$APKS
+cd packages/$APKS
 chmod +x download.sh && ./download.sh && chmod +x compile.sh && ./compile.sh experimental
 rm -rf *.jar *.apk *.patch versions
 cd $HOMEDIR
@@ -53,10 +53,9 @@ cd $HOMEDIR
 
 sign_packages ()
 {
-cd revanced
-chmod +x sign.tmux.sh
-./sign.tmux.sh
-cd ..
+chmod +x sign.sh
+./sign.sh
+cd $HOMEDIR
 }
 
 wlcmsg ()
