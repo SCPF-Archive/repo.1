@@ -1,6 +1,5 @@
 #!/bin/bash
 
-APPS="$1"
 HOMEDIR="$PWD"
 
 ##########
