@@ -56,6 +56,7 @@ sign_packages ()
 clear
 chmod +x sign.sh
 ./sign.sh
+rm -rf packages/$APKS/output/release/*.apk
 clear
 ls release/*.apk
 cd $HOMEDIR
