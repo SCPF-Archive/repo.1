@@ -47,7 +47,3 @@ do
   esac
   break
 done
-
-
-
-
