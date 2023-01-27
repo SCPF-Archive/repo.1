@@ -41,9 +41,10 @@ welc_msg ()
 {
 echo "UNDER DEVELOPMENT
 CHOICES:
-install_rv = Download Revanced Prerequisites
-Backdrops = Install Backdrops
-Citra Emulator = Install Citra Emulator
+1.) install_rv = Download Revanced Prerequisites
+2.) Backdrops = Install Backdrops
+3.) Citra Emulator = Install Citra Emulator
+4.) Exit
 "
 }
 
