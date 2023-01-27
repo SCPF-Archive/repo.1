@@ -57,7 +57,7 @@ clear
 chmod +x sign.sh
 ./sign.sh
 clear
-ls release/*
+ls release/*.apk
 cd $HOMEDIR
 }
 
