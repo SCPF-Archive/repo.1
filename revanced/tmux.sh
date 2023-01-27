@@ -90,7 +90,34 @@ clear
 wlcmsg ()
 {
 clear
-echo "UNDER DEVELOPMENT
+echo "
+                                                  
+                 .,...........',.                 
+                .:'            ,;                 
+              .';'              ,;..              
+           .','..      ....      .',,'.           
+         .,,.       .';kXKd,'.       ';,.         
+       .,;.     'cdOOkkXWWKkkOkd:.     .;,        
+      .:'    .;kKkl;.. oNXc ..;oO0x,     ,:.      
+     .:.    ,kKd,      oNXc      ;kKx.    ':.     
+    .:'    :K0;      .c0WNO:.      :K0,    ,;.    
+    ;;    ;K0'        cXMMK;        ;K0'    ;,    
+   .:.   .xNc          :kx;          oNo    ';    
+   .:.   .O0'                        ;Xk.   .:.   
+   ':.   .O0,     ......  .....      ;Xk.   .:.   
+  ':.    .dNl    .d0KKd.  'xK00o.    oNl     ':.  
+.;,.      '0K;..cx0XNx.    'ONKOd:..:Xk.      .,;.
+'c.        :XXOOd:..,.      .,.'cxO0XK,        .c.
+ .:.      .lkOX0:.              .cKXOkc       ':. 
+  .:'      .. 'd00dc,... ....,cx0Oo' ..      ,:.  
+   .;;.         .;lxkkkkkkkkkkxl,.          ;;.   
+     ,:...''.        ..''''..        ......:,     
+      .,'...''''..              ..'''''.'',.      
+              ..'''''''....'''''''..              
+                     .........                    
+                                                  
+
+UNDER DEVELOPMENT
 CHOICES:
 Install Prerequisites = Download ReVanced Prerequisites
 Backdrops = Patch Backdrops
