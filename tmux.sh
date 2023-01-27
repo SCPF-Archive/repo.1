@@ -5,6 +5,15 @@ HOMEDIR="$PWD"
 
 ##########
 
+update_script ()
+{
+git reset --hard
+git pull
+chmod +x tmux.sh
+}
+
+##########
+
 prerequisites ()
 {
 cd revanced/assets/temp && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
@@ -53,14 +62,14 @@ Exit = Exit Script
 
 wlcmsg
 
-select ZXYX in "Install ReVanced" "Backdrops" "Citra Emulator" "Exit Script"
+select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Update Script" "Exit Script"
 do
   case $ZXYX in
-    "Install ReVanced") prerequisites ;;
+    "Install Prerequisites") prerequisites ;;
     "Backdrops") APKS="backdrops" && select_apk && unset APKS && break ;;
     "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && break ;;
+    "Update Script") update_script && break ;;
     "Exit Script") break ;;
     *) echo "Command not valid." ;;
   esac
-./$0
 done
