@@ -51,6 +51,14 @@ cd $HOMEDIR
 
 ##########
 
+sign_packages ()
+{
+cd revanced
+chmod +x sign2.sh
+./sign2.sh
+cd ..
+}
+
 wlcmsg ()
 {
 clear
@@ -73,6 +81,7 @@ do
     "Install Prerequisites") prerequisites ;;
     "Backdrops") APKS="backdrops" && select_apk && unset APKS && break ;;
     "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && break ;;
+    "Sign Packages") sign_packages ;;
     "Update Script") update_script && break ;;
     "Exit Script") break ;;
     *) echo "Command not valid." ;;
