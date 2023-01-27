@@ -57,8 +57,8 @@ select ZXYX in "Install ReVanced" "Backdrops" "Citra Emulator" "Exit Script"
 do
   case $ZXYX in
     "Install ReVanced") prerequisites ;;
-    "Backdrops") APKS="backdrops" && select_apk && unset APKS ;;
-    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS ;;
+    "Backdrops") APKS="backdrops" && select_apk && unset APKS && ./$0 ;;
+    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && ./$0 ;;
     "Exit Script") break ;;
     *) echo "Command not valid." ;;
   esac
