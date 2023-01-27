@@ -13,7 +13,7 @@ clear
 cd assets/temp && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
 chmod +x copy.latest.files.sh && ./copy.latest.files.sh && cd $HOMEDIR
 echo "ReVanced Prerequisites Updated/Installed"
-echo "Going back to menu..."
+echo "Going back to the menu..."
 sleep 3
 }
 
@@ -26,7 +26,7 @@ cd assets/temp && rm -rf cli integrations patches && cd $HOMEDIR
 
 ##########
 
-# This patches the application.
+# This patches the packages.
 
 select_apk ()
 {
@@ -44,7 +44,7 @@ cd $HOMEDIR
 
 ##########
 
-# This signs the the application.
+# This signs the the packages.
 
 sign_packages ()
 {
@@ -55,6 +55,17 @@ rm -rf packages/$APKS/output
 clear
 ls release/*.apk
 cd $HOMEDIR
+}
+
+##########
+
+# This moves the packages to internal storage.
+
+move_packages ()
+{
+echo "Moving the packages."
+mkdir /storage/emulated/0/ReVanced
+mv release/*.apk /storage/emulated/0/ReVanced
 }
 
 ##########
@@ -79,9 +90,9 @@ wlcmsg ()
 clear
 echo "UNDER DEVELOPMENT
 CHOICES:
-install_rv = Download Revanced Prerequisites
-Backdrops = Install Backdrops
-Citra Emulator = Install Citra Emulator
+Install Prerequisites = Download ReVanced Prerequisites
+Backdrops = Patch Backdrops
+Citra Emulator = Patch Citra Emulator
 Exit = Exit Script
 "
 }
@@ -92,13 +103,14 @@ Exit = Exit Script
 
 wlcmsg
 
-select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Sign Packages" "Update Script" "Exit Script"
+select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Sign Packages" "Move Packages" "Update Script" "Exit Script"
 do
   case $ZXYX in
     "Install Prerequisites") prerequisites ;;
     "Backdrops") APKS="backdrops" && select_apk && unset APKS && break ;;
     "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && break ;;
     "Sign Packages") sign_packages && break ;;
+    "Move Packages") move_packages && break ;;
     "Update Script") update_script && break ;;
     "Exit Script") break ;;
     *) echo "Command not valid." ;;
