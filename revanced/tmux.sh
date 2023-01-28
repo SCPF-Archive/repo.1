@@ -155,7 +155,7 @@ do
     "Sign Packages") sign_packages && break ;;
     "Move Packages") move_packages && break ;;
     "Update Script") update_script && break ;;
-    "Script Info") script_info ;;
+    "Script Info") script_info && break ;;
     "Exit Script") clear && break ;;
     *) echo "Command not valid." ;;
   esac
