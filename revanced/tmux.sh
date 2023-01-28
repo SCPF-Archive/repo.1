@@ -89,10 +89,17 @@ clear
 
 script_info ()
 {
-echo "The script is under development.
+echo "
+The script is under development.
 
-In this script, you can patch the supported Revanced applications without even using the official ReVanced Manager.
-If you already have Termux, why do bother installing the ReVanced Manager when you can patch it in here?
+In this script, you can patch the
+supported Revanced applications without
+even using the official ReVanced Manager.
+
+If you already have Termux,
+why do bother installing the
+ReVanced Manager when you can
+patch it in here?
 "
 }
 
