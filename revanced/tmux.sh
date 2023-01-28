@@ -167,7 +167,8 @@ select ZXYX in \
 do
   case $ZXYX in
     "Install Prerequisites") prerequisites && rerun_script && break ;;
-    "backdrops","citra.emulator") APKS="$ZXYX" && select_apk && sign_and_move_packages && unset APKS ;;
+    "backdrops") APKS="$ZXYX" && select_apk && sign_and_move_packages && unset APKS ;;
+    "citra.emulator") APKS="$ZXYX" && select_apk && sign_and_move_packages && unset APKS ;;
     "Update Script") update_script && rerun_script && break ;;
     "Script Info") script_info ;;
     "Exit Script") clear && break ;;
