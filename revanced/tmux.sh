@@ -148,12 +148,11 @@ THE SCRIPT IS UNDER DEVELOPMENT.
 
 In this script, you can patch the supported
 Revanced applications without even using
-the official ReVanced Manager. If you
-already have Termux, why do bother
-installing the ReVanced Manager when you
-can patch it in here? All the patched
-packages are moved in the ReVanced folder
-in the internal storage.
+the official ReVanced Manager. If you already
+have Termux, why do bother installing the
+ReVanced Manager when you can patch it in here?
+All the patched packages are moved in the
+ReVanced folder in the internal storage.
 "
 read -n 1 -s -r -p "Press any key to continue..."
 clear
