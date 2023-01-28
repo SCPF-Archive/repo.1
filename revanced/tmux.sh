@@ -112,16 +112,29 @@ APKS="$MKMF"
 select_apk
 sign_and_move_packages
 unset APKS
+echo "Going back to main menu in..."
+for fjos in {3..1} ; do
+  echo "$fjos"
+  sleep 1
+done
 }
 
 uncased_2 ()
 {
 APKS="$MKMF"
 mkdir $HOMEDIR/release
+mkdir /storage/emulated/0/ReVanced
 cd $HOMEDIR/packages/$MKMF
 chmod +x download.sh && ./download.sh
-mv -v $HOMEDIR/packages/$APKS/*.apk release/$APKS.apk
+mv $HOMEDIR/packages/$APKS/*.apk $HOMEDIR/release/$APKS.apk
+rm -f /storage/emulated/0/ReVanced/$APKS.apk
+mv $HOMEDIR/release/*.apk /storage/emulated/0/ReVanced 
 unset APKS
+echo "Going back to main menu in..."
+for fjos in {3..1} ; do
+  echo "$fjos"
+  sleep 1
+done
 }
 
 ##########
