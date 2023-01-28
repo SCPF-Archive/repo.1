@@ -21,7 +21,7 @@
 
 </details>
 
-## 🤔How to setup?
+## 🤔Setup to GitHub
 <details><summary><b>Click to View</b></summary>
 
 #### Step 0:
@@ -115,7 +115,9 @@ When you see that you are `# commit/s behind`, update your repo by clicking the 
 
 </details>
 
-## 📱Setup Termux
+## 📱Setup to Termux
+<details><summary><b>Click to View</b></summary>
+
 > Termux script currently in development but feel free to try it out first.
 
 One by one command.
@@ -131,6 +133,8 @@ One liner command.
 ```bash
 pkg upgrade git && git clone https://github.com/SCPF-Archive/repo.1 && cd repo.1/revanced && chmod +x tmux.sh &&./tmux.sh
 ```
+
+</details>
 
 ## 📝Changelog
 <details><summary><b>Click to View</b></summary>
