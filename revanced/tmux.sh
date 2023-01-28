@@ -194,7 +194,6 @@ do
         "Return Back") rerun_script && break ;;
         *) echo "Command not valid." ;;
       esac
-    done
     "Update Script") update_script && rerun_script && break ;;
     "Script Info") script_info ;;
     "Exit Script") clear && break ;;
