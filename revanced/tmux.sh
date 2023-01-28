@@ -26,10 +26,10 @@ prerequisites ()
 clear
 cd assets/temp
 check_rv=$(ls cli/*.jar)
-if [[ $check_rv == "" ]] ; then
+if [[ -z "$check_rv" ]] ; then
   chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
   echo "ReVanced Prerequisites Updated/Installed"
-elif [[ $check_rv == "*.jar"]] ; then
+elif [[ -n "$check_rv" ]] ; then
   echo "ReVanced Prerequisites Already Updated/Installed"
 fi
 cd $HOMEDIR
