@@ -232,7 +232,6 @@ wlcmsg ()
 clear
 cat assets/banner/scpf.logo.txt
 sleep 2
-clear
 script_info
 }
 
