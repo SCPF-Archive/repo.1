@@ -24,7 +24,7 @@ done
 prerequisites ()
 {
 clear
-cd assets/temp
+cd $HOMEDIR/assets/temp
 check_rv=$(ls cli/*.jar)
 if [[ -z "$check_rv" ]] ; then
   chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
@@ -43,16 +43,16 @@ select_apk ()
 {
 clear
 
-if [ -f "packages/$APKS/output/*.apk" ] ; then
+if [ -f "$HOMEDIR/packages/$APKS/output/*.apk" ] ; then
   echo "Already patched, skipping download..."
 else
-  mkdir packages/$APKS/versions
-  cp assets/versions/latest/versions.json packages/$APKS/versions
-  cp assets/patches/*.patch packages/$APKS
-  cp assets/temp/cli/*.jar packages/$APKS/cli.jar
-  cp assets/temp/integrations/*.apk packages/$APKS/integrations.apk
-  cp assets/temp/patches/*.jar packages/$APKS/patches.jar
-  cd packages/$APKS
+  mkdir $HOMEDIR/packages/$APKS/versions
+  cp $HOMEDIR/assets/versions/latest/versions.json $HOMEDIR/packages/$APKS/versions
+  cp $HOMEDIR/assets/patches/*.patch $HOMEDIR/packages/$APKS
+  cp $HOMEDIR/assets/temp/cli/*.jar $HOMEDIR/packages/$APKS/cli.jar
+  cp $HOMEDIR/assets/temp/integrations/*.apk $HOMEDIR/packages/$APKS/integrations.apk
+  cp $HOMEDIR/assets/temp/patches/*.jar $HOMEDIR/packages/$APKS/patches.jar
+  cd $HOMEDIR/packages/$APKS
   chmod +x download.sh && ./download.sh
   chmod +x compile.sh && ./compile.sh experimental
   rm -rf *.jar *.apk *.patch versions
@@ -69,23 +69,23 @@ sign_and_move_packages ()
 clear
 
 echo "Downloading signer..."
-if [ -f "signer.jar" ] ; then
+if [ -f "$HOMEDIR/signer.jar" ] ; then
   echo "APK Signer already downloaded..."
 else
   wget -nv https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/uber-apk-signer-1.2.1.jar
   mv uber-apk-signer-1.2.1.jar signer.jar
 fi
 
-if [ -f "release/$APKS.apk" ] ; then
+if [ -f "$HOMEDIR/release/$APKS.apk" ] ; then
   echo "Already signed, skip signing..."
 else
   echo "Making directories..."
-  mkdir packages/$APKS/output/release
-  mkdir release
+  mkdir $HOMEDIR/packages/$APKS/output/release
+  mkdir $HOMEDIR/release
 
   echo "Signing packages..."
-  java -jar signer.jar --allowResign -a packages/$APKS/output -o packages/$APKS/output/release
-  mv -v packages/$APKS/output/release/*.apk release/$APKS.apk
+  java -jar signer.jar --allowResign -a $HOMEDIR/packages/$APKS/output -o $HOMEDIR/packages/$APKS/output/release
+  mv -v $HOMEDIR/packages/$APKS/output/release/*.apk $HOMEDIR/release/$APKS.apk
 fi
 
 echo "Moving the packages..."
