@@ -123,8 +123,6 @@ do
     "Exit Script") clear && break ;;
     *) echo "Command not valid." ;;
   esac
-fi
-
 done
 }
 
