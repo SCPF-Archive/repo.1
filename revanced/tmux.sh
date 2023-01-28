@@ -27,6 +27,7 @@ clear
 cd $HOMEDIR/assets/temp
 check_rv=$(ls cli/*.jar)
 if [[ -z "$check_rv" ]] ; then
+  pkg upgrade openjdk-17 wget jq aapt zipalign
   chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
   echo "ReVanced Prerequisites Updated/Installed"
 elif [[ -n "$check_rv" ]] ; then
