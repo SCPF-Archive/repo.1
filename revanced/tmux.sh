@@ -102,6 +102,7 @@ why do bother installing the
 ReVanced Manager when you can
 patch it in here?
 "
+exit && ./$0
 }
 
 ##########
