@@ -14,7 +14,7 @@ for zdf in {3..1} ; do
   echo "$zdf"
   sleep 1
 done
-./$0
+./tmux.sh
 }
 
 ##########
