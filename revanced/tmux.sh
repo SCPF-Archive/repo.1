@@ -61,10 +61,33 @@ cd $HOMEDIR
 sign_packages ()
 {
 clear
-chmod +x sign.sh
-./sign.sh
-rm -rf packages/$APKS/output
+
+echo "Downloading signer..."
+if [ -f "signer.jar" ] ; then
+  echo "APK Signer already downloaded..."
+else
+  wget -nv https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/uber-apk-signer-1.2.1.jar
+  mv uber-apk-signer-1.2.1.jar signer.jar
+fi
+
+if [ -f "release/$APKS.apk" ] ; then
+  echo "Already signed, skip signing..."
+else
+  echo "Making directories..."
+  mkdir packages/$APKS/output/release
+  mkdir release
+
+  echo "Signing packages..."
+  java -jar signer.jar --allowResign -a packages/$APKS/output -o packages/$APKS/output/release
+  mv -v packages/$APKS/output/release/*.apk release/$APKS.apk
+fi
+
+echo "Moving the packages..."
+cd /
+mkdir /storage/emulated/0/ReVanced
+mv $HOMEDIR/release/*.apk /storage/emulated/0/ReVanced
 cd $HOMEDIR
+
 }
 
 ##########
@@ -73,11 +96,7 @@ cd $HOMEDIR
 
 move_packages ()
 {
-echo "Moving the packages..."
-cd /
-mkdir /storage/emulated/0/ReVanced
-mv $HOMEDIR/release/*.apk /storage/emulated/0/ReVanced
-cd $HOMEDIR
+
 }
 
 ##########
