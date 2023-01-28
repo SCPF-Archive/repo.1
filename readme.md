@@ -116,6 +116,8 @@ When you see that you are `# commit/s behind`, update your repo by clicking the 
 </details>
 
 ## 📱Setup Termux
+> Termux script currently in development but feel free to try it out first.
+
 One by one command.
 ```bash
 pkg upgrade git
