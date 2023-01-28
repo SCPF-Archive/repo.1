@@ -119,13 +119,10 @@ do
     "Sign Packages") sign_packages && break ;;
     "Move Packages") move_packages && break ;;
     "Update Script") update_script && break ;;
-    "Script Info") script_info && break ;;
+    "Script Info") script_info && ./$0 ;;
     "Exit Script") clear && break ;;
     *) echo "Command not valid." ;;
   esac
-
-if [[ $ZXYX == "Script Info" ]] ; then
-  exit && ./$0
 fi
 
 done
@@ -165,7 +162,7 @@ echo "
                      .........                    
                                                  
 "
-sleep 3
+sleep 1
 }
 
 ##########
