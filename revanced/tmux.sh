@@ -225,7 +225,7 @@ done
 wlcmsg ()
 {
 clear
-echo ""
+cat scpf.logo.txt
 }
 
 ##########
