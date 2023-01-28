@@ -114,6 +114,16 @@ sign_and_move_packages
 unset APKS
 }
 
+uncased_2 ()
+{
+APKS="$MKMF"
+mkdir $HOMEDIR/release
+cd $HOMEDIR/packages/$MKMF
+chmod +x download.sh && ./download.sh
+mv -v $HOMEDIR/packages/$APKS/*.apk release/$APKS.apk
+unset APKS
+}
+
 ##########
 
 # This updates the repo.
@@ -133,24 +143,23 @@ clear
 
 script_info ()
 {
-echo "
-THE SCRIPT IS UNDER DEVELOPMENT.
-
-In this script, you can patch the
-supported Revanced applications without
-even using the official ReVanced Manager.
-
-If you already have Termux,
-why do bother installing the
-ReVanced Manager when you can
-patch it in here?
-
-All the patched packages are
-moved in the ReVanced folder in
-the internal storage.
+echo "THE SCRIPT IS UNDER DEVELOPMENT.
+In this script, you can patch the supported Revanced applications without even using the official ReVanced Manager. If you already have Termux, why do bother installing the ReVanced Manager when you can patch it in here? All the patched packages are moved in the ReVanced folder in the internal storage.
 "
 read -n 1 -s -r -p "Press any key to continue..."
 clear
+}
+
+##########
+
+# This is a welcome message.
+
+wlcmsg ()
+{
+clear
+cat assets/banner/scpf.logo.txt
+sleep 1
+script_info
 }
 
 ##########
@@ -170,19 +179,20 @@ do
       clear
       echo "Please select a number..."
       echo ""
-      select MKMF in "backdrops" "citra.emulator" "icon.pack.studio" "microg" "nova.launcher" "nyx.music.player/64.v8a" "nyx.music.player/v7a" "nyx.music.player/x86.64" "nyx.music.player/x86" "reddit" "spotify" "ticktick/64.v8a" "ticktick/v7a" "ticktick/x86.64" "ticktick/x86" "tiktok" "twitch" "twitter" "youtube.music/64.v8a" "youtube.music/v7a" "youtube.music/x86.64" "youtube.music/x86" "youtube" "Return Back"
+      select MKMF in "backdrops" "citra.emulator" "icon.pack.studio" "microg" "nova.launcher" "nyx.music.player/64.v8a" "nyx.music.player/v7a" "nyx.music.player/x86.64" "nyx.music.player/x86" "reddit" "revanced.manager" "spotify" "ticktick/64.v8a" "ticktick/v7a" "ticktick/x86.64" "ticktick/x86" "tiktok" "twitch" "twitter" "youtube.music/64.v8a" "youtube.music/v7a" "youtube.music/x86.64" "youtube.music/x86" "youtube" "Return Back"
       do
         case $MKMF in
           "backdrops") uncased ;;
           "citra.emulator") uncased ;;
           "icon.pack.studio") uncased ;;
-          "microg") cd $HOMEDIR/packages/$MKMF && chmod +x download.sh && ./download.sh && cd $HOMDEDIR && sign_and_move_packages ;;
+          "microg") uncased_2 ;;
           "nova.launcher") uncased ;;
           "nyx.music.player/64.v8a") uncased ;;
           "nyx.music.player/v7a") uncased ;;
           "nyx.music.player/x86.64") uncased ;;
           "nyx.music.player/x86") uncased ;;
           "reddit") uncased ;;
+          "revanced.manager") uncased_2 ;;
           "spotify") uncased ;;
           "ticktick/64.v8a") uncased ;;
           "ticktick/v7a") uncased ;;
@@ -206,18 +216,6 @@ do
     *) echo "Command not valid." ;;
   esac
 done
-}
-
-##########
-
-# This is a welcome message.
-
-wlcmsg ()
-{
-clear
-cat assets/banner/scpf.logo.txt
-sleep 1
-script_info
 }
 
 ##########
