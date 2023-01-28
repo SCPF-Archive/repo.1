@@ -112,6 +112,10 @@ If you already have Termux,
 why do bother installing the
 ReVanced Manager when you can
 patch it in here?
+
+All the patched packages are
+moved in the ReVanced folder in
+the internal storage.
 "
 }
 
@@ -125,10 +129,8 @@ select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Sign Packag
 do
   case $ZXYX in
     "Install Prerequisites") prerequisites && rerun_script && break ;;
-    "Backdrops") APKS="backdrops" && select_apk && unset APKS && break ;;
-    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && rerun_script && break ;;
-    "Sign Packages") sign_packages && rerun_script && break ;;
-    "Move Packages") move_packages && rerun_script && break ;;
+    "Backdrops") APKS="backdrops" && select_apk && unset APKS && sign_packages && move_packages && rerun_script && break ;;
+    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && sign_packages && move_packages && rerun_script && break ;;
     "Update Script") update_script && rerun_script && break ;;
     "Script Info") script_info ;;
     "Exit Script") clear && break ;;
