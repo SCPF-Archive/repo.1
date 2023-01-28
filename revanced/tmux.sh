@@ -42,15 +42,21 @@ cd $HOMEDIR
 select_apk ()
 {
 clear
-mkdir packages/$APKS/versions
-cp assets/versions/latest/versions.json packages/$APKS/versions
-cp assets/patches/*.patch packages/$APKS
-cp assets/temp/cli/*.jar packages/$APKS/cli.jar
-cp assets/temp/integrations/*.apk packages/$APKS/integrations.apk
-cp assets/temp/patches/*.jar packages/$APKS/patches.jar
-cd packages/$APKS
-chmod +x download.sh && ./download.sh && chmod +x compile.sh && ./compile.sh experimental
-rm -rf *.jar *.apk *.patch versions
+
+if [ -f "packages/$APKS/output/*.apk" ] ; then
+  echo "Already patched, skipping download..."
+else
+  mkdir packages/$APKS/versions
+  cp assets/versions/latest/versions.json packages/$APKS/versions
+  cp assets/patches/*.patch packages/$APKS
+  cp assets/temp/cli/*.jar packages/$APKS/cli.jar
+  cp assets/temp/integrations/*.apk packages/$APKS/integrations.apk
+  cp assets/temp/patches/*.jar packages/$APKS/patches.jar
+  cd packages/$APKS
+  chmod +x download.sh && ./download.sh
+  chmod +x compile.sh && ./compile.sh experimental
+  rm -rf *.jar *.apk *.patch versions
+fi
 cd $HOMEDIR
 }
 
