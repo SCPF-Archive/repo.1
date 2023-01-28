@@ -44,8 +44,8 @@ select_apk ()
 clear
 mkdir packages/$APKS/versions
 cp assets/versions/latest/versions.json packages/$APKS/versions
-cp assets/patches/*.patch packages/$ZXYX
-cp assets/temp/cli/*.jar packages/$ZXYX/cli.jar
+cp assets/patches/*.patch packages/$APKS
+cp assets/temp/cli/*.jar packages/$APKS/cli.jar
 cp assets/temp/integrations/*.apk packages/$APKS/integrations.apk
 cp assets/temp/patches/*.jar packages/$APKS/patches.jar
 cd packages/$APKS
