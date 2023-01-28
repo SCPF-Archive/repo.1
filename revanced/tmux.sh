@@ -115,12 +115,12 @@ select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Sign Packag
 do
   case $ZXYX in
     "Install Prerequisites") prerequisites ;;
-    "Backdrops") APKS="backdrops" && select_apk && unset APKS && rerun_script && break ;;
-    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && rerun_script && break ;;
-    "Sign Packages") sign_packages && rerun_script && break ;;
-    "Move Packages") move_packages && rerun_script && break ;;
+    "Backdrops") APKS="backdrops" && select_apk && unset APKS && break ;;
+    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && break ;;
+    "Sign Packages") sign_packages && break ;;
+    "Move Packages") move_packages && break ;;
     "Update Script") update_script && rerun_script && break ;;
-    "Script Info") script_info && rerun_script && break ;;
+    "Script Info") script_info && break ;;
     "Exit Script") clear && break ;;
     *) echo "Command not valid." ;;
   esac
