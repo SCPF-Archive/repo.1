@@ -128,8 +128,8 @@ select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Update Scri
 do
   case $ZXYX in
     "Install Prerequisites") prerequisites && rerun_script && break ;;
-    "Backdrops") APKS="backdrops" && select_apk && unset APKS && sign_packages && move_packages && rerun_script && break ;;
-    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && sign_packages && move_packages && rerun_script && break ;;
+    "Backdrops") APKS="backdrops" && select_apk && unset APKS && sign_packages && move_packages && rerun_script ;;
+    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && sign_packages && move_packages && rerun_script ;;
     "Update Script") update_script && rerun_script && break ;;
     "Script Info") script_info ;;
     "Exit Script") clear && break ;;
