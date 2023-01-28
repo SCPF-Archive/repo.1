@@ -5,20 +5,6 @@ HOMEDIR="$PWD" ## /data/data/com.termux/files/home/dev/revanced
 
 ##########
 
-# This restarts the script.
-
-rerun_script ()
-{
-echo "Restarting Script"
-for zdf in {3..1} ; do
-  echo "$zdf"
-  sleep 1
-done
-./tmux.sh
-}
-
-##########
-
 # This downloads the ReVanced CLI, Integrations, and Patches.
 
 prerequisites ()
@@ -146,8 +132,15 @@ update_script ()
 clear
 git reset --hard
 git pull
+cd $HOMEDIR
 chmod +x tmux.sh
 clear
+echo "Restarting Script"
+for zdf in {3..1} ; do
+  echo "$zdf"
+  sleep 1
+done
+./tmux.sh
 }
 
 ##########
@@ -231,7 +224,7 @@ do
           *) echo "Command not valid." ;;
         esac
       done ;;
-    "Update Script") update_script && rerun_script && break 2 ;;
+    "Update Script") update_script && break 2 ;;
     "Script Info") script_info ;;
     "Exit Script") clear && break 2 && exit ;;
     *) echo "Command not valid." ;;
