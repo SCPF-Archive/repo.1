@@ -104,6 +104,18 @@ cd $HOMEDIR
 
 ##########
 
+# This is the case function in menu.
+
+uncased ()
+{
+APKS="$ZXYX"
+select_apk
+sign_and_move_packages
+unset APKS
+}
+
+##########
+
 # This updates the repo.
 
 update_script ()
@@ -167,8 +179,28 @@ select ZXYX in \
 do
   case $ZXYX in
     "Install Prerequisites") prerequisites && rerun_script && break ;;
-    "backdrops") APKS="$ZXYX" && select_apk && sign_and_move_packages && unset APKS ;;
-    "citra.emulator") APKS="$ZXYX" && select_apk && sign_and_move_packages && unset APKS ;;
+    "backdrops") uncased ;;
+    "citra.emulator") uncased ;;
+    "icon.pack.studio") uncased ;;
+    "nova.launcher") uncased ;;
+    "nyx.music.player/64.v8a") uncased ;;
+    "nyx.music.player/v7a") uncased ;;
+    "nyx.music.player/x86.64") uncased ;;
+    "nyx.music.player/x86") uncased ;;
+    "reddit") uncased ;;
+    "spotify") uncased ;;
+    "ticktick/64.v8a") uncased ;;
+    "ticktick/v7a") uncased ;;
+    "ticktick/x86.64") uncased ;;
+    "ticktick/x86") uncased ;;
+    "tiktok") uncased ;;
+    "twitch") uncased ;;
+    "twitter") uncased ;;
+    "youtube.music/64.v8a") uncased ;;
+    "youtube.music/v7a") uncased ;;
+    "youtube.music/x86.64") uncased ;;
+    "youtube.music/x86") uncased ;;
+    "youtube") uncased ;;
     "Update Script") update_script && rerun_script && break ;;
     "Script Info") script_info ;;
     "Exit Script") clear && break ;;
