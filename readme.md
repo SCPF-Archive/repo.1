@@ -118,9 +118,10 @@ When you see that you are `# commit/s behind`, update your repo by clicking the 
 ## 📱Setup to Termux
 <details><summary><b>Click to View</b></summary>
 
-> Termux script currently in development but feel free to try it out first.
+Termux script currently in development but feel free to try it out first.
 
-One by one command.
+#### Install 
+> One by one command.
 ```bash
 pkg upgrade git
 git clone https://github.com/SCPF-Archive/repo.1
@@ -129,9 +130,17 @@ chmod +x tmux.sh
 ./tmux.sh
 ```
 
-One liner command.
+> One liner command.
 ```bash
 pkg upgrade git && git clone https://github.com/SCPF-Archive/repo.1 && cd repo.1/revanced && chmod +x tmux.sh &&./tmux.sh
+```
+
+---
+
+#### How to run?
+> Type this on terminal:
+```bash
+cd repo.1/revanced && ./tmux.sh
 ```
 
 </details>
