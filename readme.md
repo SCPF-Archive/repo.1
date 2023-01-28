@@ -133,6 +133,7 @@ pkg upgrade git && git clone https://github.com/SCPF-Archive/repo.1 && cd repo.1
 ## 📝Changelog
 <details><summary><b>Click to View</b></summary>
 
+- Fix Workflow Error ([**#22**](https://github.com/SCPF-Archive/repo.1/pull/22))
 - Add Termux Support ([**#21**](https://github.com/SCPF-Archive/repo.1/pull/21))
 - Simplify Workflow ([**#19**](https://github.com/SCPF-Archive/repo.1/pull/19))
 - Fix Nyx Download ([**#18**](https://github.com/SCPF-Archive/repo.1/pull/18))
