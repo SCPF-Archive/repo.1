@@ -102,7 +102,7 @@ why do bother installing the
 ReVanced Manager when you can
 patch it in here?
 "
-exit && ./$0
+./$0
 }
 
 ##########
@@ -120,7 +120,7 @@ do
     "Sign Packages") sign_packages && break ;;
     "Move Packages") move_packages && break ;;
     "Update Script") update_script && break ;;
-    "Script Info") script_info && ./$0 ;;
+    "Script Info") script_info && break ;;
     "Exit Script") clear && break ;;
     *) echo "Command not valid." ;;
   esac
