@@ -192,13 +192,13 @@ do
           "youtube.music/x86.64") uncased ;;
           "youtube.music/x86") uncased ;;
           "youtube") uncased ;;
-          "Return Back") clear && menu_select ;;
+          "Return Back") clear && menu_select && break ;;
           *) echo "Command not valid." ;;
         esac
     done ;;
     "Update Script") update_script && rerun_script && break ;;
     "Script Info") script_info ;;
-    "Exit Script") clear && exit ;;
+    "Exit Script") clear && break && exit ;;
     *) echo "Command not valid." ;;
   esac
 done
