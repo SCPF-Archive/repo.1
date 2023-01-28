@@ -43,10 +43,10 @@ select_apk ()
 {
 clear
 mkdir packages/$APKS/versions
-cp assets/versions/latest/versions.json revanced/packages/$APKS/versions
-cp assets/temp/cli/*.jar revanced/packages/$ZXYX
-cp assets/temp/integrations/*.apk revanced/packages/$APKS
-cp assets/temp/patches/*.jar revanced/packages/$APKS
+cp assets/versions/latest/versions.json packages/$APKS/versions
+cp assets/temp/cli/*.jar packages/$ZXYX
+cp assets/temp/integrations/*.apk packages/$APKS
+cp assets/temp/patches/*.jar packages/$APKS
 cd packages/$APKS
 chmod +x download.sh && ./download.sh && chmod +x compile.sh && ./compile.sh experimental
 rm -rf *.jar *.apk *.patch versions
