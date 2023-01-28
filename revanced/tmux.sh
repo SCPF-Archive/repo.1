@@ -85,6 +85,19 @@ clear
 
 ##########
 
+# This shows the script info.
+
+script_info ()
+{
+echo " The script is under development.
+
+In this script, you can patch the supported Revanced applications without even using the official ReVanced Manager.
+If you already have Termux, why do bother installing the ReVanced Manager when you can patch it in here?
+"
+}
+
+##########
+
 # This is a welcome message.
 
 wlcmsg ()
@@ -115,15 +128,9 @@ echo "
       .,'...''''..              ..'''''.'',.      
               ..'''''''....'''''''..              
                      .........                    
-                                                  
-
-UNDER DEVELOPMENT
-CHOICES:
-Install Prerequisites = Download ReVanced Prerequisites
-Backdrops = Patch Backdrops
-Citra Emulator = Patch Citra Emulator
-Exit = Exit Script
+                                                 
 "
+sleep 3
 }
 
 ##########
@@ -132,7 +139,7 @@ Exit = Exit Script
 
 wlcmsg
 
-select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Sign Packages" "Move Packages" "Update Script" "Exit Script"
+select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Sign Packages" "Move Packages" "Update Script" "Script Info" "Exit Script"
 do
   case $ZXYX in
     "Install Prerequisites") prerequisites ;;
@@ -141,6 +148,7 @@ do
     "Sign Packages") sign_packages && break ;;
     "Move Packages") move_packages && break ;;
     "Update Script") update_script && break ;;
+    "Script Info") script_info ;;
     "Exit Script") clear && break ;;
     *) echo "Command not valid." ;;
   esac
