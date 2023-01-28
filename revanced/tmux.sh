@@ -5,20 +5,6 @@ HOMEDIR="$PWD" ## /data/data/com.termux/files/home/dev/revanced
 
 ##########
 
-# This restarts the script.
-
-rerun_script ()
-{
-echo "Restarting Script"
-for zdf in {3..1} ; do
-  echo "$zdf"
-  sleep 1
-done
-./$0
-}
-
-##########
-
 # This downloads the ReVanced CLI, Integrations, and Patches.
 
 prerequisites ()
@@ -104,7 +90,7 @@ cd $HOMEDIR
 
 ##########
 
-# This is the case function in menu.
+# This is the function in menu.
 
 uncased ()
 {
@@ -112,6 +98,29 @@ APKS="$MKMF"
 select_apk
 sign_and_move_packages
 unset APKS
+echo "Going back to main menu in..."
+for fjos in {3..1} ; do
+  echo "$fjos"
+  sleep 1
+done
+}
+
+uncased_2 ()
+{
+APKS="$MKMF"
+mkdir $HOMEDIR/release
+mkdir /storage/emulated/0/ReVanced
+cd $HOMEDIR/packages/$MKMF
+chmod +x download.sh && ./download.sh
+mv $HOMEDIR/packages/$APKS/*.apk $HOMEDIR/release/$APKS.apk
+rm -f /storage/emulated/0/ReVanced/$APKS.apk
+mv $HOMEDIR/release/*.apk /storage/emulated/0/ReVanced 
+unset APKS
+echo "Going back to main menu in..."
+for fjos in {3..1} ; do
+  echo "$fjos"
+  sleep 1
+done
 }
 
 ##########
@@ -123,8 +132,15 @@ update_script ()
 clear
 git reset --hard
 git pull
+cd $HOMEDIR
 chmod +x tmux.sh
 clear
+echo "Restarting Script"
+for zdf in {3..1} ; do
+  echo "$zdf"
+  sleep 1
+done
+./tmux.sh
 }
 
 ##########
@@ -136,21 +152,28 @@ script_info ()
 echo "
 THE SCRIPT IS UNDER DEVELOPMENT.
 
-In this script, you can patch the
-supported Revanced applications without
-even using the official ReVanced Manager.
-
-If you already have Termux,
-why do bother installing the
-ReVanced Manager when you can
-patch it in here?
-
-All the patched packages are
-moved in the ReVanced folder in
-the internal storage.
+In this script, you can patch the supported
+Revanced applications without even using
+the official ReVanced Manager. If you already
+have Termux, why do bother installing the
+ReVanced Manager when you can patch it in here?
+All the patched packages are moved in the ReVanced
+folder, you can find it in the internal storage.
 "
 read -n 1 -s -r -p "Press any key to continue..."
 clear
+}
+
+##########
+
+# This is a welcome message.
+
+wlcmsg ()
+{
+clear
+cat assets/banner/scpf.logo.txt
+sleep 1
+script_info
 }
 
 ##########
@@ -170,53 +193,43 @@ do
       clear
       echo "Please select a number..."
       echo ""
-      select MKMF in "backdrops" "citra.emulator" "icon.pack.studio" "nova.launcher" "nyx.music.player/64.v8a" "nyx.music.player/v7a" "nyx.music.player/x86.64" "nyx.music.player/x86" "reddit" "spotify" "ticktick/64.v8a" "ticktick/v7a" "ticktick/x86.64" "ticktick/x86" "tiktok" "twitch" "twitter" "youtube.music/64.v8a" "youtube.music/v7a" "youtube.music/x86.64" "youtube.music/x86" "youtube" "Return Back"
+      select MKMF in "backdrops" "citra.emulator" "icon.pack.studio" "microg" "nova.launcher" "nyx.music.player/64.v8a" "nyx.music.player/v7a" "nyx.music.player/x86.64" "nyx.music.player/x86" "reddit" "revanced.manager" "spotify" "ticktick/64.v8a" "ticktick/v7a" "ticktick/x86.64" "ticktick/x86" "tiktok" "twitch" "twitter" "youtube.music/64.v8a" "youtube.music/v7a" "youtube.music/x86.64" "youtube.music/x86" "youtube" "Return Back"
       do
         case $MKMF in
-          "backdrops") uncased ;;
-          "citra.emulator") uncased ;;
-          "icon.pack.studio") uncased ;;
-          "nova.launcher") uncased ;;
-          "nyx.music.player/64.v8a") uncased ;;
-          "nyx.music.player/v7a") uncased ;;
-          "nyx.music.player/x86.64") uncased ;;
-          "nyx.music.player/x86") uncased ;;
-          "reddit") uncased ;;
-          "spotify") uncased ;;
-          "ticktick/64.v8a") uncased ;;
-          "ticktick/v7a") uncased ;;
-          "ticktick/x86.64") uncased ;;
-          "ticktick/x86") uncased ;;
-          "tiktok") uncased ;;
-          "twitch") uncased ;;
-          "twitter") uncased ;;
-          "youtube.music/64.v8a") uncased ;;
-          "youtube.music/v7a") uncased ;;
-          "youtube.music/x86.64") uncased ;;
-          "youtube.music/x86") uncased ;;
-          "youtube") uncased ;;
+          "backdrops") uncased && menu_select && break 2 ;;
+          "citra.emulator") uncased && menu_select && break 2 ;;
+          "icon.pack.studio") uncased && menu_select && break 2 ;;
+          "microg") uncased_2 && menu_select && break 2 ;;
+          "nova.launcher") uncased && menu_select && break 2 ;;
+          "nyx.music.player/64.v8a") uncased && menu_select && break 2 ;;
+          "nyx.music.player/v7a") uncased && menu_select && break 2 ;;
+          "nyx.music.player/x86.64") uncased && menu_select && break 2 ;;
+          "nyx.music.player/x86") uncased && menu_select && break 2 ;;
+          "reddit") uncased && menu_select && break 2 ;;
+          "revanced.manager") uncased_2 && menu_select && break 2 ;;
+          "spotify") uncased && menu_select && break 2 ;;
+          "ticktick/64.v8a") uncased && menu_select && break 2 ;;
+          "ticktick/v7a") uncased && menu_select && break 2 ;;
+          "ticktick/x86.64") uncased && menu_select && break 2 ;;
+          "ticktick/x86") uncased && menu_select && break 2 ;;
+          "tiktok") uncased && menu_select && break 2 ;;
+          "twitch") uncased && menu_select && break 2 ;;
+          "twitter") uncased && menu_select && break 2 ;;
+          "youtube.music/64.v8a") uncased && menu_select && break 2 ;;
+          "youtube.music/v7a") uncased && menu_select && break 2 ;;
+          "youtube.music/x86.64") uncased && menu_select && break 2 ;;
+          "youtube.music/x86") uncased && menu_select && break 2 ;;
+          "youtube") uncased && menu_select && break 2 ;;
           "Return Back") clear && menu_select && break 2 ;;
           *) echo "Command not valid." ;;
         esac
       done ;;
-    "Update Script") update_script && rerun_script && break 2 ;;
+    "Update Script") update_script && break 2 ;;
     "Script Info") script_info ;;
     "Exit Script") clear && break 2 && exit ;;
     *) echo "Command not valid." ;;
   esac
 done
-}
-
-##########
-
-# This is a welcome message.
-
-wlcmsg ()
-{
-clear
-cat assets/banner/scpf.logo.txt
-sleep 1
-script_info
 }
 
 ##########
