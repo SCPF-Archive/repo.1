@@ -125,7 +125,7 @@ the internal storage.
 
 menu_select ()
 {
-select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Sign Packages" "Move Packages" "Update Script" "Script Info" "Exit Script"
+select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Update Script" "Script Info" "Exit Script"
 do
   case $ZXYX in
     "Install Prerequisites") prerequisites && rerun_script && break ;;
