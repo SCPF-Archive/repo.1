@@ -160,7 +160,6 @@ jobs:
       if: inputs.UPLOAD
       uses: termux/upload-release-action@master
       with:
-        repo_name: ${{ github.repository }}
         repo_token: ${{ secrets.GITHUB_TOKEN }}
         release_name: "${{ github.run_id }}"
         tag: "${{ env.MAIN_TAG }}"
