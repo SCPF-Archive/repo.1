@@ -9,6 +9,11 @@ HOMEDIR="$PWD" ## /data/data/com.termux/files/home/dev/revanced
 
 rerun_script ()
 {
+echo "Restarting Script"
+for zdf in {3..1} ; do
+  echo "$zdf"
+  wait 1
+done
 ./$0
 }
 
@@ -120,7 +125,7 @@ do
     "Sign Packages") sign_packages && break ;;
     "Move Packages") move_packages && break ;;
     "Update Script") update_script && rerun_script && break ;;
-    "Script Info") script_info && break ;;
+    "Script Info") script_info ;;
     "Exit Script") clear && break ;;
     *) echo "Command not valid." ;;
   esac
