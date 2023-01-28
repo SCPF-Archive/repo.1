@@ -12,7 +12,7 @@ rerun_script ()
 echo "Restarting Script"
 for zdf in {3..1} ; do
   echo "$zdf"
-  wait 1
+  sleep 1
 done
 ./$0
 }
