@@ -149,6 +149,11 @@ All the patched packages are
 moved in the ReVanced folder in
 the internal storage.
 "
+read -n 1 -s -r -p "Press any key to continue"
+clear
+echo "
+Please select a number...
+"
 }
 
 ##########
