@@ -163,7 +163,6 @@ Please select a number...
 menu_select()
 {
 select ZXYX in "Install Prerequisites" "Patch Packages" "Update Script" "Script Info" "Exit Script"
-doselect ZXYX in "Install Prerequisites" "Patch Packages" "Update Script" "Script Info" "Exit Script"
 do
   case $ZXYX in
     "Install Prerequisites") prerequisites && rerun_script && break 2 ;;
