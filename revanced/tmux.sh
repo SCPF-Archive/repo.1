@@ -92,15 +92,6 @@ cd $HOMEDIR
 
 ##########
 
-# This moves the packages to internal storage.
-
-move_packages ()
-{
-
-}
-
-##########
-
 # This updates the repo.
 
 update_script ()
