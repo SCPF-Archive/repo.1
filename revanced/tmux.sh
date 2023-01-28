@@ -195,7 +195,7 @@ do
           "Return Back") clear && menu_select && break ;;
           *) echo "Command not valid." ;;
         esac
-    done ;;
+      done ;;
     "Update Script") update_script && rerun_script && break ;;
     "Script Info") script_info ;;
     "Exit Script") clear && break && exit ;;
