@@ -27,8 +27,6 @@ clear
 cd assets/temp && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
 chmod +x copy.latest.files.sh && ./copy.latest.files.sh && cd $HOMEDIR
 echo "ReVanced Prerequisites Updated/Installed"
-echo "Going back to the menu..."
-sleep 3
 }
 
 ##########
@@ -119,11 +117,11 @@ menu_select ()
 select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Sign Packages" "Move Packages" "Update Script" "Script Info" "Exit Script"
 do
   case $ZXYX in
-    "Install Prerequisites") prerequisites ;;
-    "Backdrops") APKS="backdrops" && select_apk && unset APKS && break ;;
-    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && break ;;
-    "Sign Packages") sign_packages && break ;;
-    "Move Packages") move_packages && break ;;
+    "Install Prerequisites") prerequisites && rerun_script ;;
+    "Backdrops") APKS="backdrops" && select_apk && unset APKS && && rerun_script break ;;
+    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && && rerun_script break ;;
+    "Sign Packages") sign_packages && rerun_script && break ;;
+    "Move Packages") move_packages && rerun_script && break ;;
     "Update Script") update_script && rerun_script && break ;;
     "Script Info") script_info ;;
     "Exit Script") clear && break ;;
