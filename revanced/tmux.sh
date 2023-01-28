@@ -167,7 +167,7 @@ do
   case $ZXYX in
     "Install Prerequisites") prerequisites && rerun_script && break 2 ;;
     "Patch Packages") 
-      select MKMF in "backdrops" "citra.emulator" "icon.pack.studio" "nova.launcher" "nyx.music.player/64.v8a" "nyx.music.player/v7a" "nyx.music.player/x86.64" "nyx.music.player/x86" "reddit" "spotify" "ticktick/64.v8a" "ticktick/v7a" "ticktick/x86.64" "ticktick/x86" "tiktok" "twitch" "twitter" "youtube.music/64.v8a" "youtube.music/v7a""youtube.music/x86.64" "youtube.music/x86" "youtube" "Return Back"
+      select MKMF in "backdrops" "citra.emulator" "icon.pack.studio" "nova.launcher" "nyx.music.player/64.v8a" "nyx.music.player/v7a" "nyx.music.player/x86.64" "nyx.music.player/x86" "reddit" "spotify" "ticktick/64.v8a" "ticktick/v7a" "ticktick/x86.64" "ticktick/x86" "tiktok" "twitch" "twitter" "youtube.music/64.v8a" "youtube.music/v7a" "youtube.music/x86.64" "youtube.music/x86" "youtube" "Return Back"
       do
         case $MKMF in
           "backdrops") uncased ;;
