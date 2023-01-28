@@ -162,46 +162,46 @@ Please select a number...
 
 menu_select()
 {
-  select ZXYX in "Install Prerequisites" "Patch Packages" "Update Script" "Script Info" "Exit Script"
-  do
-    case $ZXYX in
-      "Install Prerequisites") prerequisites && rerun_script && break ;;
-      "Patch Packages") 
-        select MKMF in "backdrops" "citra.emulator" "icon.pack.studio" "nova.launcher" "nyx.music.player/64.v8a" "nyx.music.player/v7a" "nyx.music.player/x86.64" "nyx.music.player/x86" "reddit" "spotify" "ticktick/64.v8a" "ticktick/v7a" "ticktick/x86.64" "ticktick/x86" "tiktok" "twitch" "twitter" "youtube.music/64.v8a" "youtube.music/v7a""youtube.music/x86.64" "youtube.music/x86" "youtube" "Return Back"
-        do
-          case $MKMF in
-            "backdrops") uncased ;;
-            "citra.emulator") uncased ;;
-            "icon.pack.studio") uncased ;;
-            "nova.launcher") uncased ;;
-            "nyx.music.player/64.v8a") uncased ;;
-            "nyx.music.player/v7a") uncased ;;
-            "nyx.music.player/x86.64") uncased ;;
-            "nyx.music.player/x86") uncased ;;
-            "reddit") uncased ;;
-            "spotify") uncased ;;
-            "ticktick/64.v8a") uncased ;;
-            "ticktick/v7a") uncased ;;
-            "ticktick/x86.64") uncased ;;
-            "ticktick/x86") uncased ;;
-            "tiktok") uncased ;;
-            "twitch") uncased ;;
-            "twitter") uncased ;;
-            "youtube.music/64.v8a") uncased ;;
-            "youtube.music/v7a") uncased ;;
-            "youtube.music/x86.64") uncased ;;
-            "youtube.music/x86") uncased ;;
-            "youtube") uncased ;;
-            "Return Back") rerun_script && break ;;
-            *) echo "Command not valid." ;;
-          esac
-      done ;;
-      "Update Script") update_script && rerun_script && break ;;
-      "Script Info") script_info ;;
-      "Exit Script") clear && break ;;
-      *) echo "Command not valid." ;;
-    esac
-  done
+select ZXYX in "Install Prerequisites" "Patch Packages" "Update Script" "Script Info" "Exit Script"
+do
+  case $ZXYX in
+    "Install Prerequisites") prerequisites && rerun_script && break ;;
+    "Patch Packages") 
+      select MKMF in "backdrops" "citra.emulator" "icon.pack.studio" "nova.launcher" "nyx.music.player/64.v8a" "nyx.music.player/v7a" "nyx.music.player/x86.64" "nyx.music.player/x86" "reddit" "spotify" "ticktick/64.v8a" "ticktick/v7a" "ticktick/x86.64" "ticktick/x86" "tiktok" "twitch" "twitter" "youtube.music/64.v8a" "youtube.music/v7a""youtube.music/x86.64" "youtube.music/x86" "youtube" "Return Back"
+      do
+        case $MKMF in
+          "backdrops") uncased ;;
+          "citra.emulator") uncased ;;
+          "icon.pack.studio") uncased ;;
+          "nova.launcher") uncased ;;
+          "nyx.music.player/64.v8a") uncased ;;
+          "nyx.music.player/v7a") uncased ;;
+          "nyx.music.player/x86.64") uncased ;;
+          "nyx.music.player/x86") uncased ;;
+          "reddit") uncased ;;
+          "spotify") uncased ;;
+          "ticktick/64.v8a") uncased ;;
+          "ticktick/v7a") uncased ;;
+          "ticktick/x86.64") uncased ;;
+          "ticktick/x86") uncased ;;
+          "tiktok") uncased ;;
+          "twitch") uncased ;;
+          "twitter") uncased ;;
+          "youtube.music/64.v8a") uncased ;;
+          "youtube.music/v7a") uncased ;;
+          "youtube.music/x86.64") uncased ;;
+          "youtube.music/x86") uncased ;;
+          "youtube") uncased ;;
+          "Return Back") menu_select && break ;;
+          *) echo "Command not valid." ;;
+        esac
+    done ;;
+    "Update Script") update_script && rerun_script && break ;;
+    "Script Info") script_info ;;
+    "Exit Script") clear && break ;;
+    *) echo "Command not valid." ;;
+  esac
+done
 }
 
 ##########
