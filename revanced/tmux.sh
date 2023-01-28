@@ -123,6 +123,11 @@ do
     "Exit Script") clear && break ;;
     *) echo "Command not valid." ;;
   esac
+
+if [[ $ZXYX == "Script Info" ]] ; then
+  exit && ./$0
+fi
+
 done
 }
 
@@ -170,7 +175,3 @@ sleep 3
 wlcmsg && menu_select
 
 ##########
-
-if [[ $ZXYX == "Script Info" ]] ; then
-  exit && ./$0
-fi
