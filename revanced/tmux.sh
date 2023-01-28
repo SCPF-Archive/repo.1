@@ -147,15 +147,27 @@ menu_select ()
 {
 select ZXYX in \
 "Install Prerequisites" \
-"Backdrops" "Citra Emulator" \
-"Update Script" "Script Info" \
+"backdrops" \
+"citra.emulator" \
+"icon.pack.studio" \
+"nova.launcher" \
+"nyx.music.player/64.v8a" "nyx.music.player/v7a" "nyx.music.player/x86.64" "nyx.music.player/x86" \
+"reddit" \
+"spotify" \
+"ticktick/64.v8a" "ticktick/v7a" "ticktick/x86.64" "ticktick/x86" \
+"tiktok" \
+"twitch" \
+"twitter" \
+"youtube.music/64.v8a" "youtube.music/v7a" "youtube.music/x86.64" "youtube.music/x86" \
+"youtube" \
+"Update Script" \
+"Script Info" \
 "Exit Script"
 
 do
   case $ZXYX in
     "Install Prerequisites") prerequisites && rerun_script && break ;;
-    "Backdrops") APKS="backdrops" && select_apk && sign_and_move_packages && unset APKS ;;
-    "Citra Emulator") APKS="citra.emulator" && select_apk && sign_and_move_packages && unset APKS ;;
+    "$ZXYX") APKS="$ZXYX" && select_apk && sign_and_move_packages && unset APKS ;;
     "Update Script") update_script && rerun_script && break ;;
     "Script Info") script_info ;;
     "Exit Script") clear && break ;;
