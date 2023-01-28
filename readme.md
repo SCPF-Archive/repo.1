@@ -115,9 +115,25 @@ When you see that you are `# commit/s behind`, update your repo by clicking the 
 
 </details>
 
+## 📱Setup Termux
+One by one command.
+```bash
+pkg upgrade git
+git clone https://github.com/SCPF-Archive/repo.1
+cd repo.1/revanced
+chmod +x tmux.sh
+./tmux.sh
+```
+
+One liner command.
+```bash
+pkg upgrade git && git clone https://github.com/SCPF-Archive/repo.1 && cd repo.1/revanced && chmod +x tmux.sh &&./tmux.sh
+```
+
 ## 📝Changelog
 <details><summary><b>Click to View</b></summary>
 
+- Add Termux Support ([**#21**](https://github.com/SCPF-Archive/repo.1/pull/21))
 - Simplify Workflow ([**#19**](https://github.com/SCPF-Archive/repo.1/pull/19))
 - Fix Nyx Download ([**#18**](https://github.com/SCPF-Archive/repo.1/pull/18))
 - Update Setup Steps ([**#17**](https://github.com/SCPF-Archive/repo.1/pull/17))
