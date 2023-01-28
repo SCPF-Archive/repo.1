@@ -182,30 +182,30 @@ do
       select MKMF in "backdrops" "citra.emulator" "icon.pack.studio" "microg" "nova.launcher" "nyx.music.player/64.v8a" "nyx.music.player/v7a" "nyx.music.player/x86.64" "nyx.music.player/x86" "reddit" "revanced.manager" "spotify" "ticktick/64.v8a" "ticktick/v7a" "ticktick/x86.64" "ticktick/x86" "tiktok" "twitch" "twitter" "youtube.music/64.v8a" "youtube.music/v7a" "youtube.music/x86.64" "youtube.music/x86" "youtube" "Return Back"
       do
         case $MKMF in
-          "backdrops") uncased ;;
-          "citra.emulator") uncased ;;
-          "icon.pack.studio") uncased ;;
-          "microg") uncased_2 ;;
-          "nova.launcher") uncased ;;
-          "nyx.music.player/64.v8a") uncased ;;
-          "nyx.music.player/v7a") uncased ;;
-          "nyx.music.player/x86.64") uncased ;;
-          "nyx.music.player/x86") uncased ;;
-          "reddit") uncased ;;
-          "revanced.manager") uncased_2 ;;
-          "spotify") uncased ;;
-          "ticktick/64.v8a") uncased ;;
-          "ticktick/v7a") uncased ;;
-          "ticktick/x86.64") uncased ;;
-          "ticktick/x86") uncased ;;
-          "tiktok") uncased ;;
-          "twitch") uncased ;;
-          "twitter") uncased ;;
-          "youtube.music/64.v8a") uncased ;;
-          "youtube.music/v7a") uncased ;;
-          "youtube.music/x86.64") uncased ;;
-          "youtube.music/x86") uncased ;;
-          "youtube") uncased ;;
+          "backdrops") uncased && menu_select && break 2 ;;
+          "citra.emulator") uncased && menu_select && break 2 ;;
+          "icon.pack.studio") uncased && menu_select && break 2 ;;
+          "microg") uncased_2 && menu_select && break 2 ;;
+          "nova.launcher") uncased && menu_select && break 2 ;;
+          "nyx.music.player/64.v8a") uncased && menu_select && break 2 ;;
+          "nyx.music.player/v7a") uncased && menu_select && break 2 ;;
+          "nyx.music.player/x86.64") uncased && menu_select && break 2 ;;
+          "nyx.music.player/x86") uncased && menu_select && break 2 ;;
+          "reddit") uncased && menu_select && break 2 ;;
+          "revanced.manager") uncased_2 && menu_select && break 2 ;;
+          "spotify") uncased && menu_select && break 2 ;;
+          "ticktick/64.v8a") uncased && menu_select && break 2 ;;
+          "ticktick/v7a") uncased && menu_select && break 2 ;;
+          "ticktick/x86.64") uncased && menu_select && break 2 ;;
+          "ticktick/x86") uncased && menu_select && break 2 ;;
+          "tiktok") uncased && menu_select && break 2 ;;
+          "twitch") uncased && menu_select && break 2 ;;
+          "twitter") uncased && menu_select && break 2 ;;
+          "youtube.music/64.v8a") uncased && menu_select && break 2 ;;
+          "youtube.music/v7a") uncased && menu_select && break 2 ;;
+          "youtube.music/x86.64") uncased && menu_select && break 2 ;;
+          "youtube.music/x86") uncased && menu_select && break 2 ;;
+          "youtube") uncased && menu_select && break 2 ;;
           "Return Back") clear && menu_select && break 2 ;;
           *) echo "Command not valid." ;;
         esac
