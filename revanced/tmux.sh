@@ -104,7 +104,7 @@ cd $HOMEDIR
 
 ##########
 
-# This is the case function in menu.
+# This is the function in menu.
 
 uncased ()
 {
@@ -170,12 +170,13 @@ do
       clear
       echo "Please select a number..."
       echo ""
-      select MKMF in "backdrops" "citra.emulator" "icon.pack.studio" "nova.launcher" "nyx.music.player/64.v8a" "nyx.music.player/v7a" "nyx.music.player/x86.64" "nyx.music.player/x86" "reddit" "spotify" "ticktick/64.v8a" "ticktick/v7a" "ticktick/x86.64" "ticktick/x86" "tiktok" "twitch" "twitter" "youtube.music/64.v8a" "youtube.music/v7a" "youtube.music/x86.64" "youtube.music/x86" "youtube" "Return Back"
+      select MKMF in "backdrops" "citra.emulator" "icon.pack.studio" "microg" "nova.launcher" "nyx.music.player/64.v8a" "nyx.music.player/v7a" "nyx.music.player/x86.64" "nyx.music.player/x86" "reddit" "spotify" "ticktick/64.v8a" "ticktick/v7a" "ticktick/x86.64" "ticktick/x86" "tiktok" "twitch" "twitter" "youtube.music/64.v8a" "youtube.music/v7a" "youtube.music/x86.64" "youtube.music/x86" "youtube" "Return Back"
       do
         case $MKMF in
           "backdrops") uncased ;;
           "citra.emulator") uncased ;;
           "icon.pack.studio") uncased ;;
+          "microg") cd $HOMEDIR/packages/$MKMF && chmod +x download.sh && ./download.sh && cd $HOMDEDIR && sign_and_move_packages ;;
           "nova.launcher") uncased ;;
           "nyx.music.player/64.v8a") uncased ;;
           "nyx.music.player/v7a") uncased ;;
