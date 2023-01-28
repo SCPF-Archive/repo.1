@@ -96,6 +96,7 @@ fi
 echo "Moving the packages..."
 cd /
 mkdir /storage/emulated/0/ReVanced
+rm -f /storage/emulated/0/ReVanced/$APKS.apk
 mv $HOMEDIR/release/*.apk /storage/emulated/0/ReVanced
 cd $HOMEDIR
 
