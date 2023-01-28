@@ -24,9 +24,15 @@ done
 prerequisites ()
 {
 clear
-cd assets/temp && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
-chmod +x copy.latest.files.sh && ./copy.latest.files.sh && cd $HOMEDIR
-echo "ReVanced Prerequisites Updated/Installed"
+cd assets/temp
+check_rv=$(ls cli/*.jar)
+if [[ $check_rv == "" ]] ; then
+  chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
+  echo "ReVanced Prerequisites Updated/Installed"
+elif [[ $check_rv == "*.jar"]] ; then
+  echo "ReVanced Prerequisites Already Updated/Installed"
+fi
+cd $HOMEDIR
 }
 
 ##########
