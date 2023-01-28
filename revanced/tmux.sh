@@ -160,3 +160,9 @@ do
     *) echo "Command not valid." ;;
   esac
 done
+
+##########
+
+if [[ $ZXYX == "Script Info" ]] ; then
+  exit
+fi
