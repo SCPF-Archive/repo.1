@@ -134,7 +134,7 @@ clear
 script_info ()
 {
 echo "
-The script is under development.
+THE SCRIPT IS UNDER DEVELOPMENT.
 
 In this script, you can patch the
 supported Revanced applications without
@@ -225,7 +225,13 @@ done
 wlcmsg ()
 {
 clear
-cat scpf.logo.txt
+cat assets/banner/scpf.logo.txt
+sleep 2
+clear
+cat assets/banner/scpf.archive.txt
+sleep 1
+clear
+script_info
 }
 
 ##########
