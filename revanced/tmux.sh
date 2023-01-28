@@ -118,7 +118,7 @@ select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Sign Packag
 do
   case $ZXYX in
     "Install Prerequisites") prerequisites && rerun_script ;;
-    "Backdrops") APKS="backdrops" && select_apk && unset APKS && && rerun_script break ;;
+    "Backdrops") APKS="backdrops" && select_apk && unset APKS && rerun_script break ;;
     "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && && rerun_script break ;;
     "Sign Packages") sign_packages && rerun_script && break ;;
     "Move Packages") move_packages && rerun_script && break ;;
