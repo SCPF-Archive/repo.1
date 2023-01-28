@@ -106,6 +106,28 @@ patch it in here?
 
 ##########
 
+# This is a menu selection.
+
+menu_select ()
+{
+select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Sign Packages" "Move Packages" "Update Script" "Script Info" "Exit Script"
+do
+  case $ZXYX in
+    "Install Prerequisites") prerequisites ;;
+    "Backdrops") APKS="backdrops" && select_apk && unset APKS && break ;;
+    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && break ;;
+    "Sign Packages") sign_packages && break ;;
+    "Move Packages") move_packages && break ;;
+    "Update Script") update_script && break ;;
+    "Script Info") script_info && break ;;
+    "Exit Script") clear && break ;;
+    *) echo "Command not valid." ;;
+  esac
+done
+}
+
+##########
+
 # This is a welcome message.
 
 wlcmsg ()
@@ -145,25 +167,10 @@ sleep 3
 
 # This is the main function.
 
-wlcmsg
-
-select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Sign Packages" "Move Packages" "Update Script" "Script Info" "Exit Script"
-do
-  case $ZXYX in
-    "Install Prerequisites") prerequisites ;;
-    "Backdrops") APKS="backdrops" && select_apk && unset APKS && break ;;
-    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && break ;;
-    "Sign Packages") sign_packages && break ;;
-    "Move Packages") move_packages && break ;;
-    "Update Script") update_script && break ;;
-    "Script Info") script_info && break ;;
-    "Exit Script") clear && break ;;
-    *) echo "Command not valid." ;;
-  esac
-done
+wlcmsg && menu_select
 
 ##########
 
 if [[ $ZXYX == "Script Info" ]] ; then
-  exit
+  exit && ./$0
 fi
