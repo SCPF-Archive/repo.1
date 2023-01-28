@@ -166,12 +166,12 @@ select ZXYX in \
 
 do
   case $ZXYX in
-    *) echo "Command not valid." ;;
     "Install Prerequisites") prerequisites && rerun_script && break ;;
     "backdrops","citra.emulator") APKS="$ZXYX" && select_apk && sign_and_move_packages && unset APKS ;;
     "Update Script") update_script && rerun_script && break ;;
     "Script Info") script_info ;;
     "Exit Script") clear && break ;;
+    *) echo "Command not valid." ;;
   esac
 done
 }
