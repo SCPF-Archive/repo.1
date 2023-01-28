@@ -233,9 +233,6 @@ clear
 cat assets/banner/scpf.logo.txt
 sleep 2
 clear
-cat assets/banner/scpf.archive.txt
-sleep 1
-clear
 script_info
 }
 
