@@ -5,6 +5,15 @@ HOMEDIR="$PWD" ## /data/data/com.termux/files/home/dev/revanced
 
 ##########
 
+# This restarts the script.
+
+rerun_script ()
+{
+./$0
+}
+
+##########
+
 # This downloads the ReVanced CLI, Integrations, and Patches.
 
 prerequisites ()
@@ -15,13 +24,6 @@ chmod +x copy.latest.files.sh && ./copy.latest.files.sh && cd $HOMEDIR
 echo "ReVanced Prerequisites Updated/Installed"
 echo "Going back to the menu..."
 sleep 3
-}
-
-##########
-
-copy_latest_files ()
-{
-cd assets/temp && rm -rf cli integrations patches && cd $HOMEDIR
 }
 
 ##########
@@ -81,7 +83,6 @@ git reset --hard
 git pull
 chmod +x tmux.sh
 clear
-./tmux.sh
 }
 
 ##########
@@ -102,7 +103,6 @@ why do bother installing the
 ReVanced Manager when you can
 patch it in here?
 "
-./$0
 }
 
 ##########
@@ -115,12 +115,12 @@ select ZXYX in "Install Prerequisites" "Backdrops" "Citra Emulator" "Sign Packag
 do
   case $ZXYX in
     "Install Prerequisites") prerequisites ;;
-    "Backdrops") APKS="backdrops" && select_apk && unset APKS && break ;;
-    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && break ;;
-    "Sign Packages") sign_packages && break ;;
-    "Move Packages") move_packages && break ;;
-    "Update Script") update_script && break ;;
-    "Script Info") script_info && break ;;
+    "Backdrops") APKS="backdrops" && select_apk && unset APKS && rerun_script && break ;;
+    "Citra Emulator") APKS="citra.emulator" && select_apk && unset APKS && rerun_script && break ;;
+    "Sign Packages") sign_packages && rerun_script && break ;;
+    "Move Packages") move_packages && rerun_script && break ;;
+    "Update Script") update_script && rerun_script && break ;;
+    "Script Info") script_info && rerun_script && break ;;
     "Exit Script") clear && break ;;
     *) echo "Command not valid." ;;
   esac
@@ -161,7 +161,6 @@ echo "
                      .........                    
                                                  
 "
-sleep 1
 }
 
 ##########
