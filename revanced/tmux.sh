@@ -99,13 +99,13 @@ uncased_2() {
 # This updates the repo.
 
 update_script() {
-  git reset --hard && git pull && chmod +x $0
+  git reset --hard && git pull && chmod +x $HOMEDIR/*.sh
   echo "Restarting Script"
   for zdf in {3..1} ; do
     echo "$zdf"
     sleep 1
   done
-  ./$0
+  cd $HOMEDIR && ./$HOMEDIR/tmux.sh
 }
 
 ##########
