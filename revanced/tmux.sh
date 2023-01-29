@@ -134,58 +134,58 @@ script_info
 
 ##########
 
-# This is a menu selection.
+menu_select() {
+  clear
+  echo "Please select a number..."
+  echo ""
+  select option in "Install Prerequisites" "Patch Packages" "Update Script" "Script Info" "Exit Script"
+  do
+    case $option in
+      "Install Prerequisites") prerequisites && rerun_script && break 2 ;;
+      "Patch Packages") patch_packages && break 2 ;;
+      "Update Script") update_script && break 2 ;;
+      "Script Info") script_info ;;
+      "Exit Script") clear && break 2 && exit ;;
+      *) echo "Command not valid." ;;
+    esac
+  done
+}
 
-menu_select()
-{
-clear
-echo "Please select a number..."
-echo ""
-select ZXYX in "Install Prerequisites" "Patch Packages" "Update Script" "Script Info" "Exit Script"
-do
-  case $ZXYX in
-    "Install Prerequisites") prerequisites && rerun_script && break 2 ;;
-    "Patch Packages") 
-      clear
-      echo "Please select a number..."
-      echo ""
-      select MKMF in "backdrops" "citra.emulator" "icon.pack.studio" "microg" "nova.launcher" "nyx.music.player/64.v8a" "nyx.music.player/v7a" "nyx.music.player/x86.64" "nyx.music.player/x86" "reddit" "revanced.manager" "spotify" "ticktick/64.v8a" "ticktick/v7a" "ticktick/x86.64" "ticktick/x86" "tiktok" "twitch" "twitter" "youtube.music/64.v8a" "youtube.music/v7a" "youtube.music/x86.64" "youtube.music/x86" "youtube" "Return Back"
-      do
-        case $MKMF in
-          "backdrops") uncased && menu_select && break 2 ;;
-          "citra.emulator") uncased && menu_select && break 2 ;;
-          "icon.pack.studio") uncased && menu_select && break 2 ;;
-          "microg") uncased_2 && menu_select && break 2 ;;
-          "nova.launcher") uncased && menu_select && break 2 ;;
-          "nyx.music.player/64.v8a") uncased && menu_select && break 2 ;;
-          "nyx.music.player/v7a") uncased && menu_select && break 2 ;;
-          "nyx.music.player/x86.64") uncased && menu_select && break 2 ;;
-          "nyx.music.player/x86") uncased && menu_select && break 2 ;;
-          "reddit") uncased && menu_select && break 2 ;;
-          "revanced.manager") uncased_2 && menu_select && break 2 ;;
-          "spotify") uncased && menu_select && break 2 ;;
-          "ticktick/64.v8a") uncased && menu_select && break 2 ;;
-          "ticktick/v7a") uncased && menu_select && break 2 ;;
-          "ticktick/x86.64") uncased && menu_select && break 2 ;;
-          "ticktick/x86") uncased && menu_select && break 2 ;;
-          "tiktok") uncased && menu_select && break 2 ;;
-          "twitch") uncased && menu_select && break 2 ;;
-          "twitter") uncased && menu_select && break 2 ;;
-          "youtube.music/64.v8a") uncased && menu_select && break 2 ;;
-          "youtube.music/v7a") uncased && menu_select && break 2 ;;
-          "youtube.music/x86.64") uncased && menu_select && break 2 ;;
-          "youtube.music/x86") uncased && menu_select && break 2 ;;
-          "youtube") uncased && menu_select && break 2 ;;
-          "Return Back") clear && menu_select && break 2 ;;
-          *) echo "Command not valid." ;;
-        esac
-      done ;;
-    "Update Script") update_script && break 2 ;;
-    "Script Info") script_info ;;
-    "Exit Script") clear && break 2 && exit ;;
-    *) echo "Command not valid." ;;
-  esac
-done
+patch_packages() {
+  clear
+  echo "Please select a number..."
+  echo ""
+  select package in "backdrops" "citra.emulator" "icon.pack.studio" "microg" "nova.launcher" "nyx.music.player/64.v8a" "nyx.music.player/v7a" "nyx.music.player/x86.64" "nyx.music.player/x86" "reddit" "revanced.manager" "spotify" "ticktick/64.v8a" "ticktick/v7a" "ticktick/x86.64" "ticktick/x86" "tiktok" "twitch" "twitter" "youtube.music/64.v8a" "youtube.music/v7a" "youtube.music/x86.64" "youtube.music/x86" "youtube" "Return Back"
+  do
+    case $package in
+      "backdrops") uncased && menu_select && break 2 ;;
+      "citra.emulator") uncased && menu_select && break 2 ;;
+      "icon.pack.studio") uncased && menu_select && break 2 ;;
+      "microg") uncased_2 && menu_select && break 2 ;;
+      "nova.launcher") uncased && menu_select && break 2 ;;
+      "nyx.music.player/64.v8a") uncased && menu_select && break 2 ;;
+      "nyx.music.player/v7a") uncased && menu_select && break 2 ;;
+      "nyx.music.player/x86.64") uncased && menu_select && break 2 ;;
+      "nyx.music.player/x86") uncased && menu_select && break 2 ;;
+      "reddit") uncased && menu_select && break 2 ;;
+      "revanced.manager") uncased_2 && menu_select && break 2 ;;
+      "spotify") uncased && menu_select && break 2 ;;
+      "ticktick/64.v8a") uncased && menu_select && break 2 ;;
+      "ticktick/v7a") uncased && menu_select && break 2 ;;
+      "ticktick/x86.64") uncased && menu_select && break 2 ;;
+      "ticktick/x86") uncased && menu_select && break 2 ;;
+      "tiktok") uncased && menu && select && break 2 ;;
+      "twitch") uncased && menu_select && break 2 ;;
+      "twitter") uncased && menu_select && break 2 ;;
+      "youtube.music/64.v8a") uncased && menu_select && break 2 ;;
+      "youtube.music/v7a") uncased && menu_select && break 2 ;;
+      "youtube.music/x86.64") uncased && menu_select && break 2 ;;
+      "youtube.music/x86") uncased && menu_select && break 2 ;;
+      "youtube") uncased && menu_select && break 2 ;;
+      "Return Back") clear && menu_select && break 2 ;;
+      *) echo "Command not valid." ;;
+    esac
+  done
 }
 
 ##########
@@ -193,5 +193,3 @@ done
 # This is the main function.
 
 wlcmsg && menu_select
-
-##########
