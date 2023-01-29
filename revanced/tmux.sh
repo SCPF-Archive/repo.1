@@ -107,7 +107,7 @@ clear_cache_info() {
   - Clears all the apk cache.
 
   Clear All Cache
-  - Clears all the apk
+  - Clears all the apk cache
     and ReVanced Prerequisites.
   "
   read -n 1 -s -r -p "Press any key to continue..."
