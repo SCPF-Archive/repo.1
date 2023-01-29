@@ -116,6 +116,8 @@ clear_cache_info() {
 clear_cache() {
   cd $HOMEDIR
   rm -rf $HOMEDIR/packages/*/output/*.apk
+  echo "Cache cleared, all clear..."
+  read -n 1 -s -r -p "Press any key to continue..."
 }
 
 clear_all_cache() {
@@ -124,6 +126,8 @@ clear_all_cache() {
   rm -rf $HOMEDIR/assets/temp/integrations
   rm -rf $HOMEDIR/assets/temp/patches
   rm -rf $HOMEDIR/packages/*/output/*.apk
+  echo "Cache cleared, all clear..."
+  read -n 1 -s -r -p "Press any key to continue..."
 }
 
 ##########
