@@ -66,8 +66,6 @@ uncased() {
   select_apk
   sign_and_move_packages
   mkdir /storage/emulated/0/ReVanced
-  cd $HOMEDIR/packages/$APKS
-  chmod +x download.sh && ./download.sh
   rm -f /storage/emulated/0/ReVanced/$APKS.apk
   mv $HOMEDIR/release/$APKS.apk /storage/emulated/0/ReVanced 
   unset APKS
@@ -80,13 +78,12 @@ uncased() {
 
 uncased_2() {
   APKS="$MKMF"
-  mkdir $HOMEDIR/release
-  mkdir /storage/emulated/0/ReVanced
   cd $HOMEDIR/packages/$APKS
   chmod +x download.sh && ./download.sh
   sign_and_move_packages
+  mkdir /storage/emulated/0/ReVanced
   rm -f /storage/emulated/0/ReVanced/$APKS.apk
-  mv $HOMEDIR/release/*.apk /storage/emulated/0/ReVanced 
+  mv $HOMEDIR/release/$APKS.apk /storage/emulated/0/ReVanced 
   unset APKS
   echo "Going back to main menu in..."
   for i in {3..1} ; do
