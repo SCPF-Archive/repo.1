@@ -96,7 +96,7 @@ uncased_2() {
 # This updates the repo.
 
 update_script() {
-  git reset --hard && git pull && chmod +x tmux.sh
+  git reset --hard && git pull && chmod +x $0
   echo "Restarting Script"
   for zdf in {3..1} ; do
     echo "$zdf"
