@@ -117,27 +117,6 @@ update_script() {
 
 ##########
 
-# This shows the script info.
-
-script_info ()
-{
-echo "
-THE SCRIPT IS UNDER DEVELOPMENT.
-
-In this script, you can patch the supported
-Revanced applications without even using
-the official ReVanced Manager. If you already
-have Termux, why do bother installing the
-ReVanced Manager when you can patch it in here?
-All the patched packages are moved in the ReVanced
-folder, you can find it in the internal storage.
-"
-read -n 1 -s -r -p "Press any key to continue..."
-clear
-}
-
-##########
-
 # This is a welcome message.
 
 wlcmsg ()
@@ -145,7 +124,10 @@ wlcmsg ()
 clear
 cat assets/banner/scpf.logo.txt
 sleep 1
-script_info
+read -n 1 -s -r -p "Press any key to continue..."
+echo "This script is a Bash script for the ReVanced CLI, Integrations and Patches. It updates the ReVanced Prerequisites and downloads the CLI, Integrations and Patches. It patches the packages, signs them, and moves them to the storage. Finally, it updates the repo and provides a welcome message and main menu."
+echo "It will provide a menu for selecting packages to patch and sign, and it will also allow the user to update the script, view script info, and exit the script."
+read -n 1 -s -r -p "Press any key to continue..."
 }
 
 ##########
