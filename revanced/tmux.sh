@@ -124,7 +124,6 @@ wlcmsg ()
 clear
 cat assets/banner/scpf.logo.txt
 sleep 1
-read -n 1 -s -r -p "Press any key to continue..."
 echo "
 This script is a Bash script for the
 ReVanced CLI, Integrations and Patches.
