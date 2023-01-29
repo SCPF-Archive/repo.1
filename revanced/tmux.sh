@@ -11,8 +11,7 @@ prerequisites () {
   clear
   cd "$HOMEDIR/assets/temp"
   if [ -z "$(ls cli/*.jar)" ]; then
-    pkg upgrade openjdk-17 wget jq aapt zipalign
-    chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd "$HOMEDIR"
+    pkg upgrade openjdk-17 wget jq aapt zipalign && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd "$HOMEDIR"
     echo "ReVanced Prerequisites Updated/Installed"
   else
     echo "ReVanced Prerequisites Already Updated/Installed"
@@ -79,8 +78,8 @@ uncased() {
   mv $HOMEDIR/release/*.apk /storage/emulated/0/ReVanced 
   unset APKS
   echo "Going back to main menu in..."
-  for fjos in {3..1} ; do
-    echo "$fjos"
+  for i in {3..1} ; do
+    echo "$i"
     sleep 1
   done
 }
