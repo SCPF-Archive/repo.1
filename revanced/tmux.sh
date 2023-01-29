@@ -2,6 +2,7 @@
 
 clear
 HOMEDIR=$(pwd) ## /data/data/com.termux/files/home/dev/revanced
+LOCALDIR="/storage/emulated/0"
 
 ##########
 
@@ -51,9 +52,9 @@ sign_and_move_packages() {
   mv -v $HOMEDIR/packages/$APKS/output/release/*.apk $HOMEDIR/release/$APKS.apk
   echo "Moving the packages..."
   cd /
-  mkdir /storage/emulated/0/ReVanced
-  rm -f /storage/emulated/0/ReVanced/$APKS.apk
-  mv $HOMEDIR/release/*.apk /storage/emulated/0/ReVanced
+  mkdir $LOCALDIR/ReVanced
+  rm -f $LOCALDIR/ReVanced/$APKS.apk
+  mv $HOMEDIR/release/*.apk $LOCALDIR/ReVanced
   cd $HOMEDIR
 }
 
@@ -65,9 +66,9 @@ uncased() {
   APKS="$package"
   select_apk
   sign_and_move_packages
-  mkdir /storage/emulated/0/ReVanced
-  rm -f /storage/emulated/0/ReVanced/$APKS.apk
-  mv $HOMEDIR/release/$APKS.apk /storage/emulated/0/ReVanced 
+  mkdir $LOCALDIR/ReVanced
+  rm -f $LOCALDIR/ReVanced/$APKS.apk
+  mv $HOMEDIR/release/$APKS.apk $LOCALDIR/ReVanced 
   unset APKS
   echo "Going back to main menu in..."
   for i in {3..1} ; do
@@ -80,8 +81,9 @@ uncased_2() {
   APKS="$package"
   cd $HOMEDIR/packages/$APKS
   chmod +x download.sh && ./download.sh
-  rm -f /storage/emulated/0/ReVanced/$APKS.apk
-  mv $HOMEDIR/packages/$APKS/*.apk /storage/emulated/0/ReVanced/$APKS.apk
+  rm -f $LOCALDIR/ReVanced/$APKS.apk
+  mkdir $LOCALDIR/ReVanced
+  mv $HOMEDIR/packages/$APKS/*.apk $LOCALDIR/ReVanced/$APKS.apk
   unset APKS
   echo "Going back to main menu in..."
   for i in {3..1} ; do
@@ -111,7 +113,7 @@ update_script() {
 wlcmsg ()
 {
 clear
-cat assets/banner/scpf.logo.txt
+cat $HOMEDIR/assets/banner/scpf.logo.txt
 sleep 1
 echo "
 This script is a Bash script for the
