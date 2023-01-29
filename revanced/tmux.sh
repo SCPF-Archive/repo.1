@@ -75,6 +75,7 @@ uncased() {
     echo "$i"
     sleep 1
   done
+  read -n 1 -s -r -p "Press any key to continue..."
 }
 
 uncased_2() {
@@ -90,6 +91,7 @@ uncased_2() {
     echo "$i"
     sleep 1
   done
+  read -n 1 -s -r -p "Press any key to continue..."
 }
 
 ##########
