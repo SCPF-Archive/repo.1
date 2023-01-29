@@ -7,140 +7,96 @@ HOMEDIR="$PWD" ## /data/data/com.termux/files/home/dev/revanced
 
 # This downloads the ReVanced CLI, Integrations, and Patches.
 
-prerequisites ()
-{
-clear
-cd $HOMEDIR/assets/temp
-check_rv=$(ls cli/*.jar)
-if [[ -z "$check_rv" ]] ; then
-  pkg upgrade openjdk-17
-  pkg upgrade wget
-  pkg upgrade jq
-  pkg upgrade aapt
-  pkg upgrade zipalign
-  chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd $HOMEDIR
-  echo "ReVanced Prerequisites Updated/Installed"
-elif [[ -n "$check_rv" ]] ; then
-  echo "ReVanced Prerequisites Already Updated/Installed"
-fi
-cd $HOMEDIR
+prerequisites () {
+  clear
+  cd "$HOMEDIR/assets/temp"
+  if [ -z "$(ls cli/*.jar)" ]; then
+    pkg upgrade openjdk-17 wget jq aapt zipalign
+    chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd "$HOMEDIR"
+    echo "ReVanced Prerequisites Updated/Installed"
+  else
+    echo "ReVanced Prerequisites Already Updated/Installed"
+  fi
+  cd "$HOMEDIR"
 }
 
 ##########
 
 # This patches the packages.
 
-select_apk ()
-{
-clear
-
-if [ -f "$HOMEDIR/packages/$APKS/output/*.apk" ] ; then
-  echo "Already patched, skipping download..."
-else
-  mkdir $HOMEDIR/packages/$APKS/versions
-  cp $HOMEDIR/assets/versions/latest/versions.json $HOMEDIR/packages/$APKS/versions
-  cp $HOMEDIR/assets/patches/*.patch $HOMEDIR/packages/$APKS
-  cp $HOMEDIR/assets/temp/cli/*.jar $HOMEDIR/packages/$APKS/cli.jar
-  cp $HOMEDIR/assets/temp/integrations/*.apk $HOMEDIR/packages/$APKS/integrations.apk
-  cp $HOMEDIR/assets/temp/patches/*.jar $HOMEDIR/packages/$APKS/patches.jar
-  cd $HOMEDIR/packages/$APKS
-  chmod +x download.sh && ./download.sh
-  chmod +x compile.sh && ./compile.sh experimental
-  rm -rf *.jar *.apk *.patch versions
-fi
-cd $HOMEDIR
+select_apk () {
+  clear
+  cd "$HOMEDIR/packages/$APKS"
+  if [ -f output/*.apk ]; then
+    echo "Already patched, skipping download..."
+  else
+    mkdir versions
+    cp "$HOMEDIR/assets/versions/latest/versions.json" versions
+    cp "$HOMEDIR/assets/patches/*.patch" .
+    cp "$HOMEDIR/assets/temp/cli/*.jar" cli.jar
+    cp "$HOMEDIR/assets/temp/integrations/*.apk" integrations.apk
+    cp "$HOMEDIR/assets/temp/patches/*.jar" patches.jar
+    chmod +x download.sh && ./download.sh
+    chmod +x compile.sh && ./compile.sh experimental
+    rm -rf *.jar *.apk *.patch versions
+  fi
+  cd "$HOMEDIR"
 }
 
 ##########
 
 # This signs the the packages.
 
-sign_and_move_packages ()
-{
-clear
-
-echo "Downloading signer..."
-if [ -f "$HOMEDIR/signer.jar" ] ; then
-  echo "APK Signer already downloaded..."
-else
+sign_and_move_packages() {
+  echo "Downloading signer..."
   wget -nv https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/uber-apk-signer-1.2.1.jar
   mv uber-apk-signer-1.2.1.jar signer.jar
-fi
-
-if [ -f "$HOMEDIR/release/$APKS.apk" ] ; then
-  echo "Already signed, skip signing..."
-else
-  echo "Making directories..."
   mkdir $HOMEDIR/packages/$APKS/output/release
   mkdir $HOMEDIR/release
-
   echo "Signing packages..."
   java -jar signer.jar --allowResign -a $HOMEDIR/packages/$APKS/output -o $HOMEDIR/packages/$APKS/output/release
   mv -v $HOMEDIR/packages/$APKS/output/release/*.apk $HOMEDIR/release/$APKS.apk
-fi
-
-echo "Moving the packages..."
-cd /
-mkdir /storage/emulated/0/ReVanced
-rm -f /storage/emulated/0/ReVanced/$APKS.apk
-mv $HOMEDIR/release/*.apk /storage/emulated/0/ReVanced
-cd $HOMEDIR
-
+  echo "Moving the packages..."
+  cd /
+  mkdir /storage/emulated/0/ReVanced
+  rm -f /storage/emulated/0/ReVanced/$APKS.apk
+  mv $HOMEDIR/release/*.apk /storage/emulated/0/ReVanced
+  cd $HOMEDIR
 }
 
 ##########
 
 # This is the function in menu.
 
-uncased ()
-{
-APKS="$MKMF"
-select_apk
-sign_and_move_packages
-unset APKS
-echo "Going back to main menu in..."
-for fjos in {3..1} ; do
-  echo "$fjos"
-  sleep 1
-done
-}
-
-uncased_2 ()
-{
-APKS="$MKMF"
-mkdir $HOMEDIR/release
-mkdir /storage/emulated/0/ReVanced
-cd $HOMEDIR/packages/$MKMF
-chmod +x download.sh && ./download.sh
-mv $HOMEDIR/packages/$APKS/*.apk $HOMEDIR/release/$APKS.apk
-rm -f /storage/emulated/0/ReVanced/$APKS.apk
-mv $HOMEDIR/release/*.apk /storage/emulated/0/ReVanced 
-unset APKS
-echo "Going back to main menu in..."
-for fjos in {3..1} ; do
-  echo "$fjos"
-  sleep 1
-done
+uncased() {
+  APKS="$MKMF"
+  select_apk
+  sign_and_move_packages
+  mkdir /storage/emulated/0/ReVanced
+  cd $HOMEDIR/packages/$MKMF
+  chmod +x download.sh && ./download.sh
+  rm -f /storage/emulated/0/ReVanced/$APKS.apk
+  mv $HOMEDIR/release/*.apk /storage/emulated/0/ReVanced 
+  unset APKS
+  echo "Going back to main menu in..."
+  for fjos in {3..1} ; do
+    echo "$fjos"
+    sleep 1
+  done
 }
 
 ##########
 
 # This updates the repo.
 
-update_script ()
-{
-clear
-git reset --hard
-git pull
-cd $HOMEDIR
-chmod +x tmux.sh
-clear
-echo "Restarting Script"
-for zdf in {3..1} ; do
-  echo "$zdf"
-  sleep 1
-done
-./tmux.sh
+update_script() {
+  git reset --hard && git pull && chmod +x tmux.sh
+  echo "Restarting Script"
+  for zdf in {3..1} ; do
+    echo "$zdf"
+    sleep 1
+  done
+  ./tmux.sh
 }
 
 ##########
