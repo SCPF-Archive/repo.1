@@ -59,7 +59,6 @@ sign_and_move_packages() {
   java -jar signer.jar --allowResign -a $HOMEDIR/packages/$APKS/output -o $HOMEDIR/packages/$APKS/output/release
   mv -v $HOMEDIR/packages/$APKS/output/release/*.apk $HOMEDIR/release/$APKS.apk
   echo "Moving the packages..."
-  cd /
   mkdir $LOCALDIR/ReVanced
   rm -f $LOCALDIR/ReVanced/$APKS.apk
   mv $HOMEDIR/release/*.apk $LOCALDIR/ReVanced
