@@ -80,7 +80,6 @@ uncased_2() {
   APKS="$package"
   cd $HOMEDIR/packages/$APKS
   chmod +x download.sh && ./download.sh
-  mkdir /storage/emulated/0/ReVanced
   rm -f /storage/emulated/0/ReVanced/$APKS.apk
   mv $HOMEDIR/packages/$APKS/*.apk /storage/emulated/0/ReVanced/$APKS.apk
   unset APKS
