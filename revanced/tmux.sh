@@ -173,7 +173,7 @@ patch_packages() {
       "ticktick/v7a") uncased && menu_select && break 2 ;;
       "ticktick/x86.64") uncased && menu_select && break 2 ;;
       "ticktick/x86") uncased && menu_select && break 2 ;;
-      "tiktok") uncased && menu && select && break 2 ;;
+      "tiktok") uncased && menu_select && break 2 ;;
       "twitch") uncased && menu_select && break 2 ;;
       "twitter") uncased && menu_select && break 2 ;;
       "youtube.music/64.v8a") uncased && menu_select && break 2 ;;
