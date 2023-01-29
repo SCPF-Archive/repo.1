@@ -26,12 +26,16 @@ prerequisites () {
 
 select_apk () {
   clear
-  cd "$HOMEDIR/packages/$APKS"
+  cd $HOMEDIR/packages/$APKS
   if [ -f output/*.apk ]; then
     echo "Already patched, skipping download..."
   else
     mkdir versions
-    cp "$HOMEDIR/assets/versions/latest/versions.json" versions && cp "$HOMEDIR/assets/patches/*.patch" . && cp "$HOMEDIR/assets/temp/cli/*.jar" cli.jar && cp "$HOMEDIR/assets/temp/integrations/*.apk" integrations.apk && cp "$HOMEDIR/assets/temp/patches/*.jar" patches.jar
+    cp $HOMEDIR/assets/versions/latest/versions.json versions
+    cp $HOMEDIR/assets/patches/*.patch .
+    cp $HOMEDIR/assets/temp/cli/*.jar cli.jar
+    cp $HOMEDIR/assets/temp/integrations/*.apk integrations.apk
+    cp $HOMEDIR/assets/temp/patches/*.jar patches.jar
     chmod +x download.sh && ./download.sh && chmod +x compile.sh && ./compile.sh experimental
     rm -rf *.jar *.apk *.patch versions
   fi
