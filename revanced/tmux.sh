@@ -102,7 +102,7 @@ update_script() {
     echo "$zdf"
     sleep 1
   done
-  ./tmux.sh
+  ./$0
 }
 
 ##########
