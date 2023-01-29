@@ -1,7 +1,7 @@
 #!/bin/bash
 
 clear
-HOMEDIR="$PWD" ## /data/data/com.termux/files/home/dev/revanced
+HOMEDIR=$(pwd) ## /data/data/com.termux/files/home/dev/revanced
 
 ##########
 
