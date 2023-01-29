@@ -62,7 +62,7 @@ sign_and_move_packages() {
 # This is the function in menu.
 
 uncased() {
-  APKS="$MKMF"
+  APKS="$package"
   select_apk
   sign_and_move_packages
   mkdir /storage/emulated/0/ReVanced
@@ -77,7 +77,7 @@ uncased() {
 }
 
 uncased_2() {
-  APKS="$MKMF"
+  APKS="$package"
   cd $HOMEDIR/packages/$APKS
   chmod +x download.sh && ./download.sh
   mkdir /storage/emulated/0/ReVanced
