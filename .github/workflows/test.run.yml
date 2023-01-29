@@ -57,16 +57,16 @@ jobs:
     - name: Download
       if: inputs.BUILD
       run: |
-        cd revanced/packages/ticktick/64.v8a
+        cd revanced/packages/hexedit
         chmod +x download.sh
         ./download.sh
 
     - name: Compile
       if: inputs.BUILD
       run: |
-        cd revanced/packages/ticktick/64.v8a
-        chmod +x compile.sh
-        ./compile.sh
+        #cd revanced/packages/ticktick/64.v8a
+        #chmod +x compile.sh
+        #./compile.sh
 
     - name: Sign Packages
       if: inputs.SIGN
