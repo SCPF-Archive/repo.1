@@ -158,8 +158,7 @@ menu_select() {
       "Update Script") update_script && break 2 ;;
       "Script Info") script_info ;;
       "Exit Script") clear && break 2 && exit ;;
-      "") clear ;;
-      *) echo "Command not valid." ;;
+      *) echo "Command not valid." && clear ;;
     esac
   done
 }
