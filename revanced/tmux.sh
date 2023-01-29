@@ -99,6 +99,35 @@ uncased_2() {
 
 ##########
 
+# This clears the cache.
+
+clear_cache_info() {
+  echo "
+  Clear Cache
+  - Clears all the apk cache.
+
+  Clear All Cache
+  - Clears all the apk
+    and ReVanced Prerequisites.
+  "
+  read -n 1 -s -r -p "Press any key to continue..."
+}
+
+clear_cache() {
+  cd $HOMEDIR
+  rm -rf $HOMEDIR/packages/*/output/*.apk
+}
+
+clear_all_cache() {
+  cd $HOMEDIR
+  rm -rf $HOMEDIR/assets/temp/cli
+  rm -rf $HOMEDIR/assets/temp/integrations
+  rm -rf $HOMEDIR/assets/temp/patches
+  rm -rf $HOMEDIR/packages/*/output/*.apk
+}
+
+##########
+
 # This updates the repo.
 
 update_script() {
@@ -145,13 +174,14 @@ menu_select() {
   clear
   echo "Please select a number..."
   echo ""
-  select option in "Install Prerequisites" "Patch Packages" "Update Script" "Script Info" "Exit Script"
+  select option in "Install Prerequisites" "Patch Packages" "Update Script" "Script Info" "Clear Cache" "Exit Script"
   do
     case $option in
-      "Install Prerequisites") prerequisites && rerun_script && break 2 ;;
+      "Install Prerequisites") prerequisites && menu_select && break ;;
       "Patch Packages") patch_packages && break ;;
       "Update Script") update_script && break ;;
       "Script Info") script_info ;;
+      "Clear Cache") clear_cache_options ;;
       "Exit Script") clear && break && exit ;;
       *) echo "Command not valid." ;;
     esac
@@ -189,6 +219,22 @@ patch_packages() {
       "youtube.music/x86.64") uncased && menu_select && break ;;
       "youtube.music/x86") uncased && menu_select && break ;;
       "youtube") uncased && menu_select && break ;;
+      "Return Back") clear && menu_select && break ;;
+      *) echo "Command not valid." ;;
+    esac
+  done
+}
+
+clear_cache_options() {
+  clear
+  echo "Please select a number..."
+  echo ""
+  select option in "Clear Cache" "Clear All Cache" "Info" "Return Back"
+  do
+    case $option in
+      "Clear Cache") clear_cache && clear_cache_options && break ;;
+      "Clear All Cache") clear_all_cache && clear_cache_options && break ;;
+      "Info") clear_cache_info && clear_cache_options && break ;;
       "Return Back") clear && menu_select && break ;;
       *) echo "Command not valid." ;;
     esac
