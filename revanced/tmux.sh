@@ -47,9 +47,13 @@ select_apk () {
 # This signs the the packages.
 
 sign_and_move_packages() {
-  echo "Downloading signer..."
-  wget -nv https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/uber-apk-signer-1.2.1.jar
-  mv uber-apk-signer-1.2.1.jar signer.jar
+  if [ -f signer.jar ]; then
+    echo "Signer already downloaded..."
+  else
+    echo "Downloading signer..."
+    wget -nv https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/uber-apk-signer-1.2.1.jar
+    mv uber-apk-signer-1.2.1.jar signer.jar
+  fi
   mkdir $HOMEDIR/packages/$APKS/output/release $HOMEDIR/release
   echo "Signing packages..."
   java -jar signer.jar --allowResign -a $HOMEDIR/packages/$APKS/output -o $HOMEDIR/packages/$APKS/output/release
