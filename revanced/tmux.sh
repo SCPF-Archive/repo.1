@@ -105,7 +105,7 @@ update_script() {
     echo "$zdf"
     sleep 1
   done
-  cd $HOMEDIR && bash $HOMEDIR/tmux.sh
+  cd / && ./data/data/com.termux/files/home/dev/revanced/tmux.sh
 }
 
 ##########
