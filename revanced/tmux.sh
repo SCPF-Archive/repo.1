@@ -115,8 +115,8 @@ update_script() {
 wlcmsg ()
 {
 clear
-cd $HOMEDIR
 cat $HOMEDIR/assets/banner/scpf.logo.txt
+cd $HOMEDIR
 sleep 1
 echo "
 This script is a Bash script for the
