@@ -30,13 +30,8 @@ select_apk () {
     echo "Already patched, skipping download..."
   else
     mkdir versions
-    cp "$HOMEDIR/assets/versions/latest/versions.json" versions
-    cp "$HOMEDIR/assets/patches/*.patch" .
-    cp "$HOMEDIR/assets/temp/cli/*.jar" cli.jar
-    cp "$HOMEDIR/assets/temp/integrations/*.apk" integrations.apk
-    cp "$HOMEDIR/assets/temp/patches/*.jar" patches.jar
-    chmod +x download.sh && ./download.sh
-    chmod +x compile.sh && ./compile.sh experimental
+    cp "$HOMEDIR/assets/versions/latest/versions.json" versions && cp "$HOMEDIR/assets/patches/*.patch" . && cp "$HOMEDIR/assets/temp/cli/*.jar" cli.jar && cp "$HOMEDIR/assets/temp/integrations/*.apk" integrations.apk && cp "$HOMEDIR/assets/temp/patches/*.jar" patches.jar
+    chmod +x download.sh && ./download.sh && chmod +x compile.sh && ./compile.sh experimental
     rm -rf *.jar *.apk *.patch versions
   fi
   cd "$HOMEDIR"
@@ -50,8 +45,7 @@ sign_and_move_packages() {
   echo "Downloading signer..."
   wget -nv https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/uber-apk-signer-1.2.1.jar
   mv uber-apk-signer-1.2.1.jar signer.jar
-  mkdir $HOMEDIR/packages/$APKS/output/release
-  mkdir $HOMEDIR/release
+  mkdir $HOMEDIR/packages/$APKS/output/release $HOMEDIR/release
   echo "Signing packages..."
   java -jar signer.jar --allowResign -a $HOMEDIR/packages/$APKS/output -o $HOMEDIR/packages/$APKS/output/release
   mv -v $HOMEDIR/packages/$APKS/output/release/*.apk $HOMEDIR/release/$APKS.apk
