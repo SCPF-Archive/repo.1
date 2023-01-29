@@ -188,7 +188,7 @@ menu_select() {
       "Update Script") update_script && break ;;
       "Script Info") script_info ;;
       "Clear Cache") clear_cache_options ;;
-      "Exit Script") clear && exit && break ;;
+      "Exit Script") clear && exit && cd ~ && break ;;
       *) echo "Command not valid." ;;
     esac
   done
