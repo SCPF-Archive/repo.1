@@ -82,7 +82,7 @@ uncased_2() {
   chmod +x download.sh && ./download.sh
   mkdir /storage/emulated/0/ReVanced
   rm -f /storage/emulated/0/ReVanced/$APKS.apk
-  mv $HOMEDIR/packages/$APKS/$APKS.apk /storage/emulated/0/ReVanced 
+  mv $HOMEDIR/packages/$APKS/*.apk /storage/emulated/0/ReVanced/$APKS.apk
   unset APKS
   echo "Going back to main menu in..."
   for i in {3..1} ; do
