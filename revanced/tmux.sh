@@ -57,11 +57,10 @@ sign_and_move_packages() {
   mkdir $HOMEDIR/packages/$APKS/output/release $HOMEDIR/release
   echo "Signing packages..."
   java -jar signer.jar --allowResign -a $HOMEDIR/packages/$APKS/output -o $HOMEDIR/packages/$APKS/output/release
-  mv -v $HOMEDIR/packages/$APKS/output/release/*.apk $HOMEDIR/release/$APKS.apk
   echo "Moving the packages..."
   mkdir $LOCALDIR/ReVanced
   rm -f $LOCALDIR/ReVanced/$APKS.apk
-  mv $HOMEDIR/release/*.apk $LOCALDIR/ReVanced
+  mv $HOMEDIR/packages/$APKS/output/release/*.apk $LOCALDIR/ReVanced
   cd $HOMEDIR
 }
 
@@ -72,10 +71,7 @@ sign_and_move_packages() {
 uncased() {
   APKS="$package"
   select_apk
-  sign_and_move_packages
-  mkdir $LOCALDIR/ReVanced
-  rm -f $LOCALDIR/ReVanced/$APKS.apk
-  mv $HOMEDIR/release/$APKS.apk $LOCALDIR/ReVanced 
+  sign_and_move_packages 
   unset APKS
   echo "Going back to main menu in..."
   for i in {3..1} ; do
