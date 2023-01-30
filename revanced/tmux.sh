@@ -49,6 +49,7 @@ prerequisites_force() {
   pkg upgrade jq
   pkg upgrade aapt
   pkg upgrade zipalign
+  rm -rf cli integrations patches
   chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd "$HOMEDIR"
   echo "Prerequisites Updated/Installed"
   read -n 1 -s -r -p "Press any key to continue..."
