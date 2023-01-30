@@ -3,6 +3,7 @@
 echo "MAKING DIRECTORIES"
 mkdir -p packages/backdrops/versions
 mkdir -p packages/citra.emulator/versions
+mkdir -p packages/hexedit/versions
 mkdir -p packages/icon.pack.studio/versions
 mkdir -p packages/nova.launcher/versions
 mkdir -p packages/nyx.music.player/64.v8a/versions
@@ -26,6 +27,7 @@ mkdir -p packages/youtube/versions
 echo "COPYING LATEST VERSION FILES"
 cp -p assets/versions/latest/versions.json packages/backdrops/versions
 cp -p assets/versions/latest/versions.json packages/citra.emulator/versions
+cp -p assets/versions/latest/versions.json packages/hexedit/versions
 cp -p assets/versions/latest/versions.json packages/icon.pack.studio/versions
 cp -p assets/versions/latest/versions.json packages/nova.launcher/versions
 cp -p assets/versions/latest/versions.json packages/nyx.music.player/64.v8a/versions
@@ -49,6 +51,7 @@ cp -p assets/versions/latest/versions.json packages/youtube/versions
 echo "COPYING PATCH FILES"
 cp -p assets/patches/universal.patch packages/backdrops
 cp -p assets/patches/universal.patch packages/citra.emulator
+cp -p assets/patches/universal.patch packages/hexedit
 cp -p assets/patches/universal.patch packages/icon.pack.studio
 cp -p assets/patches/universal.patch packages/nova.launcher
 cp -p assets/patches/universal.patch packages/nyx.music.player/64.v8a
@@ -73,6 +76,7 @@ cp -p assets/patches/youtube.patch packages/youtube
 echo "COPYING REVANCED CLI"
 cp -p assets/temp/cli/*.jar packages/backdrops/cli.jar
 cp -p assets/temp/cli/*.jar packages/citra.emulator/cli.jar
+cp -p assets/temp/cli/*.jar packages/hexedit/cli.jar
 cp -p assets/temp/cli/*.jar packages/icon.pack.studio/cli.jar
 cp -p assets/temp/cli/*.jar packages/nova.launcher/cli.jar
 cp -p assets/temp/cli/*.jar packages/nyx.music.player/64.v8a/cli.jar
@@ -97,6 +101,7 @@ cp -p assets/temp/cli/*.jar packages/youtube/cli.jar
 echo "COPYING REVANCED INTEGRATIONS"
 cp -p assets/temp/integrations/*.apk packages/backdrops/integrations.apk
 cp -p assets/temp/integrations/*.apk packages/citra.emulator/integrations.apk
+cp -p assets/temp/integrations/*.apk packages/hexedit/integrations.apk
 cp -p assets/temp/integrations/*.apk packages/icon.pack.studio/integrations.apk
 cp -p assets/temp/integrations/*.apk packages/nova.launcher/integrations.apk
 cp -p assets/temp/integrations/*.apk packages/nyx.music.player/64.v8a/integrations.apk
@@ -121,6 +126,7 @@ cp -p assets/temp/integrations/*.apk packages/youtube/integrations.apk
 echo "COPYING REVANCED PATCHES"
 cp -p assets/temp/patches/*.jar packages/backdrops/patches.jar
 cp -p assets/temp/patches/*.jar packages/citra.emulator/patches.jar
+cp -p assets/temp/patches/*.jar packages/hexedit/patches.jar
 cp -p assets/temp/patches/*.jar packages/icon.pack.studio/patches.jar
 cp -p assets/temp/patches/*.jar packages/nova.launcher/patches.jar
 cp -p assets/temp/patches/*.jar packages/nyx.music.player/64.v8a/patches.jar
