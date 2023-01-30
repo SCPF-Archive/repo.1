@@ -159,11 +159,11 @@ clear_cache_info() {
 clear_cache() {
   cd $HOMEDIR
   for $APKRM in $HOMEDIR/packages/*; do
-    rm -rf $HOMEDIR/packages/$APKRM/*.apk
-    rm -rf $HOMEDIR/packages/$APKRM/64.v8a/*.apk
-    rm -rf $HOMEDIR/packages/$APKRM/v7a/*.apk
-    rm -rf $HOMEDIR/packages/$APKRM/x86.64/*.apk
-    rm -rf $HOMEDIR/packages/$APKRM/x86/*.apk
+    rm -rf $HOMEDIR/packages/*/*.apk
+    rm -rf $HOMEDIR/packages/*/64.v8a/*.apk
+    rm -rf $HOMEDIR/packages/*/v7a/*.apk
+    rm -rf $HOMEDIR/packages/*/x86.64/*.apk
+    rm -rf $HOMEDIR/packages/*/x86/*.apk
   done
   echo "Cache cleared, all clear..."
   echo ""
