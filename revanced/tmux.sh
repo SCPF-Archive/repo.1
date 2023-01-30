@@ -18,7 +18,7 @@ echo ""
 read -n 1 -s -r -p "Press any key to continue..."
 }
 
-prerequisites() {
+prerequisites_install() {
   clear
   cd $HOMEDIR/assets/temp
   if [ -z "$(ls cli/*.jar)" ]; then
@@ -30,12 +30,28 @@ prerequisites() {
     pkg upgrade aapt
     pkg upgrade zipalign
     chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd "$HOMEDIR"
-    echo "ReVanced Prerequisites Updated/Installed"
+    echo "Prerequisites Updated/Installed"
     read -n 1 -s -r -p "Press any key to continue..."
   else
-    echo "ReVanced Prerequisites Already Updated/Installed"
+    echo "Prerequisites Already Updated/Installed"
     read -n 1 -s -r -p "Press any key to continue..."
   fi
+  cd "$HOMEDIR"
+}
+
+prerequisites_force() {
+  clear
+  cd $HOMEDIR/assets/temp
+  clear
+  prerequisites_install_info
+  pkg upgrade openjdk-17
+  pkg upgrade wget
+  pkg upgrade jq
+  pkg upgrade aapt
+  pkg upgrade zipalign
+  chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd "$HOMEDIR"
+  echo "Prerequisites Updated/Installed"
+  read -n 1 -s -r -p "Press any key to continue..."
   cd "$HOMEDIR"
 }
 
@@ -239,12 +255,27 @@ menu_select() {
   select option in "Install Prerequisites" "Patch Packages" "Update Script" "Script Info" "Clear Cache" "Exit Script"
   do
     case $option in
-      "Install Prerequisites") prerequisites && menu_select && break ;;
+      "Install Prerequisites") prerequisites_menu && menu_select && break ;;
       "Patch Packages") patch_packages && break ;;
       "Update Script") update_script && break ;;
       "Script Info") script_info ;;
       "Clear Cache") clear_cache_options ;;
       "Exit Script") clear && exit && break ;;
+      *) echo "Command not valid." ;;
+    esac
+  done
+}
+
+prerequisites_menu() {
+  clear
+  echo "Please select a number..."
+  echo ""
+  select option in "Install/Update" "Force Update" "Return Back"
+  do
+    case $option in
+      "Install/Update") prerequisites_install && prerequisites_menu && break ;;
+      "Force Update") prerequisites_force && prerequisites_menu && break ;;
+      "Return Back") clear && menu_select && break ;;
       *) echo "Command not valid." ;;
     esac
   done
