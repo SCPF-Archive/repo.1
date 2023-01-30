@@ -13,8 +13,7 @@ prerequisites () {
   cd $HOMEDIR/assets/temp
   if [ -z "$(ls cli/*.jar)" ]; then
     clear
-    echo '
-    This will install the prerequisites.\Just type "y" or "Y" in every prompt.\Type "n" on every prompt to cancel installation.'
+    echo "This will install the prerequisites.\Just type y or Y in every prompt.\Type n or N on every prompt to cancel installation."
     echo ""
     read -n 1 -s -r -p "Press any key to continue..."
     pkg upgrade openjdk-17
