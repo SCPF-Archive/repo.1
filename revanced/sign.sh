@@ -7,6 +7,7 @@ mv uber-apk-signer-1.2.1.jar signer.jar
 echo "PREPARING"
 mkdir -p packages/backdrops/output/release
 mkdir -p packages/citra.emulator/output/release
+mkdir -p packages/hexedit/output/release
 mkdir -p packages/icon.pack.studio/output/release
 mkdir -p packages/nova.launcher/output/release
 mkdir -p packages/nyx.music.player/64.v8a/output/release
@@ -39,6 +40,9 @@ then
 
     java -jar signer.jar --allowResign -a packages/citra.emulator/output -o packages/citra.emulator/output/release
     mv -v packages/citra.emulator/output/release/*.apk release/citra.emulator.apk
+
+    java -jar signer.jar --allowResign -a packages/hexedit/output -o packages/hexedit/output/release
+    mv -v packages/hexedit/output/release/*.apk release/hexedit.apk
 
     java -jar signer.jar --allowResign -a packages/icon.pack.studio/output -o packages/icon.pack.studio/output/release
     mv -v packages/icon.pack.studio/output/release/*.apk release/icon.pack.studio.apk
