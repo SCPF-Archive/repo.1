@@ -236,8 +236,6 @@ wlcmsg() {
   and downloads the CLI, Integrations
   and Patches. It patches the packages,
   signs them, and moves them to the storage.
-  Finally, it updates the repo and provides
-  a welcome message and main menu.
   "
   echo "
   It will provide a menu for selecting
