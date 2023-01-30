@@ -148,6 +148,7 @@ cd repo.1/revanced && ./tmux.sh
 ## 📝Changelog
 <details><summary><b>Click to View</b></summary>
 
+- Add Hexedit ([**#26**](https://github.com/SCPF-Archive/repo.1/pull/26))
 - Update Termux Script ([**#25**](https://github.com/SCPF-Archive/repo.1/pull/25))
 - Fix Workflow Error ([**#22**](https://github.com/SCPF-Archive/repo.1/pull/22))
 - Add Termux Support ([**#21**](https://github.com/SCPF-Archive/repo.1/pull/21))
