@@ -17,6 +17,7 @@ prerequisites () {
     This will install the prerequisites.
     
     just type "y" or "Y" in every prompt.
+    type "n" on every prompt to cancel installation.
     '
     echo ""
     read -n 1 -s -r -p "Press any key to continue..."
