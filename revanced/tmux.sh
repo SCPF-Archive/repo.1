@@ -157,13 +157,15 @@ clear_cache_info() {
 }
 
 clear_cache() {
-  cd $HOMEDIR
-  for * in $HOMEDIR/packages/*; do
+  cd $HOMEDIR/packages
+  while [ -e packages/*/*.apk ]; do
     rm -rf $HOMEDIR/packages/*/*.apk
-    rm -rf $HOMEDIR/packages/*/64.v8a/*.apk
-    rm -rf $HOMEDIR/packages/*/v7a/*.apk
-    rm -rf $HOMEDIR/packages/*/x86.64/*.apk
-    rm -rf $HOMEDIR/packages/*/x86/*.apk
+  done
+  while [ -e packages/*/*/*.apk ]; do
+    rm -rf packages/*/64.v8a/*.apk
+    rm -rf packages/*/v7a/*.apk
+    rm -rf packages/*/x86.64/*.apk
+    rm -rf packages/*/x86/*.apk
   done
   echo "Cache cleared, all clear..."
   echo ""
