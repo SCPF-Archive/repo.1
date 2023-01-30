@@ -88,7 +88,7 @@ sign_and_move_packages() {
 
 uncased() {
   APKS="$package"
-  if [ -z "$(ls $HOMEDIR/assets/temp/cli/*.jar)" ]; then
+  if [ -f $HOMEDIR/assets/temp/cli/*.jar ]; then
     echo "Install prerequisites first..."
   else
     select_apk
@@ -104,7 +104,7 @@ uncased() {
 
 uncased_2() {
   APKS="$package"
-  if [ -z "$(ls $HOMEDIR/assets/temp/cli/*.jar)" ]; then
+  if [ -f $HOMEDIR/assets/temp/cli/*.jar ]; then
     echo "Install prerequisites first..."
   else
     cd $HOMEDIR/packages/$APKS
