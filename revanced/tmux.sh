@@ -24,20 +24,38 @@ prerequisites () {
 
 # This patches the packages.
 
+copy_prerequisites_func() {
+  cp $HOMEDIR/assets/versions/latest/versions.json versions
+  cp $HOMEDIR/assets/patches/*.patch .
+  cp $HOMEDIR/assets/temp/cli/*.jar cli.jar
+  cp $HOMEDIR/assets/temp/integrations/*.apk integrations.apk
+  cp $HOMEDIR/assets/temp/patches/*.jar patches.jar
+}
+
+move_and_clean_func() {
+  echo "Moving the packages..."
+  if [ -f $LOCALDIR/ReVanced]; then
+    mkdir $LOCALDIR/ReVanced
+  else
+    echo "Directory exists, moving..."
+  fi
+  rm -f $LOCALDIR/ReVanced/$APKS.apk
+  cp $HOMEDIR/packages/$APKS/output/*.apk $LOCALDIR/ReVanced
+  rm -rf *.jar integrations.apk *.patch versions
+}
+
 select_apk () {
   clear
   cd $HOMEDIR/packages/$APKS
-  if [ -f output/*.apk ]; then
-    echo "Already patched, skipping download..."
+  if [ -n $(ls *.apk) ]; then
+    echo "Already downloaded, skipping download..."
+    copy_prerequisites_func
+    chmod +x compile.sh && ./compile.sh experimental
+    move_and_clean_func
   else
-    mkdir versions
-    cp $HOMEDIR/assets/versions/latest/versions.json versions
-    cp $HOMEDIR/assets/patches/*.patch .
-    cp $HOMEDIR/assets/temp/cli/*.jar cli.jar
-    cp $HOMEDIR/assets/temp/integrations/*.apk integrations.apk
-    cp $HOMEDIR/assets/temp/patches/*.jar patches.jar
+    copy_prerequisites_func
     chmod +x download.sh && ./download.sh && chmod +x compile.sh && ./compile.sh experimental
-    rm -rf *.jar *.apk *.patch versions
+    move_and_clean_func
   fi
   cd "$HOMEDIR"
 }
@@ -70,8 +88,7 @@ sign_and_move_packages() {
 
 uncased() {
   APKS="$package"
-  select_apk
-  sign_and_move_packages 
+  select_apk 
   unset APKS
   echo "Going back to main menu in..."
   for i in {3..1} ; do
@@ -150,28 +167,27 @@ update_script() {
 
 # This is a welcome message.
 
-wlcmsg ()
-{
-clear
-cat $HOMEDIR/assets/banner/scpf.logo.txt
-sleep 1
-echo "
-This script is a Bash script for the
-ReVanced CLI, Integrations and Patches.
-It updates the ReVanced Prerequisites
-and downloads the CLI, Integrations
-and Patches. It patches the packages,
-signs them, and moves them to the storage.
-Finally, it updates the repo and provides
-a welcome message and main menu.
-"
-echo "
-It will provide a menu for selecting
-packages to patch and sign, and it will
-also allow the user to update the script,
-view script info, and exit the script.
-"
-read -n 1 -s -r -p "Press any key to continue..."
+wlcmsg() {
+  clear
+  cat $HOMEDIR/assets/banner/scpf.logo.txt
+  sleep 1
+  echo "
+  This script is a Bash script for the
+  ReVanced CLI, Integrations and Patches.
+  It updates the ReVanced Prerequisites
+  and downloads the CLI, Integrations
+  and Patches. It patches the packages,
+  signs them, and moves them to the storage.
+  Finally, it updates the repo and provides
+  a welcome message and main menu.
+  "
+  echo "
+  It will provide a menu for selecting
+  packages to patch and sign, and it will
+  also allow the user to update the script,
+  view script info, and exit the script.
+  "
+  read -n 1 -s -r -p "Press any key to continue..."
 }
 
 ##########
