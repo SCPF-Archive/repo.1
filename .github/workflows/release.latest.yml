@@ -57,6 +57,12 @@ jobs:
         cd revanced/packages/citra.emulator
         chmod +x download.sh && ./download.sh && chmod +x compile.sh && ./compile.sh experimental
 
+    - name: Patch Hexedit
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/hexedit
+        chmod +x download.sh && ./download.sh && chmod +x compile.sh && ./compile.sh experimental
+
     - name: Patch Icon Pack Studio
       if: inputs.BUILD
       run: |
