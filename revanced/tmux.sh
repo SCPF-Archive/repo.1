@@ -10,7 +10,7 @@ LOCALDIR="/storage/emulated/0"
 
 prerequisites () {
   clear
-  cd "$HOMEDIR/assets/temp"
+  cd $HOMEDIR/assets/temp
   if [ -z "$(ls cli/*.jar)" ]; then
     pkg upgrade openjdk-17 wget jq aapt zipalign && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd "$HOMEDIR"
     echo "ReVanced Prerequisites Updated/Installed"
@@ -88,7 +88,11 @@ sign_and_move_packages() {
 
 uncased() {
   APKS="$package"
-  select_apk 
+  if [ -z "$(ls $HOMEDIR/assets/temp/cli/*.jar)" ]; then
+    echo "Install prerequisites first..."
+  else
+    select_apk
+  fi
   unset APKS
   echo "Going back to main menu in..."
   for i in {3..1} ; do
@@ -100,11 +104,15 @@ uncased() {
 
 uncased_2() {
   APKS="$package"
-  cd $HOMEDIR/packages/$APKS
-  chmod +x download.sh && ./download.sh
-  rm -f $LOCALDIR/ReVanced/$APKS.apk
-  mkdir $LOCALDIR/ReVanced
-  mv $HOMEDIR/packages/$APKS/*.apk $LOCALDIR/ReVanced/$APKS.apk
+  if [ -z "$(ls $HOMEDIR/assets/temp/cli/*.jar)" ]; then
+    echo "Install prerequisites first..."
+  else
+    cd $HOMEDIR/packages/$APKS
+    chmod +x download.sh && ./download.sh
+    rm -f $LOCALDIR/ReVanced/$APKS.apk
+    mkdir $LOCALDIR/ReVanced
+    mv $HOMEDIR/packages/$APKS/*.apk $LOCALDIR/ReVanced/$APKS.apk
+  fi
   unset APKS
   echo "Going back to main menu in..."
   for i in {3..1} ; do
