@@ -12,7 +12,8 @@ prerequisites_install_info() {
 echo "
 This will install the prerequisites.
 Just type y or Y in every prompt.
-Type n or N on every prompt to cancel installation.
+Type n or N on every prompt to
+cancel installation.
 "
 echo ""
 read -n 1 -s -r -p "Press any key to continue..."
@@ -231,18 +232,18 @@ wlcmsg() {
   cat $HOMEDIR/assets/banner/scpf.logo.txt
   sleep 1
   echo "
-  This script is a Bash script for the
-  ReVanced CLI, Integrations and Patches.
-  It updates the ReVanced Prerequisites
-  and downloads the CLI, Integrations
-  and Patches. It patches the packages,
-  signs them, and moves them to the storage.
+This script is a Bash script for the
+ReVanced CLI, Integrations and Patches.
+It updates the ReVanced Prerequisites
+and downloads the CLI, Integrations
+and Patches. It patches the packages,
+signs them, and moves them to the storage.
   "
   echo "
-  It will provide a menu for selecting
-  packages to patch and sign, and it will
-  also allow the user to update the script,
-  view script info, and exit the script.
+It will provide a menu for selecting
+packages to patch and sign, and it will
+also allow the user to update the script,
+view script info, and exit the script.
   "
   read -n 1 -s -r -p "Press any key to continue..."
 }
