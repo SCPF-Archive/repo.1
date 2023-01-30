@@ -16,7 +16,7 @@ prerequisites () {
     echo "
     This will install the prerequisites.
     
-    just type "y" or "Y" in every prompt.
+    just type '"'y'"' or '"'Y'"' in every prompt.
     "
     echo ""
     read -n 1 -s -r -p "Press any key to continue..."
