@@ -158,7 +158,7 @@ clear_cache_info() {
 
 clear_cache() {
   cd $HOMEDIR
-  for $APKRM in $HOMEDIR/packages/*; do
+  for * in $HOMEDIR/packages/*; do
     rm -rf $HOMEDIR/packages/*/*.apk
     rm -rf $HOMEDIR/packages/*/64.v8a/*.apk
     rm -rf $HOMEDIR/packages/*/v7a/*.apk
