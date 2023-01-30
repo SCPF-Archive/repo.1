@@ -60,6 +60,7 @@ prerequisites_force() {
 # This patches the packages.
 
 copy_prerequisites_func() {
+  cd $HOMEDIR/packages/$APKS
   cp $HOMEDIR/assets/versions/latest/versions.json versions
   cp $HOMEDIR/assets/patches/*.patch .
   cp $HOMEDIR/assets/temp/cli/*.jar cli.jar
@@ -68,6 +69,7 @@ copy_prerequisites_func() {
 }
 
 move_and_clean_func() {
+  cd $HOMEDIR/packages/$APKS
   echo "Moving the packages..."
   if [ -f $LOCALDIR/ReVanced]; then
     mkdir $LOCALDIR/ReVanced
