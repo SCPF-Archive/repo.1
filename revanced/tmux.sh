@@ -267,19 +267,7 @@ patch_packages() {
   clear
   echo "Please select a number..."
   echo ""
-  select package in
-  "backdrops" "citra.emulator" "hexedit"
-  "icon.pack.studio" "microg" "nova.launcher"
-  "nyx.music.player/64.v8a" "nyx.music.player/v7a"
-  "nyx.music.player/x86.64" "nyx.music.player/x86"
-  "reddit" "revanced.manager" "spotify"
-  "ticktick/64.v8a" "ticktick/v7a"
-  "ticktick/x86.64" "ticktick/x86"
-  "tiktok" "twitch" "twitter"
-  "youtube.music/64.v8a" "youtube.music/v7a"
-  "youtube.music/x86.64" "youtube.music/x86"
-  "youtube"
-  "Return Back"
+  select package in "backdrops" "citra.emulator" "hexedit" "icon.pack.studio" "microg" "nova.launcher" "nyx.music.player/64.v8a" "nyx.music.player/v7a" "nyx.music.player/x86.64" "nyx.music.player/x86" "reddit" "revanced.manager" "spotify" "ticktick/64.v8a" "ticktick/v7a" "ticktick/x86.64" "ticktick/x86" "tiktok" "twitch" "twitter" "youtube.music/64.v8a" "youtube.music/v7a" "youtube.music/x86.64" "youtube.music/x86" "youtube" "Return Back"
   do
     case $package in
       "backdrops") uncased && menu_select && break ;;
