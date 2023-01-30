@@ -260,7 +260,7 @@ menu_select() {
       "Install Prerequisites") prerequisites_menu && menu_select && break ;;
       "Patch Packages") patch_packages && break ;;
       "Update Script") update_script && break ;;
-      "Script Info") script_info ;;
+      "Script Info") wlcmsg && menu_select && break ;;
       "Clear Cache") clear_cache_options ;;
       "Exit Script") clear && exit && break ;;
       *) echo "Command not valid." ;;
