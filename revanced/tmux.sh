@@ -12,7 +12,20 @@ prerequisites () {
   clear
   cd $HOMEDIR/assets/temp
   if [ -z "$(ls cli/*.jar)" ]; then
-    pkg upgrade openjdk-17 wget jq aapt zipalign && chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd "$HOMEDIR"
+    clear
+    echo "
+    This will install the prerequisites.
+    
+    just type "y" or "Y" in every prompt.
+    "
+    echo ""
+    read -n 1 -s -r -p "Press any key to continue..."
+    pkg upgrade openjdk-17
+    pkg upgrade wget
+    pkg upgrade jq
+    pkg upgrade aapt
+    pkg upgrade zipalign
+    chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd "$HOMEDIR"
     echo "ReVanced Prerequisites Updated/Installed"
   else
     echo "ReVanced Prerequisites Already Updated/Installed"
