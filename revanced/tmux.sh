@@ -8,14 +8,22 @@ LOCALDIR="/storage/emulated/0"
 
 # This downloads the ReVanced CLI, Integrations, and Patches.
 
-prerequisites () {
+prerequisites_install_info() {
+echo "
+This will install the prerequisites.
+Just type y or Y in every prompt.
+Type n or N on every prompt to cancel installation.
+"
+echo ""
+read -n 1 -s -r -p "Press any key to continue..."
+}
+
+prerequisites() {
   clear
   cd $HOMEDIR/assets/temp
   if [ -z "$(ls cli/*.jar)" ]; then
     clear
-    echo -e "This will install the prerequisites.\nJust type y or Y in every prompt.\nType n or N on every prompt to cancel installation."
-    echo ""
-    read -n 1 -s -r -p "Press any key to continue..."
+    prerequisites_install_info
     pkg upgrade openjdk-17
     pkg upgrade wget
     pkg upgrade jq
