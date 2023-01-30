@@ -263,6 +263,7 @@ menu_select() {
       "Exit Script") clear && exit && break ;;
       *) echo "Command not valid." ;;
     esac
+  clear
   done
 }
 
@@ -278,6 +279,7 @@ prerequisites_menu() {
       "Return Back") clear && menu_select && break ;;
       *) echo "Command not valid." ;;
     esac
+  clear
   done
 }
 
@@ -316,6 +318,7 @@ patch_packages() {
       "Return Back") clear && menu_select && break ;;
       *) echo "Command not valid." ;;
     esac
+  clear
   done
 }
 
@@ -332,6 +335,7 @@ clear_cache_options() {
       "Return Back") clear && menu_select && break ;;
       *) echo "Command not valid." ;;
     esac
+  clear
   done
 }
 
