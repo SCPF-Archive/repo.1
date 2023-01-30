@@ -101,28 +101,6 @@ select_apk () {
 
 ##########
 
-# This signs the the packages.
-
-sign_and_move_packages() {
-  if [ -f signer.jar ]; then
-    echo "Signer already downloaded..."
-  else
-    echo "Downloading signer..."
-    wget -nv https://github.com/patrickfav/uber-apk-signer/releases/download/v1.2.1/uber-apk-signer-1.2.1.jar
-    mv uber-apk-signer-1.2.1.jar signer.jar
-  fi
-  mkdir $HOMEDIR/packages/$APKS/output/release $HOMEDIR/release
-  echo "Signing packages..."
-  java -jar signer.jar --allowResign -a $HOMEDIR/packages/$APKS/output -o $HOMEDIR/packages/$APKS/output/release
-  echo "Moving the packages..."
-  mkdir $LOCALDIR/ReVanced
-  rm -f $LOCALDIR/ReVanced/$APKS.apk
-  mv $HOMEDIR/packages/$APKS/output/release/*.apk $LOCALDIR/ReVanced
-  cd $HOMEDIR
-}
-
-##########
-
 # This is the function in menu.
 
 uncased() {
