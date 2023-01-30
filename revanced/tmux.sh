@@ -47,7 +47,7 @@ move_and_clean_func() {
 select_apk () {
   clear
   cd $HOMEDIR/packages/$APKS
-  if [ -n $(ls *.apk) ]; then
+  if [ -f *.apk ]; then
     echo "Already downloaded, skipping download..."
     copy_prerequisites_func
     chmod +x compile.sh && ./compile.sh experimental
@@ -88,7 +88,7 @@ sign_and_move_packages() {
 
 uncased() {
   APKS="$package"
-  if [ -f $HOMEDIR/assets/temp/cli/*.jar ]; then
+  if [ -z $(ls $HOMEDIR/assets/temp/cli/*.jar) ]; then
     echo "Install prerequisites first..."
   else
     select_apk
