@@ -31,8 +31,10 @@ prerequisites() {
     pkg upgrade zipalign
     chmod +x download.prerequisites.sh && ./download.prerequisites.sh && cd "$HOMEDIR"
     echo "ReVanced Prerequisites Updated/Installed"
+    read -n 1 -s -r -p "Press any key to continue..."
   else
     echo "ReVanced Prerequisites Already Updated/Installed"
+    read -n 1 -s -r -p "Press any key to continue..."
   fi
   cd "$HOMEDIR"
 }
