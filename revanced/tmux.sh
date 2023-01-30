@@ -140,7 +140,13 @@ clear_cache_info() {
 
 clear_cache() {
   cd $HOMEDIR
-  rm -rf $HOMEDIR/packages/*/output/*.apk
+  for $APKRM in $HOMEDIR/packages/*; do
+    rm -rf $HOMEDIR/packages/$APKRM/*.apk
+    rm -rf $HOMEDIR/packages/$APKRM/64.v8a/*.apk
+    rm -rf $HOMEDIR/packages/$APKRM/v7a/*.apk
+    rm -rf $HOMEDIR/packages/$APKRM/x86.64/*.apk
+    rm -rf $HOMEDIR/packages/$APKRM/x86/*.apk
+  done
   echo "Cache cleared, all clear..."
   echo ""
   read -n 1 -s -r -p "Press any key to continue..."
@@ -151,7 +157,13 @@ clear_all_cache() {
   rm -rf $HOMEDIR/assets/temp/cli
   rm -rf $HOMEDIR/assets/temp/integrations
   rm -rf $HOMEDIR/assets/temp/patches
-  rm -rf $HOMEDIR/packages/*/output/*.apk
+  for $APKRM in $HOMEDIR/packages/*; do
+    rm -rf $HOMEDIR/packages/$APKRM/*.apk
+    rm -rf $HOMEDIR/packages/$APKRM/64.v8a/*.apk
+    rm -rf $HOMEDIR/packages/$APKRM/v7a/*.apk
+    rm -rf $HOMEDIR/packages/$APKRM/x86.64/*.apk
+    rm -rf $HOMEDIR/packages/$APKRM/x86/*.apk
+  done
   echo "Cache cleared, all clear..."
   echo ""
   read -n 1 -s -r -p "Press any key to continue..."
