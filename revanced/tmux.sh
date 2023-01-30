@@ -41,20 +41,18 @@ prerequisites_install() {
 }
 
 prerequisites_force() {
-  echo "Confirm update..?"
-  yes_or_no() {
-    while true; do
-        read -p "$* [y/n]: " yn
-        case $yn in
-            [Yy]*) return 0  ;;  
-            [Nn]*) echo "Aborted" ; return  1 ;;
-        esac
-    done
-  }
   clear
   cd $HOMEDIR/assets/temp
   clear
   prerequisites_install_info
+  echo "Confirm update..?"
+  while true; do
+    read -p "$* [y/n]: " yn
+    case $yn in
+      [Yy]*) return 0  ;;  
+      [Nn]*) echo "Aborted" ; return  1 ;;
+    esac
+  done
   pkg upgrade openjdk-17
   pkg upgrade wget
   pkg upgrade jq
