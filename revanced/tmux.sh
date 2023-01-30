@@ -73,7 +73,7 @@ copy_prerequisites_func() {
 move_and_clean_func() {
   cd $HOMEDIR/packages/$APKS
   echo "Moving the packages..."
-  if [ -f $LOCALDIR/ReVanced]; then
+  if [ -f $LOCALDIR/ReVanced ]; then
     mkdir $LOCALDIR/ReVanced
   else
     echo "Directory exists, moving..."
