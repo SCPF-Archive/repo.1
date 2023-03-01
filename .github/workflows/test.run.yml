@@ -57,14 +57,14 @@ jobs:
     - name: Download
       if: inputs.BUILD
       run: |
-        cd revanced/packages/hexedit
+        cd revanced/packages/reddit
         chmod +x download.sh
         ./download.sh
 
     - name: Compile
       if: inputs.BUILD
       run: |
-        cd revanced/packages/hexedit
+        cd revanced/packages/reddit
         chmod +x compile.sh
         ./compile.sh
 
