@@ -69,6 +69,12 @@ jobs:
         cd revanced/packages/icon.pack.studio
         chmod +x download.sh && ./download.sh && chmod +x compile.sh && ./compile.sh experimental
 
+    - name: Download Instagram
+      if: inputs.BUILD
+      run: |
+        cd revanced/packages/instagram
+        chmod +x download.sh && ./download.sh
+
     - name: Download Micro G
       if: inputs.BUILD
       run: |
