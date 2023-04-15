@@ -148,6 +148,7 @@ cd repo.1/revanced && ./tmux.sh
 ## 📝Changelog
 <details><summary><b>Click to View</b></summary>
 
+- Add Instagram (Instander) ([**#28**](https://github.com/SCPF-Archive/repo.1/pull/28))
 - Slight Fix and Update ([**#27**](https://github.com/SCPF-Archive/repo.1/pull/27))
 - Add Hexedit ([**#26**](https://github.com/SCPF-Archive/repo.1/pull/26))
 - Update Termux Script ([**#25**](https://github.com/SCPF-Archive/repo.1/pull/25))
