@@ -31,10 +31,6 @@ mkdir -p release
 echo "SIGNING PACKAGES"
 if [ -f "sign.sh" ]
 then
-    mv -v packages/microg/*.apk release/microg.apk
-
-    mv -v packages/revanced.manager/*.apk release/revanced.manager.apk
-
     java -jar signer.jar --allowResign -a packages/backdrops/output -o packages/backdrops/output/release
     mv -v packages/backdrops/output/release/*.apk release/backdrops.apk
 
@@ -46,6 +42,10 @@ then
 
     java -jar signer.jar --allowResign -a packages/icon.pack.studio/output -o packages/icon.pack.studio/output/release
     mv -v packages/icon.pack.studio/output/release/*.apk release/icon.pack.studio.apk
+
+    mv -v packages/instagram/*.apk release/instagram.apk
+
+    mv -v packages/microg/*.apk release/microg.apk
 
     java -jar signer.jar --allowResign -a packages/nova.launcher/output -o packages/nova.launcher/output/release
     mv -v packages/nova.launcher/output/release/*.apk release/nova.launcher.apk
@@ -64,6 +64,8 @@ then
 
     java -jar signer.jar --allowResign -a packages/reddit/output -o packages/reddit/output/release
     mv -v packages/reddit/output/release/*.apk release/reddit.apk
+
+    mv -v packages/revanced.manager/*.apk release/revanced.manager.apk
 
     java -jar signer.jar --allowResign -a packages/spotify/output -o packages/spotify/output/release
     mv -v packages/spotify/output/release/*.apk release/spotify.apk
