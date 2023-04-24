@@ -1,5 +1,6 @@
 # INCLUDED PATCHES
 background-play
+bypass-certificate-checks
 codecs-unlock
 compact-header
 exclusive-audio-playback
