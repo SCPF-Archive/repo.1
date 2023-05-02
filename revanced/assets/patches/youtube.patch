@@ -30,6 +30,7 @@ hide-floating-microphone-button
 hide-info-cards
 hide-my-mix
 hide-player-buttons
+hide-player-overlay
 hide-shorts-button
 hide-time-and-seekbar
 hide-video-buttons
@@ -37,6 +38,7 @@ hide-watch-in-vr
 hide-watermark
 microg-support
 minimized-playback
+navigation-buttons
 old-quality-layout
 open-links-externally
 
