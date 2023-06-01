@@ -26,12 +26,15 @@ hide-create-button
 hide-crowdfunding-box
 hide-email-address
 hide-endscreen-cards
+hide-filter-bar
 hide-floating-microphone-button
 hide-info-cards
+hide-load-more-button
 hide-my-mix
 hide-player-buttons
 hide-player-overlay
 hide-shorts-button
+hide-shorts-components
 hide-time-and-seekbar
 hide-video-buttons
 hide-watch-in-vr
