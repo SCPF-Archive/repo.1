@@ -15,6 +15,7 @@ disable-zoom-haptics
 external-downloads
 enable-wide-searchbar
 general-ads
+hide-ads
 hdr-auto-brightness
 hide-album-cards
 hide-artist-card
@@ -29,6 +30,7 @@ hide-endscreen-cards
 hide-filter-bar
 hide-floating-microphone-button
 hide-info-cards
+hide-layout-components
 hide-load-more-button
 hide-my-mix
 hide-player-buttons
